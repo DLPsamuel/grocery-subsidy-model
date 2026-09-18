@@ -1,0 +1,38 @@
+{
+  "api_key_used": true,
+  "sources": [
+    {
+      "release": "acs2024_5yr",
+      "release_info": {
+        "id": "acs2024_5yr",
+        "name": "ACS 2024 5-year",
+        "years": "2020-2024"
+      },
+      "n_geographies": 361,
+      "url": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B11001%2CB19001&geo_ids=140%7C05000US36005"
+    },
+    {
+      "release": "latest",
+      "release_info": {
+        "id": "acs2024_5yr",
+        "name": "ACS 2024 5-year",
+        "years": "2020-2024"
+      },
+      "n_geographies": 361,
+      "url": "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B11001%2CB19001&geo_ids=140%7C05000US36005"
+    }
+  ],
+  "years_ok": [
+    2024,
+    2024,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "years_missing": [
+    2025
+  ],
+  "notes": []
+}

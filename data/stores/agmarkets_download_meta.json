@@ -1,0 +1,9 @@
+{
+  "dataset": "9a8c-vfzj",
+  "url": "https://data.ny.gov/Economic-Development/Retail-Food-Stores/9a8c-vfzj",
+  "api": "https://data.ny.gov/resource/9a8c-vfzj.json",
+  "raw_rows": 24281,
+  "bronx_rows": 2235,
+  "with_coords": 2201,
+  "cd2_rows": 137
+}

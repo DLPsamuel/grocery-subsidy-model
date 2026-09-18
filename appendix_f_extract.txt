@@ -1,0 +1,38 @@
+﻿P24: Appendix F: Complete Data and Parameter Reference Table
+P390: Appendix F: Complete Data and Parameter Reference Table
+CANDIDATE TABLES [40]
+\n==== TABLE 40 rows 34 ====
+Lead || Symbol || Term || Section || Type || Specific data needed || Source
+R || ╬▒_j || Store quality fixed effect || 1.1.1 || Parameter || Assigned by store type: supermarket +1.5, discount/independent 0, bodega ΓêÆ1.5 || Store type from USDA SNAP locator + NYC DOHMH food establishment data
+R || p_j || Basket price level ($/basket) || 1.1.1 || Dataset || Estimated by store type (~$36ΓÇô$48) or Revenue_j / Q_j || BLS CPI food-at-home (NYC metro); ReferenceUSA establishment revenue
+S || d_ij || Distance: group i to store j (min) || 1.1.1 || Dataset || Euclidean distance (lat/lon) ├ù 15 min/km; income group representative location || Store geocodes from SNAP locator; group centroid from ACS tract centroids or CD2 centroid
+C || ╬▓_p_i || Price sensitivity ΓÇö group i || 1.1.1 / 1.1.2 || Parameter || Low: 0.55, Mid: 0.30, High: 0.15 ΓÇö from literature, calibrated by income group || Allcott et al. (2019) Table IV; ACS B19001 income distribution for Bronx CD2
+C || ╬▓_d_i || Distance sensitivity ΓÇö group i || 1.1.1 / 1.1.2 || Parameter || Low: 0.40, Mid: 0.25, High: 0.15 ΓÇö higher in car-free areas (Hunts Point) || Ben-Akiva & Lerman (1985) Ch. 5; ACS B08201 vehicle access in Bronx CD2
+ || V_ij || Systematic utility || 1.1.1 || Derived || Computed: ╬▒_j ΓêÆ ╬▓_p_i ┬╖ p_j ΓêÆ ╬▓_d_i ┬╖ d_ij || Equation 1.1.1a; used in all subsequent equations
+ || ╬╡_ij || Random utility term || 1.1.1 || Distributional assumption || Not directly computed; Gumbel(0,1) assumption produces the logit formula || Statistical assumption ΓÇö McFadden (1974)
+S || n_i || Households in income group i || 1.1.2 / 1.1.4 || Dataset || Count of CD2 households in each of 3 income brackets (<$25K, $25ΓÇô50K, >$50K) || ACS 5-Year Table B19001 for Bronx County tracts, filtered to BoroCD = 202
+S || N_HH || Total CD2 households || 1.1.2 / 1.2.1 || Dataset || Sum of n_i across all 3 groups; total households in Bronx CD2 || ACS 5-Year Table B11001, Bronx County, CD2 tracts
+ || s_ij || Choice probability ΓÇö group i, store j || 1.1.3 || Derived || logit formula: exp(V_ij) / ╬ú_k exp(V_ik); sums to 1 across stores || Equation 1.1.3; validated: ╬ú_j s_ij = 1
+R || J || Number of candidate stores || 1.1.3 || Dataset || SNAP-authorized stores in Bronx CD2 from spatial filter || USDA SNAP Retailer Locator CSV (snap-retailer-locator.fns.usda.gov)
+ || S_j || Aggregate market share of store j || 1.1.4 || Derived || Household-count-weighted avg of s_ij: ╬ú_i n_i ┬╖ s_ij / N_HH || Equation 1.1.4; validate: ╬ú_j S_j = 1
+ || W_i || Welfare level for group i ($/HH) || 1.1.5 || Derived || Logsum: (1/╬▓_p_i) ┬╖ ln[╬ú_k exp(V_ik)] || Equation 1.1.5a
+ || ╬öW_i || Welfare gain for group i ($/HH) || 1.1.5 || Derived || Change in logsum ├╖ ╬▓_p_i; positive when any store lowers price || Equation 1.1.5b
+ || ╬öCS || Aggregate welfare gain ($/yr) || 1.1.5 || Derived ΓÇö PRIMARY OUTPUT || ╬ú_i ╬öW_i ┬╖ n_i; total annual dollar benefit to all CD2 households || Equation 1.1.5c; the number the city maximizes
+R || Revenue_j || Annual store revenue ($) || 1.2.1 || Dataset || Establishment-level revenue estimate for each candidate store || ReferenceUSA (library access); search NAICS 445110 by address
+R + S || Q_j || Annual volume (basket-trips/yr) || 1.2.1 || Dataset / Derived || Revenue_j / p_j; cross-check: Q_j = S_j ┬╖ M / p_j within 20% || ReferenceUSA; cross-check with ACS B11001 ├ù BLS CES spending data
+S || M || Total CD2 annual grocery market ($) || 1.2.1 || Parameter || N_HH ├ù average annual food-at-home spending per household || ACS B11001 ├ù BLS Consumer Expenditure Survey Table 4700 (bls.gov/cex)
+S || f╠ä || Avg weekly food spending ($/wk) || 1.2.1 || Parameter || ~$75ΓÇô$140/wk; varies by income quintile in NYC metro area || BLS Consumer Expenditure Survey (bls.gov/cex), Table 4700
+C || ╬╕ || Pass-through rate || 1.3.1 || Parameter || Fraction of subsidy passed to consumers as lower prices; base = 0.65 || Besanko et al. (2005); Nakamura & Zerom (2010); vary in sensitivity: 0.40, 0.65, 0.85
+ || s || Annual subsidy ($/yr) || 1.3.1 || Decision variable || Total annual dollars city commits to one store; the policy lever || City budget decision; constrained by budget B
+ || ╬öp_j(s) || Price reduction ($/basket) || 1.3.1 || Derived || ╬╕ ┬╖ s / Q_j; single scalar per store; check: ╬öp/p Γëê 1ΓÇô5% for plausible s || Equation 1.3.1
+ || ╧ä || Tax break fraction || 1.3.2 || Decision variable || Fraction of annual tax bill the city forgives; s = ╧ä ┬╖ Tax_j || City decision; Tax_j from NYC NYCDB / NYC Dept. of Finance
+S || Tax_j || Annual property/business tax || 1.3.2 || Dataset || Store j's annual tax liability; upper bound on tax break instrument || NYC NYCDB (nycdb.info); NYC Dept. of Finance property tax data
+ || ╧â_rent || Rent subsidy amount ($/yr) || 1.3.2 || Decision variable || Annual rent the city covers; s = ╧â_rent; max = Rent_j || City decision; Rent_j from NYC ACRIS lease data
+S || Rent_j || Annual rent for store j || 1.3.2 || Dataset || Store's annual lease payment; upper bound on rent subsidy || NYC ACRIS (a836-acris.nyc.gov); or sq-ft ├ù market rate (~$20ΓÇô$35/sq-ft/yr in Hunts Point)
+ || ╬öp_min || Minimum price drop threshold || 1.4.1 || Parameter (policy) || How much prices must fall to count as a meaningful improvement || Policy decision; recommended starting point: 5% of p_j
+ || ╬öCS_min || Minimum welfare gain threshold || 1.4.1 || Parameter (policy) || How large aggregate welfare gain must be to justify the subsidy || Policy decision; e.g., $50,000/yr for Bronx CD2
+S || B || Total annual budget || 1.4.1 / 1.4.2 || Parameter (constraint) || City's maximum annual commitment to the subsidy program || City budget allocation ΓÇö exogenous input
+ || s* || Minimum effective subsidy || 1.4.1 || Derived ΓÇö Goal 1 OUTPUT || Smallest s meeting both ╬öp_min and ╬öCS_min thresholds at store j* || Grid search over ╬öCS(s)
+R || e_j || Store eligibility indicator || 1.4.2 || Dataset || 1 = SNAP-authorized, within Bronx CD2, meets any city program criteria || USDA SNAP Retailer Locator + NYC program eligibility rules
+ || j* || Optimal subsidized store || 1.4.2 || Derived ΓÇö Goal 2 OUTPUT || Store with highest ╬öCS_j(B) among eligible stores || argmax of ╬öCS_j(B); Goal 2 enumeration
+ || K || Max stores to subsidize || 1.4.2 || Parameter (policy) || Number of stores to select; start with K = 1 || City policy decision

@@ -1,0 +1,7 @@
+year,food_at_home_annual_usd,food_away_annual_usd,food_total_annual_usd,geography,source_url,source_note,f_bar_weekly_usd
+2019,4643,3526,8169,United States (all consumer units),https://www.bls.gov/opub/reports/consumer-expenditures/2023/,"BLS Consumer Expenditures in 2023 report, historical comparison table",89.29
+2020,4935,2375,7310,United States (all consumer units),https://www.bls.gov/opub/reports/consumer-expenditures/2023/,BLS Consumer Expenditures in 2023 report,94.9
+2021,5259,3030,8289,United States (all consumer units),https://www.bls.gov/opub/reports/consumer-expenditures/2023/,BLS Consumer Expenditures in 2023 report,101.13
+2022,5703,3639,9343,United States (all consumer units),https://www.bls.gov/news.release/cesan.nr0.htm,BLS Consumer Expenditures — 2023 news release table,109.67
+2023,6053,3933,9985,United States (all consumer units),https://www.bls.gov/news.release/cesan.nr0.htm,BLS Consumer Expenditures — 2023 news release,116.4
+2024,6224,3945,10169,United States (all consumer units),https://www.bls.gov/news.release/cesan.htm,BLS Consumer Expenditures News Release — 2024 A01 results table,119.69

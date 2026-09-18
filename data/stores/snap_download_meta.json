@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "download_url": "https://www.fns.usda.gov/sites/default/files/resource-files/snap-retailer-locator-data2005-2025.zip",
+  "local_file": "C:\\Users\\samia\\Code_Projects\\grocery_subsidy_analysis\\data\\stores\\snap_raw\\snap-retailer-locator-data2005-2025.zip",
+  "cd2_rows": 553,
+  "us_rows": 703441,
+  "bronx_rows": 9836,
+  "portal": "https://www.fns.usda.gov/snap/retailer-locator"
+}

@@ -1,0 +1,17 @@
+{
+  "xlsx_attempt": {
+    "downloaded": [],
+    "failed": {
+      "2020": "403 Client Error: Forbidden for url: https://www.bls.gov/cex/tables/calendar-year/mean/cu-income-before-taxes-2020.xlsx",
+      "2021": "403 Client Error: Forbidden for url: https://www.bls.gov/cex/tables/calendar-year/mean/cu-income-before-taxes-2021.xlsx",
+      "2022": "403 Client Error: Forbidden for url: https://www.bls.gov/cex/tables/calendar-year/mean/cu-income-before-taxes-2022.xlsx",
+      "2023": "403 Client Error: Forbidden for url: https://www.bls.gov/cex/tables/calendar-year/mean/cu-income-before-taxes-2023.xlsx",
+      "2024": "403 Client Error: Forbidden for url: https://www.bls.gov/cex/tables/calendar-year/mean/cu-income-before-taxes-2024.xlsx"
+    },
+    "sources": {}
+  },
+  "published_series_file": "ces_food_at_home_annual_published.csv",
+  "tables_portal": "https://www.bls.gov/cex/tables.htm",
+  "ces_home": "https://www.bls.gov/cex/",
+  "block_note": "Direct bls.gov file downloads returned HTTP 403 from this environment; published annual food-at-home figures were transcribed from BLS HTML reports with citations."
+}

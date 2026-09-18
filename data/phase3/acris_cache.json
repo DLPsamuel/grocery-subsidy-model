@@ -1,0 +1,1906 @@
+{
+  "2027630212": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 1,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027430019": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 2,
+    "acris_lease_doc_type": "MLEA",
+    "acris_lease_doc_date": "2007-12-14T00:00:00.000",
+    "acris_lease_doc_id": "2008010401443001",
+    "Rent_j_acris": 175000.0
+  },
+  "2027650198": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 6,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027720262": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 4,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027620015": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 14,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026960003": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 25,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027030001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027270045": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026850056": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027630105": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 13,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027680285": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 7,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026830052": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 6,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027240164": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 25,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027237501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027540001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 32,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026990033": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 7,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027610001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 40,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027460001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027450022": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 9,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026900001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 23,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027500013": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 11,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026960075": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 38,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027200076": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 14,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027420039": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 3,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027810440": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027030025": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 51,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": "FT_2020000741402",
+    "Rent_j_acris": null
+  },
+  "2027030053": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 57,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": "FT_2030000741403",
+    "Rent_j_acris": null
+  },
+  "2027430001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 11,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027410060": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027440011": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 19,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027740258": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 50,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027560080": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027200073": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 11,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026030026": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 32,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027620016": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 31,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027650290": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 38,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027240001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 41,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027270064": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 37,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027770250": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027610142": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": "FT_2160000582716",
+    "Rent_j_acris": null
+  },
+  "2027750173": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 17,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027150055": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 19,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027430015": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 27,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027070060": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 10,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "MLEA",
+    "acris_lease_doc_date": "2022-10-14T00:00:00.000",
+    "acris_lease_doc_id": "2022121600870001",
+    "Rent_j_acris": null
+  },
+  "2027040039": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 32,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027800073": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 16,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026860005": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 14,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027270001": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 43,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "MLEA",
+    "acris_lease_doc_date": "2007-12-23T00:00:00.000",
+    "acris_lease_doc_id": "2008021400095001",
+    "Rent_j_acris": null
+  },
+  "2026830100": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 19,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027200001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 26,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026060003": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 59,
+    "acris_n_lease_docs": 7,
+    "acris_lease_doc_type": "TERL",
+    "acris_lease_doc_date": "2013-02-28T00:00:00.000",
+    "acris_lease_doc_id": "2013031401159001",
+    "Rent_j_acris": 1.0
+  },
+  "2026960095": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 31,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026037501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2026960103": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027040016": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026910044": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 44,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026890048": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 41,
+    "acris_n_lease_docs": 6,
+    "acris_lease_doc_type": "ASSTO",
+    "acris_lease_doc_date": "2014-07-29T00:00:00.000",
+    "acris_lease_doc_id": "2014080701361001",
+    "Rent_j_acris": 18400000.0
+  },
+  "2027080040": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 53,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027620248": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 4,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027230068": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 48,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027430030": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 41,
+    "acris_n_lease_docs": 2,
+    "acris_lease_doc_type": "ASSTO",
+    "acris_lease_doc_date": "2019-10-30T00:00:00.000",
+    "acris_lease_doc_id": "2022051200897002",
+    "Rent_j_acris": null
+  },
+  "2027080046": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 39,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026830035": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027230066": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 16,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026840068": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027360021": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 15,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026900105": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 33,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027630220": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 43,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026920074": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 33,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027350001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 34,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027400039": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 2,
+    "acris_lease_doc_type": "MLEA",
+    "acris_lease_doc_date": "2024-01-10T00:00:00.000",
+    "acris_lease_doc_id": "2024021400226001",
+    "Rent_j_acris": null
+  },
+  "2026830001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 7,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027030018": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027260070": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 25,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027040005": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 31,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027680295": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 16,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027350020": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 48,
+    "acris_n_lease_docs": 3,
+    "acris_lease_doc_type": "MLEA",
+    "acris_lease_doc_date": "2008-10-07T00:00:00.000",
+    "acris_lease_doc_id": "2008111700224001",
+    "Rent_j_acris": 91830.38
+  },
+  "2027070063": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 14,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027650140": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 27,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027310043": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 2,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026900063": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 18,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027070001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 26,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027570066": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 18,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027540015": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 17,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026900119": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 45,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027627501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027500022": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027160031": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 16,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027640021": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 14,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027490001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 33,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026900022": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 9,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027590042": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 20,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": "1971-11-08T00:00:00.000",
+    "acris_lease_doc_id": "BK_7120016801671",
+    "Rent_j_acris": null
+  },
+  "2027290070": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 11,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027427501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027630215": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 43,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027037501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027360212": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 1,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027210024": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 48,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027150053": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 38,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026840076": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 34,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027630190": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 7,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027610083": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027200041": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 44,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026030024": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 13,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": "FT_2720005344972",
+    "Rent_j_acris": null
+  },
+  "2027030032": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 12,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027630162": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 46,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026770070": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 28,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027200069": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 48,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026880048": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 3,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": "2006-09-28T00:00:00.000",
+    "acris_lease_doc_id": "2006100301160001",
+    "Rent_j_acris": 225033.25
+  },
+  "2027630256": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": "FT_2180000570218",
+    "Rent_j_acris": null
+  },
+  "2027420026": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027120028": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 24,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027260066": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 54,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027420003": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 19,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027430025": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 38,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026950048": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 20,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027070085": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 47,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026030011": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 11,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027220001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 24,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027500003": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027610024": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 15,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026940024": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 30,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027500009": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 17,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026830045": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 17,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027620042": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 25,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026030051": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 21,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027150035": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 15,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027620012": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 14,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027240186": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 41,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "MLEA",
+    "acris_lease_doc_date": "2013-07-09T00:00:00.000",
+    "acris_lease_doc_id": "2013071500330004",
+    "Rent_j_acris": null
+  },
+  "2027370134": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 11,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027430055": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027500008": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 11,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027040001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 51,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027247502": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2029807501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027680241": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 15,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026900100": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 51,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026910005": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 2,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027420030": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 19,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": "FT_2170000570217",
+    "Rent_j_acris": null
+  },
+  "2027350019": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 22,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026860013": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 27,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026860001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 9,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027170068": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 27,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027610006": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 45,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026900024": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027400001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027410001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 10,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027357501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027630150": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 38,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026990060": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 18,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027040007": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 31,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027240101": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 27,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027430006": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 27,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026907503": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2026977501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2026937502": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2026900074": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027240190": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 17,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027630185": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027570089": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 35,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": "2005-02-24T00:00:00.000",
+    "acris_lease_doc_id": "2005111401161001",
+    "Rent_j_acris": null
+  },
+  "2026890046": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 29,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027030016": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 6,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027240170": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 30,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027650078": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 37,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027400007": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 45,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026970045": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 60,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027030030": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 16,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027320026": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 52,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027147501": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2026870001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 36,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027247503": {
+    "acris_ok": false,
+    "acris_lease_hit": false,
+    "Rent_j_acris": null,
+    "acris_n_docs": 0
+  },
+  "2027440063": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 30,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027210041": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 25,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027170070": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 4,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027130018": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 49,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027370102": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 5,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027240134": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 44,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027340030": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 6,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027570093": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 9,
+    "acris_n_lease_docs": 2,
+    "acris_lease_doc_type": "MLEA",
+    "acris_lease_doc_date": "2012-08-21T00:00:00.000",
+    "acris_lease_doc_id": "2013121701060001",
+    "Rent_j_acris": null
+  },
+  "2027630097": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 48,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026830041": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 12,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027630106": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 39,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027270052": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 33,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027540029": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 31,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027810460": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 3,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027270041": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 24,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2026030180": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 2,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027420022": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 9,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027040042": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 36,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027570085": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 15,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027420037": {
+    "acris_ok": true,
+    "acris_lease_hit": true,
+    "acris_n_docs": 21,
+    "acris_n_lease_docs": 1,
+    "acris_lease_doc_type": "LEAS",
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": "FT_2170000570217",
+    "Rent_j_acris": null
+  },
+  "2026830051": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 45,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027720270": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 15,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027700001": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 14,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027030014": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 30,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  },
+  "2027680196": {
+    "acris_ok": true,
+    "acris_lease_hit": false,
+    "acris_n_docs": 4,
+    "acris_n_lease_docs": 0,
+    "acris_lease_doc_type": null,
+    "acris_lease_doc_date": null,
+    "acris_lease_doc_id": null,
+    "Rent_j_acris": null
+  }
+}

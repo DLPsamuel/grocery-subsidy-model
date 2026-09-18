@@ -1,0 +1,7 @@
+# Data collection dependencies (Phase 0 / Lead S downloads)
+pandas>=2.0
+geopandas>=0.14
+shapely>=2.0
+requests>=2.31
+pyogrio>=0.7
+openpyxl>=3.1

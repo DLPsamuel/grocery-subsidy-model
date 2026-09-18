@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"name": "bronx_cd2_tract_centroids",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "tract_id": "36005008700", "lon": -73.897273106173259, "lat": 40.819674330706874 }, "geometry": { "type": "Point", "coordinates": [ -73.897273106173259, 40.819674330706874 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005011702", "lon": -73.875344270025806, "lat": 40.809871656392829 }, "geometry": { "type": "Point", "coordinates": [ -73.875344270025806, 40.809871656392829 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005012102", "lon": -73.887897942551433, "lat": 40.826004791617898 }, "geometry": { "type": "Point", "coordinates": [ -73.887897942551433, 40.826004791617898 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005012901", "lon": -73.898734617304925, "lat": 40.822629037605616 }, "geometry": { "type": "Point", "coordinates": [ -73.898734617304925, 40.822629037605616 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005012701", "lon": -73.892328163244841, "lat": 40.825632762020128 }, "geometry": { "type": "Point", "coordinates": [ -73.892328163244841, 40.825632762020128 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005011701", "lon": -73.883577820080674, "lat": 40.814370973078375 }, "geometry": { "type": "Point", "coordinates": [ -73.883577820080674, 40.814370973078375 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005008500", "lon": -73.899078309402341, "lat": 40.816267221149374 }, "geometry": { "type": "Point", "coordinates": [ -73.899078309402341, 40.816267221149374 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005008900", "lon": -73.893917109580244, "lat": 40.818559550573667 }, "geometry": { "type": "Point", "coordinates": [ -73.893917109580244, 40.818559550573667 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005015900", "lon": -73.893559041793637, "lat": 40.8223721508488 }, "geometry": { "type": "Point", "coordinates": [ -73.893559041793637, 40.8223721508488 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005013100", "lon": -73.897894966967897, "lat": 40.825951221512454 }, "geometry": { "type": "Point", "coordinates": [ -73.897894966967897, 40.825951221512454 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005011900", "lon": -73.889562657910034, "lat": 40.823280266552814 }, "geometry": { "type": "Point", "coordinates": [ -73.889562657910034, 40.823280266552814 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005009302", "lon": -73.889371200517928, "lat": 40.807746362556401 }, "geometry": { "type": "Point", "coordinates": [ -73.889371200517928, 40.807746362556401 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005009301", "lon": -73.8891147245958, "lat": 40.814354647370557 }, "geometry": { "type": "Point", "coordinates": [ -73.8891147245958, 40.814354647370557 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005011502", "lon": -73.8860286912264, "lat": 40.819686920522571 }, "geometry": { "type": "Point", "coordinates": [ -73.8860286912264, 40.819686920522571 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005008300", "lon": -73.901835734692909, "lat": 40.813662114432283 }, "geometry": { "type": "Point", "coordinates": [ -73.901835734692909, 40.813662114432283 ] } },
+{ "type": "Feature", "properties": { "tract_id": "36005001904", "lon": -73.898369797385229, "lat": 40.799576385641188 }, "geometry": { "type": "Point", "coordinates": [ -73.898369797385229, 40.799576385641188 ] } }
+]
+}

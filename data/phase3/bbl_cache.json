@@ -1,0 +1,2189 @@
+{
+  "772 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027630212",
+    "method": "geosearch",
+    "label": "772 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006550",
+    "confidence": 0.8
+  },
+  "1054 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027430019",
+    "method": "geosearch",
+    "label": "1054 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006021",
+    "confidence": 0.8
+  },
+  "670 BARRETTO ST, Bronx, NY 10474": {
+    "bbl": "2027650198",
+    "method": "geosearch",
+    "label": "670 BARRETTO STREET, Bronx, NY, USA",
+    "bin": "2006623",
+    "confidence": 0.8
+  },
+  "490 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027720262",
+    "method": "geosearch",
+    "label": "490 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006931",
+    "confidence": 0.8
+  },
+  "844 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027620015",
+    "method": "geosearch",
+    "label": "844 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006425",
+    "confidence": 0.8
+  },
+  "814 HEWITT PL, Bronx, NY 10459": {
+    "bbl": "2026960003",
+    "method": "geosearch",
+    "label": "814 HEWITT PLACE, Bronx, NY, USA",
+    "bin": "2005344",
+    "confidence": 0.8
+  },
+  "926 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027030001",
+    "method": "geosearch",
+    "label": "926 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005450",
+    "confidence": 0.8
+  },
+  "1087-1093 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270045",
+    "method": "geosearch",
+    "label": "1093 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005806",
+    "confidence": 0.8
+  },
+  "699 BECK ST ##, Bronx, NY 10455": {
+    "bbl": "2026850056",
+    "method": "geosearch",
+    "label": "699 BECK STREET, Bronx, NY, USA",
+    "bin": "2005113",
+    "confidence": 0.8
+  },
+  "701 COSTER ST ####, Bronx, NY 10474": {
+    "bbl": "2027630105",
+    "method": "geosearch",
+    "label": "701 COSTER STREET, Bronx, NY, USA",
+    "bin": "2006510",
+    "confidence": 0.8
+  },
+  "542 BARRETTO ST, Bronx, NY 10474": {
+    "bbl": "2027680285",
+    "method": "geosearch",
+    "label": "542 BARRETTO STREET, Bronx, NY, USA",
+    "bin": "2006812",
+    "confidence": 0.8
+  },
+  "549 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830052",
+    "method": "geosearch",
+    "label": "549 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005088",
+    "confidence": 0.8
+  },
+  "1007 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027240164",
+    "method": "geosearch",
+    "label": "1007 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005779",
+    "confidence": 0.8
+  },
+  "1020-1022 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027237501",
+    "method": "geosearch",
+    "label": "1022 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005764",
+    "confidence": 0.8
+  },
+  "1001 E 167TH ST, Bronx, NY 10459": {
+    "bbl": "2027540001",
+    "method": "geosearch",
+    "label": "1001 EAST 167 STREET, Bronx, NY, USA",
+    "bin": "2006184",
+    "confidence": 0.8
+  },
+  "986 ROGERS PL, Bronx, NY 10459": {
+    "bbl": "2026990033",
+    "method": "geosearch",
+    "label": "986 ROGERS PLACE, Bronx, NY, USA",
+    "bin": "2005382",
+    "confidence": 0.8
+  },
+  "874 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027610001",
+    "method": "geosearch",
+    "label": "874 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006318",
+    "confidence": 0.8
+  },
+  "900 HOE AVE, Bronx, NY 10459": {
+    "bbl": "2027460001",
+    "method": "geosearch",
+    "label": "900 HOE AVENUE, Bronx, NY, USA",
+    "bin": "2006072",
+    "confidence": 0.8
+  },
+  "956 LONGWOOD AVE###, Bronx, NY 10459": {
+    "bbl": "2027450022",
+    "method": "geosearch",
+    "label": "956 HOME STREET, Bronx, NY, USA",
+    "bin": "2006056",
+    "confidence": 1
+  },
+  "870 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026900001",
+    "method": "geosearch",
+    "label": "870 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005189",
+    "confidence": 0.8
+  },
+  "1126 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027500013",
+    "method": "geosearch",
+    "label": "1126 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006145",
+    "confidence": 0.8
+  },
+  "831 DAWSON ST, Bronx, NY 10459": {
+    "bbl": "2026960075",
+    "method": "geosearch",
+    "label": "831 DAWSON STREET, Bronx, NY, USA",
+    "bin": "2005347",
+    "confidence": 0.8
+  },
+  "795 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2027200076",
+    "method": "geosearch",
+    "label": "795 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005732",
+    "confidence": 0.8
+  },
+  "944 ALDUS ST, Bronx, NY 10459": {
+    "bbl": "2027420039",
+    "method": "geosearch",
+    "label": "944 ALDUS STREET, Bronx, NY, USA",
+    "bin": "2006012",
+    "confidence": 0.8
+  },
+  "155 FOOD CENTER DR ##, Bronx, NY 10474": {
+    "bbl": "2027810440",
+    "method": "geosearch",
+    "label": "155 FOOD CENTER DRIVE, Bronx, NY, USA",
+    "bin": "2101319",
+    "confidence": 0.8
+  },
+  "935 E 163RD ST ##, Bronx, NY 10459": {
+    "bbl": "2027030025",
+    "method": "geosearch",
+    "label": "935 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005456",
+    "confidence": 0.8
+  },
+  "947 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027030053",
+    "method": "geosearch",
+    "label": "947 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005463",
+    "confidence": 0.8
+  },
+  "945 ALDUS ST, Bronx, NY 10459": {
+    "bbl": "2027430001",
+    "method": "geosearch",
+    "label": "945 ALDUS STREET, Bronx, NY, USA",
+    "bin": "2006015",
+    "confidence": 0.8
+  },
+  "1101 GARRISON AVE, Bronx, NY 10474": {
+    "bbl": "2027410060",
+    "method": "geosearch",
+    "label": "1101 GARRISON AVENUE, Bronx, NY, USA",
+    "bin": "2006005",
+    "confidence": 0.8
+  },
+  "1086 SOUTHERN BLVD. STORE #2 ###, Bronx, NY 10459": {
+    "bbl": "2027440011",
+    "method": "geosearch",
+    "label": "1086 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006029",
+    "confidence": 0.8
+  },
+  "311 MANIDA ST ###, Bronx, NY 10474": {
+    "bbl": "2027740258",
+    "method": "geosearch",
+    "label": "311 MANIDA STREET, Bronx, NY, USA",
+    "bin": "2006949",
+    "confidence": 0.8
+  },
+  "1142 E 165TH ST ###, Bronx, NY 10459": {
+    "bbl": "2027560080",
+    "method": "geosearch",
+    "label": "1142 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2006272",
+    "confidence": 0.8
+  },
+  "547 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830052",
+    "method": "geosearch",
+    "label": "547 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005088",
+    "confidence": 0.8
+  },
+  "1024 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027200073",
+    "method": "geosearch",
+    "label": "1024 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005731",
+    "confidence": 0.8
+  },
+  "596 SOUTHERN BLVD ###, Bronx, NY 10455": {
+    "bbl": "2026030026",
+    "method": "geosearch",
+    "label": "596 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2004129",
+    "confidence": 0.8
+  },
+  "1204 GILBERT PL, Bronx, NY 10474": {
+    "bbl": "2027620016",
+    "method": "geosearch",
+    "label": "1204 GILBERT PLACE, Bronx, NY, USA",
+    "bin": "2006426",
+    "confidence": 0.8
+  },
+  "622-624 MANIDA ST - STORE 1, Bronx, NY 10474": {
+    "bbl": "2027650290",
+    "method": "geosearch",
+    "label": "624 MANIDA STREET, Bronx, NY, USA",
+    "bin": "2006661",
+    "confidence": 0.8
+  },
+  "935 E 163 ST - CORNER, Bronx, NY 10459": {
+    "bbl": "2027240001",
+    "method": "geosearch",
+    "label": "991 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005769",
+    "confidence": 0.8
+  },
+  "1057 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270064",
+    "method": "geosearch",
+    "label": "1057 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005808",
+    "confidence": 0.8
+  },
+  "1093 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270045",
+    "method": "geosearch",
+    "label": "1093 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005806",
+    "confidence": 0.8
+  },
+  "220 COSTER ST, Bronx, NY 10474": {
+    "bbl": "2027770250",
+    "method": "geosearch",
+    "label": "220 COSTER STREET, Bronx, NY, USA",
+    "bin": "2007017",
+    "confidence": 0.8
+  },
+  "1331 SENECA AVE, Bronx, NY 10474": {
+    "bbl": "2027610142",
+    "method": "geosearch",
+    "label": "1331 SENECA AVENUE, Bronx, NY, USA",
+    "bin": "2006384",
+    "confidence": 0.8
+  },
+  "1361 VIELE AVE #201 ##, Bronx, NY 10474": {
+    "bbl": "2027750173",
+    "method": "geosearch",
+    "label": "1361 VIELE AVENUE, Bronx, NY, USA",
+    "bin": "2006997",
+    "confidence": 0.8
+  },
+  "987 WESTCHESTER AVE ####, Bronx, NY 10459": {
+    "bbl": "2027150055",
+    "method": "geosearch",
+    "label": "987 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2093866",
+    "confidence": 0.8
+  },
+  "1046 SOUTHERN BLVD ##, Bronx, NY 10459": {
+    "bbl": "2027430015",
+    "method": "geosearch",
+    "label": "1046 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006020",
+    "confidence": 0.8
+  },
+  "978 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027070060",
+    "method": "geosearch",
+    "label": "978 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005537",
+    "confidence": 0.8
+  },
+  "995 KELLY ST, STORE 16, Bronx, NY 10459": {
+    "bbl": "2027040039",
+    "method": "geosearch",
+    "label": "995 KELLY STREET, Bronx, NY, USA",
+    "bin": "2094327",
+    "confidence": 0.8
+  },
+  "800 FOOD CENTER DR UNIT 36 ###, Bronx, NY 10474": {
+    "bbl": "2027800073",
+    "method": "geosearch",
+    "label": "800 FOOD CENTER DRIVE, Bronx, NY, USA",
+    "bin": "2088215",
+    "confidence": 0.8
+  },
+  "671 KELLY ST, Bronx, NY 10455": {
+    "bbl": "2026860005",
+    "method": "geosearch",
+    "label": "671 KELLY STREET, Bronx, NY, USA",
+    "bin": "2005122",
+    "confidence": 0.8
+  },
+  "953A WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027040039",
+    "method": "geosearch",
+    "label": "953A WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2094329",
+    "confidence": 0.8
+  },
+  "1031 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027270001",
+    "method": "geosearch",
+    "label": "1031 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005801",
+    "confidence": 0.8
+  },
+  "639 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830100",
+    "method": "geosearch",
+    "label": "639 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005092",
+    "confidence": 0.8
+  },
+  "902 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027410060",
+    "method": "geosearch",
+    "label": "902 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006005",
+    "confidence": 0.8
+  },
+  "1017 LEGGET AVE, Bronx, NY 10455": {
+    "bbl": "2027200001",
+    "method": "geosearch",
+    "label": "1017 LEGGETT AVENUE, Bronx, NY, USA",
+    "bin": "2005719",
+    "confidence": 0.8
+  },
+  "1080 LEGGETT AVE, Bronx, NY 10474": {
+    "bbl": "2026060003",
+    "method": "geosearch",
+    "label": "1080 LEGGETT AVENUE, Bronx, NY, USA",
+    "bin": "2004156",
+    "confidence": 0.8
+  },
+  "880 E 163RD ST ###, Bronx, NY 10459": {
+    "bbl": "2026960095",
+    "method": "geosearch",
+    "label": "880 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2102069",
+    "confidence": 0.8
+  },
+  "548 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026037501",
+    "method": "geosearch",
+    "label": "548 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2004121",
+    "confidence": 0.8
+  },
+  "908 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2026960103",
+    "method": "geosearch",
+    "label": "908 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005349",
+    "confidence": 0.8
+  },
+  "1006 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027040016",
+    "method": "geosearch",
+    "label": "1006 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005470",
+    "confidence": 0.8
+  },
+  "865 E 165TH ST, Bronx, NY 10459": {
+    "bbl": "2026910044",
+    "method": "geosearch",
+    "label": "865 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2005248",
+    "confidence": 0.8
+  },
+  "867 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2026890048",
+    "method": "geosearch",
+    "label": "867 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2115863",
+    "confidence": 0.8
+  },
+  "950 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027080040",
+    "method": "geosearch",
+    "label": "950 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005568",
+    "confidence": 0.8
+  },
+  "801 EDGEWATER RD, Bronx, NY 10474": {
+    "bbl": "2027620248",
+    "method": "geosearch",
+    "label": "801 EDGEWATER ROAD, Bronx, NY, USA",
+    "bin": "2006484",
+    "confidence": 0.8
+  },
+  "901 SOUTHERN BLVD. STORE B, Bronx, NY 10459": {
+    "bbl": "2027230068",
+    "method": "geosearch",
+    "label": "901 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005768",
+    "confidence": 0.8
+  },
+  "797 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2027200073",
+    "method": "geosearch",
+    "label": "797 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005731",
+    "confidence": 0.8
+  },
+  "699 BECK ST ####, Bronx, NY 10455": {
+    "bbl": "2026850056",
+    "method": "geosearch",
+    "label": "699 BECK STREET, Bronx, NY, USA",
+    "bin": "2005113",
+    "confidence": 0.8
+  },
+  "1078 E 165TH ST ####, Bronx, NY 10459": {
+    "bbl": "2027430030",
+    "method": "geosearch",
+    "label": "1078 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2006023",
+    "confidence": 0.8
+  },
+  "976 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027080046",
+    "method": "geosearch",
+    "label": "976 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005569",
+    "confidence": 0.8
+  },
+  "585 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830035",
+    "method": "geosearch",
+    "label": "585 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005082",
+    "confidence": 0.8
+  },
+  "1007 E 163RD ST ####, Bronx, NY 10459": {
+    "bbl": "2027240001",
+    "method": "geosearch",
+    "label": "1007 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2099788",
+    "confidence": 0.8
+  },
+  "907 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027230066",
+    "method": "geosearch",
+    "label": "907 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005767",
+    "confidence": 0.8
+  },
+  "698 BECK ST, Bronx, NY 10455": {
+    "bbl": "2026840068",
+    "method": "geosearch",
+    "label": "698 BECK STREET, Bronx, NY, USA",
+    "bin": "2005098",
+    "confidence": 0.8
+  },
+  "1081 LEGGETT AVE, Bronx, NY 10474": {
+    "bbl": "2027360021",
+    "method": "geosearch",
+    "label": "1081 LEGGETT AVENUE, Bronx, NY, USA",
+    "bin": "2094342",
+    "confidence": 0.8
+  },
+  "954 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026900105",
+    "method": "geosearch",
+    "label": "954 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005207",
+    "confidence": 0.8
+  },
+  "1318 LAFAYETTE AVE, Bronx, NY 10474": {
+    "bbl": "2027630220",
+    "method": "geosearch",
+    "label": "1318 LAFAYETTE AVENUE, Bronx, NY, USA",
+    "bin": "2006552",
+    "confidence": 0.8
+  },
+  "901 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027230068",
+    "method": "geosearch",
+    "label": "901 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005768",
+    "confidence": 0.8
+  },
+  "1103 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2026920074",
+    "method": "geosearch",
+    "label": "1103 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005291",
+    "confidence": 0.8
+  },
+  "800 FOOD CENTER DR UNIT 117 ###, Bronx, NY 10474": {
+    "bbl": "2027800073",
+    "method": "geosearch",
+    "label": "800 FOOD CENTER DRIVE, Bronx, NY, USA",
+    "bin": "2088215",
+    "confidence": 0.8
+  },
+  "900 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027350001",
+    "method": "geosearch",
+    "label": "900 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005881",
+    "confidence": 0.8
+  },
+  "803 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027400039",
+    "method": "geosearch",
+    "label": "803 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2005958",
+    "confidence": 0.8
+  },
+  "545 A SOUTHERN BLVD ####, Bronx, NY 10455": {
+    "bbl": "2026830001",
+    "method": "geosearch",
+    "label": "545 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005080",
+    "confidence": 0.8
+  },
+  "948 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027030018",
+    "method": "geosearch",
+    "label": "948 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005453",
+    "confidence": 0.8
+  },
+  "1025 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027260070",
+    "method": "geosearch",
+    "label": "1025 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2095487",
+    "confidence": 0.8
+  },
+  "980 INTERVALE AVE ###, Bronx, NY 10459": {
+    "bbl": "2027040005",
+    "method": "geosearch",
+    "label": "980 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005465",
+    "confidence": 0.8
+  },
+  "1264 RANDALL AVE, Bronx, NY 10474": {
+    "bbl": "2027680295",
+    "method": "geosearch",
+    "label": "1264 RANDALL AVENUE, Bronx, NY, USA",
+    "bin": "2006814",
+    "confidence": 0.8
+  },
+  "925 HUNTS POINT AVE, Bronx, NY 10459": {
+    "bbl": "2027350020",
+    "method": "geosearch",
+    "label": "925 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2129345",
+    "confidence": 0.8
+  },
+  "1000 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027070063",
+    "method": "geosearch",
+    "label": "1000 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005538",
+    "confidence": 0.8
+  },
+  "1240 SPOFFORD AVE, Bronx, NY 10474": {
+    "bbl": "2027650140",
+    "method": "geosearch",
+    "label": "1240 SPOFFORD AVENUE, Bronx, NY, USA",
+    "bin": "2006612",
+    "confidence": 0.8
+  },
+  "1091 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270045",
+    "method": "geosearch",
+    "label": "1091 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005806",
+    "confidence": 0.8
+  },
+  "819 GARRISON AVE, Bronx, NY 10474": {
+    "bbl": "2027310043",
+    "method": "geosearch",
+    "label": "819 GARRISON AVENUE, Bronx, NY, USA",
+    "bin": "2096074",
+    "confidence": 0.8
+  },
+  "920 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026900063",
+    "method": "geosearch",
+    "label": "920 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2115864",
+    "confidence": 0.8
+  },
+  "710 BECK ST, Bronx, NY 10455": {
+    "bbl": "2027070001",
+    "method": "geosearch",
+    "label": "710 BECK STREET, Bronx, NY, USA",
+    "bin": "2115251",
+    "confidence": 0.8
+  },
+  "1090 LONGFELLOW AVE ####, Bronx, NY 10459": {
+    "bbl": "2027570066",
+    "method": "geosearch",
+    "label": "1090 LONGFELLOW AVENUE, Bronx, NY, USA",
+    "bin": "2006286",
+    "confidence": 0.8
+  },
+  "1019 E 167TH ST ###, Bronx, NY 10459": {
+    "bbl": "2027540015",
+    "method": "geosearch",
+    "label": "1019 EAST 167 STREET, Bronx, NY, USA",
+    "bin": "2006187",
+    "confidence": 0.8
+  },
+  "976 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026900119",
+    "method": "geosearch",
+    "label": "976 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005212",
+    "confidence": 0.8
+  },
+  "869 BRYANT AVE, Bronx, NY 10474": {
+    "bbl": "2027627501",
+    "method": "geosearch",
+    "label": "869 BRYANT AVENUE, Bronx, NY, USA",
+    "bin": "2006460",
+    "confidence": 0.8
+  },
+  "1218 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027500022",
+    "method": "geosearch",
+    "label": "1218 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006148",
+    "confidence": 0.8
+  },
+  "1086 KELLY ST, Bronx, NY 10459": {
+    "bbl": "2027160031",
+    "method": "geosearch",
+    "label": "1086 KELLY STREET, Bronx, NY, USA",
+    "bin": "2005673",
+    "confidence": 0.8
+  },
+  "727 DRAKE ST, Bronx, NY 10474": {
+    "bbl": "2027640021",
+    "method": "geosearch",
+    "label": "727 DRAKE STREET, Bronx, NY, USA",
+    "bin": "2088210",
+    "confidence": 0.8
+  },
+  "800 FOOD CENTER DR UNIT 3-4, Bronx, NY 10474": {
+    "bbl": "2027800073",
+    "method": "geosearch",
+    "label": "800 FOOD CENTER DRIVE, Bronx, NY, USA",
+    "bin": "2088215",
+    "confidence": 0.8
+  },
+  "1000 HOE AVE, Bronx, NY 10459": {
+    "bbl": "2027490001",
+    "method": "geosearch",
+    "label": "1000 HOE AVENUE, Bronx, NY, USA",
+    "bin": "2006109",
+    "confidence": 0.8
+  },
+  "910 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026900022",
+    "method": "geosearch",
+    "label": "910 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005194",
+    "confidence": 0.8
+  },
+  "1037E 163ST, Bronx, NY 10459": {
+    "bbl": null,
+    "method": "geosearch_no_hit",
+    "label": null,
+    "bin": null
+  },
+  "1037E 163ST, Bronx, NY 10459|pluto": {
+    "bbl": null,
+    "method": "pluto_no_hit",
+    "label": null,
+    "bin": null
+  },
+  "1360 BRUCKNER BLVD ###, Bronx, NY 10459": {
+    "bbl": "2027590042",
+    "method": "geosearch",
+    "label": "1360 BRUCKNER BOULEVARD, Bronx, NY, USA",
+    "bin": "2006313",
+    "confidence": 0.8
+  },
+  "796 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2027290070",
+    "method": "geosearch",
+    "label": "796 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005828",
+    "confidence": 0.8
+  },
+  "951 HOE AVE, Bronx, NY 10459": {
+    "bbl": "2027427501",
+    "method": "geosearch",
+    "label": "951 HOE AVENUE, Bronx, NY, USA",
+    "bin": "2113353",
+    "confidence": 0.8
+  },
+  "1302-1304 LAFAYETTE AVE, Bronx, NY 10474": {
+    "bbl": "2027630215",
+    "method": "geosearch",
+    "label": "1304 LAFAYETTE AVENUE, Bronx, NY, USA",
+    "bin": "2006551",
+    "confidence": 0.8
+  },
+  "950 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027037501",
+    "method": "geosearch",
+    "label": "950 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2114693",
+    "confidence": 0.8
+  },
+  "1187 E 156TH ST, Bronx, NY 10474": {
+    "bbl": "2027360212",
+    "method": "geosearch",
+    "label": "1187 EAST 156 STREET, Bronx, NY, USA",
+    "bin": "2005913",
+    "confidence": 0.8
+  },
+  "809 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027210024",
+    "method": "geosearch",
+    "label": "809 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005741",
+    "confidence": 0.8
+  },
+  "998 LONGWOOD AVE #6, Bronx, NY 10459": {
+    "bbl": "2027070063",
+    "method": "geosearch",
+    "label": "998 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005538",
+    "confidence": 0.8
+  },
+  "968 E 165TH ST, Bronx, NY 10459": {
+    "bbl": "2027150053",
+    "method": "geosearch",
+    "label": "968 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2005669",
+    "confidence": 0.8
+  },
+  "990 LEGGETT AVE, Bronx, NY 10455": {
+    "bbl": "2026840076",
+    "method": "geosearch",
+    "label": "990 LEGGETT AVENUE, Bronx, NY, USA",
+    "bin": "2005101",
+    "confidence": 0.8
+  },
+  "798 HUNTS PT AVE, Bronx, NY 10474": {
+    "bbl": "2027630190",
+    "method": "geosearch",
+    "label": "798 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006548",
+    "confidence": 0.8
+  },
+  "918 FAILE ST #1, Bronx, NY 10474": {
+    "bbl": "2027610083",
+    "method": "geosearch",
+    "label": "918 FAILE STREET, Bronx, NY, USA",
+    "bin": "2006367",
+    "confidence": 0.8
+  },
+  "703 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2027200041",
+    "method": "geosearch",
+    "label": "703 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005724",
+    "confidence": 0.8
+  },
+  "543 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830001",
+    "method": "geosearch",
+    "label": "543 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005080",
+    "confidence": 0.8
+  },
+  "590 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026030024",
+    "method": "geosearch",
+    "label": "590 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2004128",
+    "confidence": 0.8
+  },
+  "956 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027030032",
+    "method": "geosearch",
+    "label": "956 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005458",
+    "confidence": 0.8
+  },
+  "800 FOOD CENTER DR UNIT 13, Bronx, NY 10474": {
+    "bbl": "2027800073",
+    "method": "geosearch",
+    "label": "800 FOOD CENTER DRIVE, Bronx, NY, USA",
+    "bin": "2088215",
+    "confidence": 0.8
+  },
+  "701-703 FAILE ST, Bronx, NY 10474": {
+    "bbl": "2027630162",
+    "method": "geosearch",
+    "label": "703 FAILE STREET, Bronx, NY, USA",
+    "bin": "2006535",
+    "confidence": 0.8
+  },
+  "923 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026770070",
+    "method": "geosearch",
+    "label": "923 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005012",
+    "confidence": 0.8
+  },
+  "1010 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027200069",
+    "method": "geosearch",
+    "label": "1010 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005730",
+    "confidence": 0.8
+  },
+  "850 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2026880048",
+    "method": "geosearch",
+    "label": "850 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005169",
+    "confidence": 0.8
+  },
+  "724 HUNTS PT AVE, Bronx, NY 10474": {
+    "bbl": "2027630256",
+    "method": "geosearch",
+    "label": "724 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006564",
+    "confidence": 0.8
+  },
+  "950-960 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027420026",
+    "method": "geosearch",
+    "label": "960 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006007",
+    "confidence": 0.8
+  },
+  "931 FOX ST, Bronx, NY 10459": {
+    "bbl": "2027120028",
+    "method": "geosearch",
+    "label": "931 FOX STREET, Bronx, NY, USA",
+    "bin": "2005635",
+    "confidence": 0.8
+  },
+  "1029 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027260066",
+    "method": "geosearch",
+    "label": "1029 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005798",
+    "confidence": 0.8
+  },
+  "1065 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "1065 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2094370",
+    "confidence": 0.8
+  },
+  "1050 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027430025",
+    "method": "geosearch",
+    "label": "1050 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006022",
+    "confidence": 0.8
+  },
+  "911 E 156TH ST, Bronx, NY 10455": {
+    "bbl": "2026950048",
+    "method": "geosearch",
+    "label": "911 EAST 156 STREET, Bronx, NY, USA",
+    "bin": "2091998",
+    "confidence": 0.8
+  },
+  "753 FOX ST, Bronx, NY 10455": {
+    "bbl": "2027070085",
+    "method": "geosearch",
+    "label": "753 FOX STREET, Bronx, NY, USA",
+    "bin": "2005542",
+    "confidence": 0.8
+  },
+  "564 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026030011",
+    "method": "geosearch",
+    "label": "564 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2004123",
+    "confidence": 0.8
+  },
+  "854 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027220001",
+    "method": "geosearch",
+    "label": "854 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2087653",
+    "confidence": 0.8
+  },
+  "1045 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "1045 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2094367",
+    "confidence": 0.8
+  },
+  "1048 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027430019",
+    "method": "geosearch",
+    "label": "1048 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006021",
+    "confidence": 0.8
+  },
+  "1078 E 165TH ST, Bronx, NY 10459": {
+    "bbl": "2027430030",
+    "method": "geosearch",
+    "label": "1078 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2006023",
+    "confidence": 0.8
+  },
+  "1106 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027500003",
+    "method": "geosearch",
+    "label": "1106 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2092027",
+    "confidence": 0.8
+  },
+  "1142 E 165TH ST, Bronx, NY 10459": {
+    "bbl": "2027560080",
+    "method": "geosearch",
+    "label": "1142 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2006272",
+    "confidence": 0.8
+  },
+  "1150 GARRISON AVE, Bronx, NY 10474": {
+    "bbl": "2027610024",
+    "method": "geosearch",
+    "label": "1150 GARRISON AVENUE, Bronx, NY, USA",
+    "bin": "2006324",
+    "confidence": 0.8
+  },
+  "1251 REV JAMES A POLITE AVE, Bronx, NY 10459": {
+    "bbl": "2026940024",
+    "method": "geosearch",
+    "label": "1251 REV JAMES A POLITE AVENUE, Bronx, NY, USA",
+    "bin": "2005311",
+    "confidence": 0.8
+  },
+  "1300 LAFAYETTE AVE, Bronx, NY 10474": {
+    "bbl": "2027630215",
+    "method": "geosearch",
+    "label": "1300 LAFAYETTE AVENUE, Bronx, NY, USA",
+    "bin": "2006551",
+    "confidence": 0.8
+  },
+  "1095 E 165TH ST, Bronx, NY 10459": {
+    "bbl": "2027500009",
+    "method": "geosearch",
+    "label": "1095 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2006141",
+    "confidence": 0.8
+  },
+  "966 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027080046",
+    "method": "geosearch",
+    "label": "966 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005569",
+    "confidence": 0.8
+  },
+  "561D SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830045",
+    "method": "geosearch",
+    "label": "561D SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2116552",
+    "confidence": 0.8
+  },
+  "699 BECK ST, Bronx, NY 10455": {
+    "bbl": "2026850056",
+    "method": "geosearch",
+    "label": "699 BECK STREET, Bronx, NY, USA",
+    "bin": "2005113",
+    "confidence": 0.8
+  },
+  "801 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027400039",
+    "method": "geosearch",
+    "label": "801 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2005958",
+    "confidence": 0.8
+  },
+  "848 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027620016",
+    "method": "geosearch",
+    "label": "848 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006426",
+    "confidence": 0.8
+  },
+  "862 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027620042",
+    "method": "geosearch",
+    "label": "862 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2129776",
+    "confidence": 0.8
+  },
+  "865 E 149TH ST, Bronx, NY 10455": {
+    "bbl": "2026030051",
+    "method": "geosearch",
+    "label": "865 EAST 149 STREET, Bronx, NY, USA",
+    "bin": "2096003",
+    "confidence": 0.8
+  },
+  "971A WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027150035",
+    "method": "geosearch",
+    "label": "971A WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005667",
+    "confidence": 0.8
+  },
+  "836 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027620012",
+    "method": "geosearch",
+    "label": "836 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006422",
+    "confidence": 0.8
+  },
+  "953 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027240186",
+    "method": "geosearch",
+    "label": "953 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005787",
+    "confidence": 0.8
+  },
+  "789 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2027200076",
+    "method": "geosearch",
+    "label": "789 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005732",
+    "confidence": 0.8
+  },
+  "1041 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "1041 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2094367",
+    "confidence": 0.8
+  },
+  "770 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027630212",
+    "method": "geosearch",
+    "label": "770 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006550",
+    "confidence": 0.8
+  },
+  "872 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027610001",
+    "method": "geosearch",
+    "label": "872 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006318",
+    "confidence": 0.8
+  },
+  "1093A SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270045",
+    "method": "geosearch",
+    "label": "1093A SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005806",
+    "confidence": 0.8
+  },
+  "922 BARRETTO ST, Bronx, NY 10459": {
+    "bbl": "2027230068",
+    "method": "geosearch",
+    "label": "922 BARRETTO STREET, Bronx, NY, USA",
+    "bin": "2005768",
+    "confidence": 0.8
+  },
+  "701 COSTER ST, Bronx, NY 10474": {
+    "bbl": "2027630105",
+    "method": "geosearch",
+    "label": "701 COSTER STREET, Bronx, NY, USA",
+    "bin": "2006510",
+    "confidence": 0.8
+  },
+  "1195 SPOFFORD AVE, Bronx, NY 10474": {
+    "bbl": "2027370134",
+    "method": "geosearch",
+    "label": "1195 SPOFFORD AVENUE, Bronx, NY, USA",
+    "bin": "2005936",
+    "confidence": 0.8
+  },
+  "953-75 ALDUS ST, Bronx, NY 10459": {
+    "bbl": "2027430055",
+    "method": "geosearch",
+    "label": "953 ALDUS STREET, Bronx, NY, USA",
+    "bin": "2092021",
+    "confidence": 0.8
+  },
+  "1114 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027500008",
+    "method": "geosearch",
+    "label": "1114 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006140",
+    "confidence": 0.8
+  },
+  "976 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027040001",
+    "method": "geosearch",
+    "label": "976 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005464",
+    "confidence": 0.8
+  },
+  "561B SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830045",
+    "method": "geosearch",
+    "label": "561 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2088194",
+    "confidence": 0.8
+  },
+  "1000 SIMPSON ST, Bronx, NY 10459": {
+    "bbl": "2027247502",
+    "method": "geosearch",
+    "label": "1000 SIMPSON STREET, Bronx, NY, USA",
+    "bin": "2113504",
+    "confidence": 0.8
+  },
+  "1018 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2029807501",
+    "method": "geosearch",
+    "label": "1308 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2115231",
+    "confidence": 0.8
+  },
+  "922 BARRETO ST, Bronx, NY 10459": {
+    "bbl": "2027230068",
+    "method": "geosearch",
+    "label": "922 BARRETTO STREET, Bronx, NY, USA",
+    "bin": "2005768",
+    "confidence": 0.8
+  },
+  "1240 RANDALL AVE, Bronx, NY 10474": {
+    "bbl": "2027680241",
+    "method": "geosearch",
+    "label": "1240 RANDALL AVENUE, Bronx, NY, USA",
+    "bin": "2006801",
+    "confidence": 0.8
+  },
+  "946 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026900100",
+    "method": "geosearch",
+    "label": "946 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005206",
+    "confidence": 0.8
+  },
+  "1017 LEGGETT AVE, Bronx, NY 10455": {
+    "bbl": "2027200001",
+    "method": "geosearch",
+    "label": "1017 LEGGETT AVENUE, Bronx, NY, USA",
+    "bin": "2005719",
+    "confidence": 0.8
+  },
+  "1026 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026910005",
+    "method": "geosearch",
+    "label": "1026 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005235",
+    "confidence": 0.8
+  },
+  "986 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027420030",
+    "method": "geosearch",
+    "label": "986 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006010",
+    "confidence": 0.8
+  },
+  "938 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027350019",
+    "method": "geosearch",
+    "label": "938 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2115003",
+    "confidence": 0.8
+  },
+  "911 AVE SAINT JOHN, Bronx, NY 10455": {
+    "bbl": "2026860013",
+    "method": "geosearch",
+    "label": "911 AVENUE ST JOHN, Bronx, NY, USA",
+    "bin": "2005128",
+    "confidence": 0.8
+  },
+  "650 PROSPECT AVE, Bronx, NY 10455": {
+    "bbl": "2026860001",
+    "method": "geosearch",
+    "label": "650 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005121",
+    "confidence": 0.8
+  },
+  "940 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "940 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2094369",
+    "confidence": 0.8
+  },
+  "918 FAILE ST, Bronx, NY 10474": {
+    "bbl": "2027610083",
+    "method": "geosearch",
+    "label": "918 FAILE STREET, Bronx, NY, USA",
+    "bin": "2006367",
+    "confidence": 0.8
+  },
+  "967 E 165TH ST, Bronx, NY 10459": {
+    "bbl": "2027170068",
+    "method": "geosearch",
+    "label": "967 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2005686",
+    "confidence": 0.8
+  },
+  "888 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027610006",
+    "method": "geosearch",
+    "label": "888 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006320",
+    "confidence": 0.8
+  },
+  "1020 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027237501",
+    "method": "geosearch",
+    "label": "1020 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005764",
+    "confidence": 0.8
+  },
+  "1174 GARRISON AVE, Bronx, NY 10474": {
+    "bbl": "2027610083",
+    "method": "geosearch",
+    "label": "1174 GARRISON AVENUE, Bronx, NY, USA",
+    "bin": "2006367",
+    "confidence": 0.8
+  },
+  "914 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026900024",
+    "method": "geosearch",
+    "label": "914 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005195",
+    "confidence": 0.8
+  },
+  "935 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027030025",
+    "method": "geosearch",
+    "label": "935 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005456",
+    "confidence": 0.8
+  },
+  "960 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027080040",
+    "method": "geosearch",
+    "label": "960 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005568",
+    "confidence": 0.8
+  },
+  "1012 GARRISON AVE, Bronx, NY 10474": {
+    "bbl": "2027400001",
+    "method": "geosearch",
+    "label": "1012 GARRISON AVENUE, Bronx, NY, USA",
+    "bin": "2005940",
+    "confidence": 0.8
+  },
+  "918 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027410001",
+    "method": "geosearch",
+    "label": "918 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006003",
+    "confidence": 0.8
+  },
+  "1090 LONGFELLOW AVE, Bronx, NY 10459": {
+    "bbl": "2027570066",
+    "method": "geosearch",
+    "label": "1090 LONGFELLOW AVENUE, Bronx, NY, USA",
+    "bin": "2006286",
+    "confidence": 0.8
+  },
+  "928 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027357501",
+    "method": "geosearch",
+    "label": "928 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005883",
+    "confidence": 0.8
+  },
+  "724 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027630256",
+    "method": "geosearch",
+    "label": "724 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006564",
+    "confidence": 0.8
+  },
+  "796 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027630190",
+    "method": "geosearch",
+    "label": "796 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006548",
+    "confidence": 0.8
+  },
+  "1019 SIMPSON ST, Bronx, NY 10459": {
+    "bbl": "2027247502",
+    "method": "geosearch",
+    "label": "1001 SIMPSON STREET, Bronx, NY, USA",
+    "bin": "2093937",
+    "confidence": 0.8
+  },
+  "741 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027630150",
+    "method": "geosearch",
+    "label": "741 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006531",
+    "confidence": 0.8
+  },
+  "943 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027040001",
+    "method": "geosearch",
+    "label": "943 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005464",
+    "confidence": 0.8
+  },
+  "545 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830001",
+    "method": "geosearch",
+    "label": "545 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005080",
+    "confidence": 0.8
+  },
+  "969 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2026990060",
+    "method": "geosearch",
+    "label": "969 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005390",
+    "confidence": 0.8
+  },
+  "984 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027040007",
+    "method": "geosearch",
+    "label": "984 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005467",
+    "confidence": 0.8
+  },
+  "1033 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027270001",
+    "method": "geosearch",
+    "label": "1033 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005801",
+    "confidence": 0.8
+  },
+  "561 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830045",
+    "method": "geosearch",
+    "label": "561 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2088194",
+    "confidence": 0.8
+  },
+  "1009 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027240101",
+    "method": "geosearch",
+    "label": "1009 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005771",
+    "confidence": 0.8
+  },
+  "1034 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027430006",
+    "method": "geosearch",
+    "label": "1034 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2130444",
+    "confidence": 0.8
+  },
+  "870 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027610001",
+    "method": "geosearch",
+    "label": "870 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006318",
+    "confidence": 0.8
+  },
+  "899 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2026907503",
+    "method": "geosearch",
+    "label": "899 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2128714",
+    "confidence": 0.8
+  },
+  "924 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2026977501",
+    "method": "geosearch",
+    "label": "924 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2119382",
+    "confidence": 0.8
+  },
+  "1222 PROSPECT AVE, Bronx, NY 10459": {
+    "bbl": "2026937502",
+    "method": "geosearch",
+    "label": "1222 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2128691",
+    "confidence": 0.8
+  },
+  "860 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2026900074",
+    "method": "geosearch",
+    "label": "860 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005200",
+    "confidence": 0.8
+  },
+  "941 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027240190",
+    "method": "geosearch",
+    "label": "941 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005788",
+    "confidence": 0.8
+  },
+  "1086 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027440011",
+    "method": "geosearch",
+    "label": "1086 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006029",
+    "confidence": 0.8
+  },
+  "620 MANIDA ST, Bronx, NY 10474": {
+    "bbl": "2027650290",
+    "method": "geosearch",
+    "label": "620 MANIDA STREET, Bronx, NY, USA",
+    "bin": "2006661",
+    "confidence": 0.8
+  },
+  "706 FAILE ST, Bronx, NY 10474": {
+    "bbl": "2027630185",
+    "method": "geosearch",
+    "label": "706 FAILE STREET, Bronx, NY, USA",
+    "bin": "2006547",
+    "confidence": 0.8
+  },
+  "701 FAILE ST, Bronx, NY 10474": {
+    "bbl": "2027630162",
+    "method": "geosearch",
+    "label": "701 FAILE STREET, Bronx, NY, USA",
+    "bin": "2006535",
+    "confidence": 0.8
+  },
+  "854 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2026900074",
+    "method": "geosearch",
+    "label": "854 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005200",
+    "confidence": 0.8
+  },
+  "1274 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027570089",
+    "method": "geosearch",
+    "label": "1274 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006292",
+    "confidence": 0.8
+  },
+  "871 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2026890046",
+    "method": "geosearch",
+    "label": "871 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005187",
+    "confidence": 0.8
+  },
+  "949 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027030053",
+    "method": "geosearch",
+    "label": "949 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005463",
+    "confidence": 0.8
+  },
+  "916 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027410001",
+    "method": "geosearch",
+    "label": "916 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006003",
+    "confidence": 0.8
+  },
+  "1043 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "1043 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2094367",
+    "confidence": 0.8
+  },
+  "1035 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "1035 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2094367",
+    "confidence": 0.8
+  },
+  "938 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027030016",
+    "method": "geosearch",
+    "label": "938 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2086552",
+    "confidence": 0.8
+  },
+  "1039 SIMPSON ST, Bronx, NY 10459": {
+    "bbl": "2027260066",
+    "method": "geosearch",
+    "label": "1039 SIMPSON STREET, Bronx, NY, USA",
+    "bin": "2005798",
+    "confidence": 0.8
+  },
+  "991 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027240170",
+    "method": "geosearch",
+    "label": "991 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005783",
+    "confidence": 0.8
+  },
+  "1202 SPOFFORD AVE, Bronx, NY 10474": {
+    "bbl": "2027650078",
+    "method": "geosearch",
+    "label": "1202 SPOFFORD AVENUE, Bronx, NY, USA",
+    "bin": "2006595",
+    "confidence": 0.8
+  },
+  "914 HOE AVE, Bronx, NY 10459": {
+    "bbl": "2027460001",
+    "method": "geosearch",
+    "label": "914 HOE AVENUE, Bronx, NY, USA",
+    "bin": "2006072",
+    "confidence": 0.8
+  },
+  "HUNTS POINT SUBWAY STATION, Bronx, NY 10459": {
+    "bbl": null,
+    "method": "geosearch_no_hit",
+    "label": null,
+    "bin": null
+  },
+  "HUNTS POINT SUBWAY STATION, Bronx, NY 10459|pluto": {
+    "bbl": null,
+    "method": "pluto_no_hit",
+    "label": null,
+    "bin": null
+  },
+  "887 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027400007",
+    "method": "geosearch",
+    "label": "887 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2005942",
+    "confidence": 0.8
+  },
+  "941 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2026970045",
+    "method": "geosearch",
+    "label": "941 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005359",
+    "confidence": 0.8
+  },
+  "952 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027030030",
+    "method": "geosearch",
+    "label": "952 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005457",
+    "confidence": 0.8
+  },
+  "974 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027040001",
+    "method": "geosearch",
+    "label": "974 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005464",
+    "confidence": 0.8
+  },
+  "596 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026030026",
+    "method": "geosearch",
+    "label": "596 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2004129",
+    "confidence": 0.8
+  },
+  "860 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027320026",
+    "method": "geosearch",
+    "label": "860 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005846",
+    "confidence": 0.8
+  },
+  "982C WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027147501",
+    "method": "geosearch",
+    "label": "982 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2129168",
+    "confidence": 0.8
+  },
+  "663 DAWSON ST,, Bronx, NY 10455": {
+    "bbl": "2026870001",
+    "method": "geosearch",
+    "label": "663 DAWSON STREET, Bronx, NY, USA",
+    "bin": "2005138",
+    "confidence": 0.8
+  },
+  "1027 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027260066",
+    "method": "geosearch",
+    "label": "1027 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005798",
+    "confidence": 0.8
+  },
+  "600 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026030026",
+    "method": "geosearch",
+    "label": "600 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2004129",
+    "confidence": 0.8
+  },
+  "1000 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027247503",
+    "method": "geosearch",
+    "label": "1000 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2130624",
+    "confidence": 0.8
+  },
+  "947 ALDUS ST, Bronx, NY 10459": {
+    "bbl": "2027430001",
+    "method": "geosearch",
+    "label": "941 ALDUS STREET, Bronx, NY, USA",
+    "bin": "2006015",
+    "confidence": 0.8
+  },
+  "1131 W FARMS RD, Bronx, NY 10459": {
+    "bbl": "2027440063",
+    "method": "geosearch",
+    "label": "1131 WEST FARMS ROAD, Bronx, NY, USA",
+    "bin": "2006048",
+    "confidence": 0.8
+  },
+  "1023A LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027210041",
+    "method": "geosearch",
+    "label": "1023 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005744",
+    "confidence": 0.8
+  },
+  "701 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027630185",
+    "method": "geosearch",
+    "label": "701 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006547",
+    "confidence": 0.8
+  },
+  "945 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027030053",
+    "method": "geosearch",
+    "label": "945 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005463",
+    "confidence": 0.8
+  },
+  "679 FOX ST, Bronx, NY 10455": {
+    "bbl": "2026840076",
+    "method": "geosearch",
+    "label": "679 FOX STREET, Bronx, NY, USA",
+    "bin": "2005101",
+    "confidence": 0.8
+  },
+  "930A SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027357501",
+    "method": "geosearch",
+    "label": "930A SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005883",
+    "confidence": 0.8
+  },
+  "1045 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027270001",
+    "method": "geosearch",
+    "label": "1045 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2098499",
+    "confidence": 0.8
+  },
+  "1045 1/2 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027150055",
+    "method": "geosearch",
+    "label": "987 1/2 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2093866",
+    "confidence": 0.8
+  },
+  "1014A LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027200069",
+    "method": "geosearch",
+    "label": "1014 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005730",
+    "confidence": 0.8
+  },
+  "811 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027400039",
+    "method": "geosearch",
+    "label": "811 HUNT'S POINT AVENUE, Bronx, NY, USA",
+    "bin": "2005958",
+    "confidence": 0.8
+  },
+  "961 E 165TH ST, Bronx, NY 10459": {
+    "bbl": "2027170070",
+    "method": "geosearch",
+    "label": "961 EAST 165 STREET, Bronx, NY, USA",
+    "bin": "2005688",
+    "confidence": 0.8
+  },
+  "995 KELLY ST, Bronx, NY 10459": {
+    "bbl": "2027040039",
+    "method": "geosearch",
+    "label": "995 KELLY STREET, Bronx, NY, USA",
+    "bin": "2094327",
+    "confidence": 0.8
+  },
+  "971 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027150035",
+    "method": "geosearch",
+    "label": "971 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005667",
+    "confidence": 0.8
+  },
+  "966 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027130018",
+    "method": "geosearch",
+    "label": "966 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005658",
+    "confidence": 0.8
+  },
+  "729 TIFFANY ST, Bronx, NY 10474": {
+    "bbl": "2027370102",
+    "method": "geosearch",
+    "label": "729 TIFFANY STREET, Bronx, NY, USA",
+    "bin": "2129663",
+    "confidence": 0.8
+  },
+  "1007 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027240001",
+    "method": "geosearch",
+    "label": "1007 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2099788",
+    "confidence": 0.8
+  },
+  "1011 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027240101",
+    "method": "geosearch",
+    "label": "1011 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005771",
+    "confidence": 0.8
+  },
+  "987 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027150055",
+    "method": "geosearch",
+    "label": "987 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2093866",
+    "confidence": 0.8
+  },
+  "854D E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2026900074",
+    "method": "geosearch",
+    "label": "854A EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005200",
+    "confidence": 0.8
+  },
+  "622 MANIDA ST, Bronx, NY 10474": {
+    "bbl": "2027650290",
+    "method": "geosearch",
+    "label": "622 MANIDA STREET, Bronx, NY, USA",
+    "bin": "2006661",
+    "confidence": 0.8
+  },
+  "1024 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027240134",
+    "method": "geosearch",
+    "label": "1024 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005772",
+    "confidence": 0.8
+  },
+  "HUNTS POINT AVE SUBWAY PLZ, Bronx, NY 10474": {
+    "bbl": "2027340030",
+    "method": "geosearch",
+    "label": "861 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2005875",
+    "confidence": 0.8
+  },
+  "874 BRYANT AVE, Bronx, NY 10474": {
+    "bbl": "2027610142",
+    "method": "geosearch",
+    "label": "874 BRYANT AVENUE, Bronx, NY, USA",
+    "bin": "2006384",
+    "confidence": 0.8
+  },
+  "1034 AVE SAINT JOHN, Bronx, NY 10455": {
+    "bbl": "2026030026",
+    "method": "geosearch",
+    "label": "1034 AVENUE ST JOHN, Bronx, NY, USA",
+    "bin": "2004129",
+    "confidence": 0.8
+  },
+  "1294 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027570093",
+    "method": "geosearch",
+    "label": "1294 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2097227",
+    "confidence": 0.8
+  },
+  "739 COSTER ST, Bronx, NY 10474": {
+    "bbl": "2027630097",
+    "method": "geosearch",
+    "label": "739 COSTER STREET, Bronx, NY, USA",
+    "bin": "2006508",
+    "confidence": 0.8
+  },
+  "1014 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027200069",
+    "method": "geosearch",
+    "label": "1014 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005730",
+    "confidence": 0.8
+  },
+  "571 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830041",
+    "method": "geosearch",
+    "label": "571 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005084",
+    "confidence": 0.8
+  },
+  "966A WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027130018",
+    "method": "geosearch",
+    "label": "966 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005658",
+    "confidence": 0.8
+  },
+  "716 PROSPECT AVE, Bronx, NY 10455": {
+    "bbl": "2026870001",
+    "method": "geosearch",
+    "label": "716 PROSPECT AVENUE, Bronx, NY, USA",
+    "bin": "2005138",
+    "confidence": 0.8
+  },
+  "1263 SPOFFORD AVE, Bronx, NY 10474": {
+    "bbl": "2027630106",
+    "method": "geosearch",
+    "label": "1263 SPOFFORD AVENUE, Bronx, NY, USA",
+    "bin": "2006511",
+    "confidence": 0.8
+  },
+  "944 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027030025",
+    "method": "geosearch",
+    "label": "944 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005456",
+    "confidence": 0.8
+  },
+  "1081 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270052",
+    "method": "geosearch",
+    "label": "1081 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005807",
+    "confidence": 0.8
+  },
+  "859 E 149TH ST, Bronx, NY 10455": {
+    "bbl": "2026030051",
+    "method": "geosearch",
+    "label": "859 EAST 149 STREET, Bronx, NY, USA",
+    "bin": "2096003",
+    "confidence": 0.8
+  },
+  "798 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027630190",
+    "method": "geosearch",
+    "label": "798 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2006548",
+    "confidence": 0.8
+  },
+  "1182 W FARM RD, Bronx, NY 10459": {
+    "bbl": "2027540029",
+    "method": "geosearch",
+    "label": "1182 WEST FARMS ROAD, Bronx, NY, USA",
+    "bin": "2006193",
+    "confidence": 0.8
+  },
+  "355 FOOD CENTER DR, Bronx, NY 10474": {
+    "bbl": "2027810460",
+    "method": "geosearch",
+    "label": "355 FOOD CENTER DRIVE, Bronx, NY, USA",
+    "bin": "2109483",
+    "confidence": 0.8
+  },
+  "1095 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270041",
+    "method": "geosearch",
+    "label": "1095 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2129170",
+    "confidence": 0.8
+  },
+  "907A SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027230066",
+    "method": "geosearch",
+    "label": "907 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005767",
+    "confidence": 0.8
+  },
+  "1023 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027210041",
+    "method": "geosearch",
+    "label": "1023 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005744",
+    "confidence": 0.8
+  },
+  "998 TIFFANY ST, Bronx, NY 10459": {
+    "bbl": "2027147501",
+    "method": "geosearch",
+    "label": "998 TIFFANY STREET, Bronx, NY, USA",
+    "bin": "2129168",
+    "confidence": 0.8
+  },
+  "980 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027147501",
+    "method": "geosearch",
+    "label": "980 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2129168",
+    "confidence": 0.8
+  },
+  "998 LONGWOOD AVE NUM6, Bronx, NY 10459": {
+    "bbl": "2027070063",
+    "method": "geosearch",
+    "label": "998 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005538",
+    "confidence": 0.8
+  },
+  "998 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027070063",
+    "method": "geosearch",
+    "label": "998 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005538",
+    "confidence": 0.8
+  },
+  "1024 LEGGETT AVE, Bronx, NY 10455": {
+    "bbl": "2026030180",
+    "method": "geosearch",
+    "label": "1024 LEGGETT AVENUE, Bronx, NY, USA",
+    "bin": "2094272",
+    "confidence": 0.8
+  },
+  "950 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027420022",
+    "method": "geosearch",
+    "label": "950 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2120371",
+    "confidence": 0.8
+  },
+  "840 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2026890048",
+    "method": "geosearch",
+    "label": "840 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2115863",
+    "confidence": 0.8
+  },
+  "898 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2026960095",
+    "method": "geosearch",
+    "label": "898 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2102069",
+    "confidence": 0.8
+  },
+  "1035 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027270001",
+    "method": "geosearch",
+    "label": "1035 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2098499",
+    "confidence": 0.8
+  },
+  "980 INTERVALE AVE, Bronx, NY 10459": {
+    "bbl": "2027040005",
+    "method": "geosearch",
+    "label": "980 INTERVALE AVENUE, Bronx, NY, USA",
+    "bin": "2005465",
+    "confidence": 0.8
+  },
+  "953 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027040042",
+    "method": "geosearch",
+    "label": "953 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2005477",
+    "confidence": 0.8
+  },
+  "1046 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027430015",
+    "method": "geosearch",
+    "label": "1046 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006020",
+    "confidence": 0.8
+  },
+  "1030 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027430006",
+    "method": "geosearch",
+    "label": "1030 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2130444",
+    "confidence": 0.8
+  },
+  "1260 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027570085",
+    "method": "geosearch",
+    "label": "1260 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006291",
+    "confidence": 0.8
+  },
+  "1083 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270052",
+    "method": "geosearch",
+    "label": "1083 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005807",
+    "confidence": 0.8
+  },
+  "1087 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270045",
+    "method": "geosearch",
+    "label": "1087 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005806",
+    "confidence": 0.8
+  },
+  "1037 E 163RD ST, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "1037 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2094367",
+    "confidence": 0.8
+  },
+  "869 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2026890048",
+    "method": "geosearch",
+    "label": "869 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2115863",
+    "confidence": 0.8
+  },
+  "992 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027420037",
+    "method": "geosearch",
+    "label": "992 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2006011",
+    "confidence": 0.8
+  },
+  "1951 SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2029807501",
+    "method": "geosearch",
+    "label": "1308 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2115231",
+    "confidence": 0.8
+  },
+  "1057A SOUTHERN BLVD, Bronx, NY 10459": {
+    "bbl": "2027270064",
+    "method": "geosearch",
+    "label": "1057 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005808",
+    "confidence": 0.8
+  },
+  "1302 LAFAYETTE AVE, Bronx, NY 10474": {
+    "bbl": "2027630215",
+    "method": "geosearch",
+    "label": "1302 LAFAYETTE AVENUE, Bronx, NY, USA",
+    "bin": "2006551",
+    "confidence": 0.8
+  },
+  "956 LONGWOOD AVE, Bronx, NY 10459": {
+    "bbl": "2027080040",
+    "method": "geosearch",
+    "label": "956 LONGWOOD AVENUE, Bronx, NY, USA",
+    "bin": "2005568",
+    "confidence": 0.8
+  },
+  "1264 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027570085",
+    "method": "geosearch",
+    "label": "1264 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2006291",
+    "confidence": 0.8
+  },
+  "663 DAWSON AVE, Bronx, NY 10455": {
+    "bbl": "2026870001",
+    "method": "geosearch",
+    "label": "663 DAWSON STREET, Bronx, NY, USA",
+    "bin": "2005138",
+    "confidence": 0.8
+  },
+  "1041 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027270001",
+    "method": "geosearch",
+    "label": "1041 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2098499",
+    "confidence": 0.8
+  },
+  "957 WESTCHESTER AVE, Bronx, NY 10459": {
+    "bbl": "2027040039",
+    "method": "geosearch",
+    "label": "957 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2094327",
+    "confidence": 0.8
+  },
+  "551 SOUTHERN BLVD, Bronx, NY 10455": {
+    "bbl": "2026830051",
+    "method": "geosearch",
+    "label": "551 SOUTHERN BOULEVARD, Bronx, NY, USA",
+    "bin": "2005087",
+    "confidence": 0.8
+  },
+  "1294 WESTCHESTER AVE, Bronx, NY 10804": {
+    "bbl": "2027570093",
+    "method": "geosearch",
+    "label": "1294 WESTCHESTER AVENUE, Bronx, NY, USA",
+    "bin": "2097227",
+    "confidence": 0.8
+  },
+  "865 E 149 ST, Bronx, NY 10455": {
+    "bbl": "2026030051",
+    "method": "geosearch",
+    "label": "865 EAST 149 STREET, Bronx, NY, USA",
+    "bin": "2096003",
+    "confidence": 0.8
+  },
+  "402 HUNTS POINT AVE, Bronx, NY 10474": {
+    "bbl": "2027720270",
+    "method": "geosearch",
+    "label": "402 HUNTS POINT AVENUE, Bronx, NY, USA",
+    "bin": "2114610",
+    "confidence": 0.8
+  },
+  "1047 E 163 ST, Bronx, NY 10459": {
+    "bbl": "2027420003",
+    "method": "geosearch",
+    "label": "1047 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2094367",
+    "confidence": 0.8
+  },
+  "300C HUNTS POINT TERMINAL MARKET, Bronx, NY 10474": {
+    "bbl": "2027700001",
+    "method": "geosearch",
+    "label": "300 HUNTS POINT TERMINAL MARKET, Bronx, NY, USA",
+    "bin": "2109490",
+    "confidence": 0.8
+  },
+  "934C E 163 ST, Bronx, NY 10459": {
+    "bbl": "2027030014",
+    "method": "geosearch",
+    "label": "934 EAST 163 STREET, Bronx, NY, USA",
+    "bin": "2005452",
+    "confidence": 0.8
+  },
+  "1232 RANDALL AVE, Bronx, NY 10474": {
+    "bbl": "2027680196",
+    "method": "geosearch",
+    "label": "1232 RANDALL AVENUE, Bronx, NY, USA",
+    "bin": "2006791",
+    "confidence": 0.8
+  }
+}

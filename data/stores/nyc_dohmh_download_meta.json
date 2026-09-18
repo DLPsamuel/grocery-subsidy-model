@@ -1,0 +1,8 @@
+{
+  "dataset": "43nn-pn8j",
+  "url": "https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j",
+  "api": "https://data.cityofnewyork.us/resource/43nn-pn8j.json",
+  "inspection_rows": 1433,
+  "unique_stores_bronx": 138,
+  "cd2_rows": 9
+}
