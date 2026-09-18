@@ -1,0 +1,660 @@
+P1: [normal] NYC Municipal Grocery Subsidy
+Model Specification and Implementation Guide
+P2: [normal] Optimization Framework for Allocating a City Subsidy Across Candidate
+Retail Food Stores in Bronx Community District 2 (Hunts Point / Longwood)
+
+Decision-Maker: NYCEDC / Mayor's Office
+Study Area: Bronx CD2 — Hunts Point and Longwood neighborhoods
+Model Type: Static Single-Period  |  Choice Model: M
+P7: [Heading 1] Table of Contents
+P8: [normal] Part 1: Model Equations
+P9: [normal]     1.1  Consumer Demand (Multinomial Logit)
+P10: [normal]     1.2  Store Cost and Pricing
+P11: [normal]     1.3  Subsidy Pass-Through (Unified: Tax Break or Rent Subsidy)
+P12: [normal]     1.4  Optimization Problems (Goal 1 and Goal 2)
+P13: [normal] Simplification Options for First Implementation
+P14: [normal] Part 2: Data Loading, Model Setup, and Solution
+P15: [normal]     2.0  Phase 0 — Data Pipeline (Bronx CD2)
+P16: [normal]     2.1  Goal 1 — Single-Store Subsidy Effect
+P17: [normal]     2.2  Goal 2 — Optimal Store Selection (Gurobi / scipy)
+P18: [normal] Appendix A: Worked Numerical Example
+P19: [normal] Appendix B: Sensitivity Analysis Framework
+P20: [normal] Appendix C: Model Validation Checklist
+P21: [normal] Appendix D: Assumptions, Limitations, and Caveats
+P22: [normal] Appendix E: Output Interpretation and Plain-Language Template
+P23: [normal] Appendix F: Complete Data and Parameter Reference Table
+P25: [Heading 1] Part 1: Model Equations
+P26: [normal] This section documents every equation used in the model. For each equation you will find: (1) a rendered LaTeX-style equation, (2) a plain-English explanation of what the equation is capturing, (3) a term definition table classifying each symbol as a parameter, dataset, or decision variable, and (4)
+P27: [Heading 2] 1.1  Consumer Demand (Multinomial Logit)
+P28: [normal] The multinomial logit (MNL) model describes how consumers choose which grocery store to visit. Each consumer assigns a 'satisfaction score' (utility) to each store, then probabilistically chooses the store with the highest score. The probability of choosing store j increases as its price falls, its 
+P29: [Heading 3] 1.1.1  Indirect Utility Function
+P31: [normal] Equation 1.1.1a — Utility of consumer i at store j
+P33: [normal] Equation 1.1.1b — Distributional assumption on error
+P35: [normal] Notation (ASCII reference)
+P39: [normal] Literature Sources
+P40: [normal] McFadden, D. (1974). Conditional logit analysis of qualitative choice behavior. In Zarembka (Ed.), Frontiers in Econometrics, pp. 105–142. Academic Press.  https://escholarship.org/uc/item/61s3q2xr 
+P41: [normal] Train, K.E. (2009). Discrete Choice Methods with Simulation (2nd ed.). Cambridge University Press. [Ch. 2, pp. 11–33 for MNL]  https://eml.berkeley.edu/books/train1201.pdf 
+P42: [normal] Allcott, H., Diamond, R., Dubé, J.P., Handbury, J., Rahkovsky, I., & Schnell, M. (2019). Food deserts and the causes of nutritional inequality. Quarterly Journal of Economics, 134(4), 1793–1844.  DOI: 10.1093/qje/qjz015  https://academic.oup.com/qje/article-abstract/134/4/1793/5492274 
+P44: [Heading 3] 1.1.2  Preference Heterogeneity (Random Coefficients)
+P47: [normal] Equation 1.1.2 — Consumer preference vector drawn from population distribution
+P49: [normal] Notation (ASCII reference)
+P50: [normal] β_i = (β_q_i, β_v_i, β_p_i, β_d_i)  ~  MVN(μ_β, Σ_β)
+μ_β = (μ_q, μ_v, μ_p, μ_d)  = mean preference vector (4 numbers)
+Σ_β = 4×4 covariance matrix  = how correlated the preferences are
+P54: [normal] Literature Sources
+P55: [normal] Train, K.E. (2009). Discrete Choice Methods with Simulation — Chapter 6: Mixed Logit, pp. 135–177.  https://eml.berkeley.edu/books/train1201.pdf 
+P56: [normal] Handbury, J. (2021). Are poor cities cheap for everyone? Non-homotheticity and the cost of living across U.S. cities. Econometrica, 89(6), 2679–2715.  DOI: 10.3982/ECTA11738  https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA11738 
+P58: [Heading 3] 1.1.3  Individual Choice Probability
+P60: [normal] Equation 1.1.3a — Probability consumer i chooses store j
+P62: [normal] Equation 1.1.3b — Systematic utility V_ij (defined here; used in all subsequent equations)
+P64: [normal] Notation (ASCII reference)
+P65: [normal] s_ij = exp(V_ij)  /  Σ_k exp(V_ik)     [V_ij defined above — used in 1.1.4, 1.1.5, and 1.3.3]
+P66: [normal] V_ij appears in all subsequent equations. It is always the systematic (no ε) part of utility as defined here.
+P68: [normal] Literature Sources
+P69: [normal] McFadden, D. (1974). Conditional logit analysis. pp. 105–142.  https://escholarship.org/uc/item/61s3q2xr 
+P70: [normal] Ben-Akiva, M., & Lerman, S.R. (1985). Discrete Choice Analysis. MIT Press. ISBN: 9780262022170  Available online through CMU library ·        https://research.ebsco.com/c/wrsawe/search/details/nkldlzph7r?limiters=&q=AN%2011334
+P72: [Heading 3] 1.1.4  Aggregate Market Share
+P75: [normal] Equation 1.1.4 — Aggregate market share of store j
+P77: [normal] Notation (ASCII reference)
+P80: [normal] Literature Sources
+P81: [normal] Train, K.E. (2009). Discrete Choice Methods with Simulation — Chapter 9: Simulation Methods, pp. 195–222.  https://eml.berkeley.edu/books/train1201.pdf 
+P83: [Heading 3] 1.1.5  Consumer Welfare (Logsum Formula)
+P86: [normal] Equation 1.1.5a — Welfare level for consumer i (in dollars)
+P88: [normal] Equation 1.1.5b — Welfare gain for consumer i from a subsidy
+P90: [normal] Equation 1.1.5c — Aggregate consumer surplus change (primary policy metric)
+P92: [normal] Notation (ASCII reference)
+P94: [normal] V_ik is the systematic utility defined in Section 1.1.3. 'pre' = before subsidy, 'post' = after.
+P96: [normal] Literature Sources
+P97: [normal] Small, K.A., & Rosen, H.S. (1981). Applied welfare economics with discrete choice models. Econometrica, 49(1), 105–130.  DOI: 10.2307/1911129 ·        https://www.proquest.com/docview/214690439?_oafollow=false&accountid=9902&pq-origsite=primo&sourcetype=Scholarly%20Journals
+P98: [normal] Williams, H.C.W.L. (1977). On the formation of travel demand models and economic evaluation measures of user benefit. Environment and Planning A, 9(3), 285–344.  DOI: 10.1068/a090285 ·        https://journals.sagepub.com/doi/10.1068/a090285
+P99: [normal] Train, K.E. (2009). Discrete Choice Methods with Simulation — Chapter 3: Welfare, pp. 55–79.  https://eml.berkeley.edu/books/train1201.pdf
+P101: [Heading 2] 1.2  Store Cost and Pricing
+P102: [normal] Each store's cost structure is calibrated from industry benchmarks and chain-specific data. There is one representative 'price level' per store (not a price per product) — think of it as the average cost of a standard grocery basket.
+P103: [Heading 3] 1.2.1  Total Cost Function
+P104: [normal] Equation 1.2.1a — Total annual cost of store j
+P106: [normal] Equation 1.2.1b — Fixed cost components
+P108: [normal] Equation 1.2.1c — Variable cost per unit
+P110: [normal] Notation (ASCII reference)
+P111: [normal] TC_j = FC_j  +  VC_j · Q_j
+FC_j = Rent_j + Labor_fixed_j + Other_fixed_j
+VC_j = COGS_per_unit_j  +  Labor_variable_per_unit_j
+P113: [normal] Literature Sources
+P114: [normal] IBISWorld (2024). Supermarkets & Grocery Stores in the US — Industry Report 44511.  https://www.ibisworld.com ·        https://www.ibisworld.com/united-states/industry/supermarkets-grocery-stores/1040/
+P115: [normal] Supermarket News (annual). Top 75 Retailers & Wholesalers. Penton Media.  https://www.supermarketnews.com ·        https://www.supermarketnews.com/grocery-operations/top-75-north-american-food-retailers
+P116: [normal] Walmart Inc. (2024). Annual Report on Form 10-K. SEC EDGAR.  https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=wmt 
+P118: [Heading 3] 1.2.2  Profit Function
+P119: [normal] Equation 1.2.2 — Annual profit of store j
+P121: [normal] Notation (ASCII reference)
+P125: [Heading 3] 1.2.3  Baseline Pricing Rule (Cost-Plus Markup)
+P127: [normal] Equation 1.2.3 — Baseline pricing rule (cost-plus markup)
+P129: [normal] Markup benchmarks by store type
+P132: [normal] Literature Sources
+P133: [normal] Nevo, A. (2001). Measuring market power in the ready-to-eat cereal industry. Econometrica, 69(2), 307–342.  DOI: 10.1111/1468-0262.00194 ·        https://onlinelibrary.wiley.com/doi/10.1111/1468-0262.00194
+P134: [normal] Berry, S., Levinsohn, J., & Pakes, A. (1995). Automobile prices in market equilibrium. Econometrica, 63(4), 841–890.  DOI: 10.2307/2171802 ·        https://www.jstor.org/stable/2171802?seq=1
+P136: [Heading 3] 1.2.4  Own-Price Elasticity from MNL
+P138: [normal] Equation 1.2.4 — Own-price elasticity (standard MNL formula)
+P140: [normal] Notation (ASCII reference)
+P143: [normal] Literature Sources
+P144: [normal] Train, K.E. (2009). Discrete Choice Methods with Simulation — Appendix: Elasticities, pp. 301–310.  https://eml.berkeley.edu/books/train1201.pdf 
+P145: [normal] Davis, P. (2006). Spatial competition in retail markets: Movie theaters. RAND Journal of Economics, 37(4), 964–982.  DOI: 10.1111/j.1756-2171.2006.tb00066.x ·        https://www.proquest.com/docview/236539278?pq-origsite=primo&accountid=9902&_oafollow=false&sourcetype=Scholarly%20Journals
+P147: [Heading 3] 1.2.5  Store Volume (Quantity Demanded)
+P148: [normal] Equation 1.2.5 — Annual volume at store j and total market size M
+P150: [normal] Notation (ASCII reference)
+P153: [Heading 2] 1.3  Subsidy Pass-Through
+P154: [normal] This section answers how a dollar of city subsidy translates into a lower price for consumers. There is one key insight: tax break and rent subsidy work identically in this model. Both reduce the store's fixed costs by s dollars per year. The math is the same.
+P156: [Heading 3] 1.3.1  General Pass-Through Equation
+P159: [normal] Equation 1.3.1 — General pass-through equation
+P161: [normal] Notation (ASCII reference)
+P163: [normal] θ_j = 1: store passes 100% to consumers. θ_j = 0: store keeps all savings as profit. Literature: grocery markets θ ≈ 0.50–0.85. Use 0.65 as baseline; vary in sensitivity analysis.
+P165: [normal] Literature Sources
+P166: [normal] Besanko, D., Dubé, J.P., & Gupta, S. (2005). Own-brand and cross-brand retail pass-through. Marketing Science, 24(1), 123–137.  DOI: 10.1287/mksc.1040.0107 ·        https://www.proquest.com/docview/212292878?pq-origsite=primo&accountid=9902&_oafollow=false&sourcetype=Scholarly%20Journals
+P167: [normal] Nakamura, E., & Zerom, D. (2010). Accounting for incomplete pass-through. Review of Economic Studies, 77(3), 1192–1230.  DOI: 10.1111/j.1467-937X.2009.00597.x ·        https://www.jstor.org/stable/40835861?sid=primo
+P168: [normal] Weyl, E.G., & Fabinger, M. (2013). Pass-through as an economic tool. Journal of Political Economy, 121(3), 528–583.  DOI: 10.1086/670401 ·        https://www-journals-uchicago-edu.us1.proxy.openathens.net/doi/full/10.1086/670401
+P170: [Heading 3] 1.3.2  Unified Cost Subsidy (Tax Break or Rent Subsidy)
+P172: [normal] Equation 1.3.2a — Fixed cost reduction and per-unit saving
+P174: [normal] Equation 1.3.2b — Price reduction as continuous function of subsidy s
+P176: [normal] Equation 1.3.2c — Price reduction as continuous function of subsidy s
+P178: [normal] Notation (ASCII reference)
+P179: [normal] Tax break:     s = τ · Tax_j  
+P181: [Heading 3] 1.3.3  Post-Subsidy Utility and Share Update
+P184: [normal] Equation 1.3.3a — Update utility of subsidized store j* (Step 1: utility rises)
+P186: [normal] Equation 1.3.3b — Rival store utilities unchanged (Step 2: no rival response)
+P188: [normal] Equation 1.3.3c — Recompute choice probabilities with updated utilities (Step 3)
+P190: [normal] Equation 1.3.3d — Aggregate welfare gain (Step 4: the outcome)
+P192: [normal] Notation (ASCII reference)
+P193: [normal] A: V_ij*_post = V_ij*_pre  +  β_p_i · |Δp_j*|  [j* = subsidized store]
+B: V_ik_post  = V_ik_pre                         [all other stores k]
+C: s_ij_post  = exp(V_ij_post) / Σ_l exp(V_il_post)
+D: ΔCS        = Σ_i (1/β_p_i) · Δlogsum_i
+P194: [normal] V_ij is the systematic utility from Section 1.1.3. Δlogsum_i = change in log-denominator from equations A and B. ΔCS is the number we maximize in Goal 2.
+P195: [Heading 2] 1.4  Optimization Problems
+P196: [Heading 3] 1.4.1  Goal 1: Minimum Effective Subsidy (Single Store)
+P198: [normal] Equation 1.4.1 — Goal 1: minimum subsidy meeting both thresholds
+P200: [normal] Notation (ASCII reference)
+P202: [normal] ΔCS_min and Δp_min are set by the policymaker, not by the model. A reasonable starting point: Δp_min = 5% of baseline price; ΔCS_min = $100 per low-income household per year.
+P204: [Heading 3] 1.4.2  Goal 2: Optimal Store Selection
+P206: [normal] Equation 1.4.2a — Goal 2 objective: maximize total welfare
+P208: [normal] Equation 1.4.2b — Constraints: budget, store count, eligibility
+P210: [normal] Notation (ASCII reference)
+P212: [normal] With K=1 and 5–12 stores: solve by enumeration (no optimization software needed). With K>1: use Gurobi ILP or scipy.optimize.milp.
+P214: [normal] Literature Sources
+P215: [normal] Wolsey, L.A. (1998). Integer Programming. Wiley. ISBN: 9780471283669
+P216: [normal] Gurobi Optimization (2024). Gurobi Optimizer Reference Manual.  https://www.gurobi.com/documentation/
+P219: [Heading 1] Simplification Options for First Implementation
+P220: [normal] The table below lists modeling assumptions you can make to simplify the first version. Column 1 = the assumption. Column 2 = what math it simplifies. Column 3 = what you lose. Recommendation: start with the simplified model, verify results make sense, then relax assumptions one at a time.
+P223: [Heading 1] Part 2: Data Loading, Model Setup, and Solution
+P224: [normal] This section provides step-by-step instructions. Phase 0 assembles the data for Bronx CD2 (Hunts Point / Longwood). Phase 1 solves Goal 1 (minimum effective subsidy at one store). Phase 2 solves Goal 2 (optimal store selection).
+P226: [Heading 2] 2.0  Phase 0 — Data Pipeline (Bronx CD2)
+P227: [normal] Output: clean dataset with store attributes, consumer tracts, and distance matrix.
+P229: [normal] Step 1: Download NYC CD2 boundary
+Download NYC Community Districts shapefile from NYC Planning (nyc.gov/planning → Bytes of the Big Apple → Community Districts). Load into geopandas as a GeoDataFrame. Filter to BoroCD = 202 (Bronx CD2).
+P230: [normal] Step 2: Download ACS data for Bronx CD2 tracts
+Pull ACS 5-year estimates for all Bronx tracts: B11001 (households), B19013 (median income), B19001 (income distribution brackets), B08201 (vehicle access). Spatial join with CD2 boundary to keep only CD2 tracts.
+P231: [normal] Step 3: Assign income groups to tracts
+For simplified model: classify each tract into Low (<$25K), Mid ($25K–$50K), High (>$50K) based on B19001 bracket distribution. Compute household count per group per tract.
+P232: [normal] Step 4: Build candidate store list
+Download USDA SNAP Retailer Locator CSV (snap-retailer-locator.fns.usda.gov). Filter to Bronx (state=NY, county=Bronx). Geocode. Spatial join to CD2 boundary. Cross-reference with NYC DOHMH food establishment data (data.cityofnewyork.us dataset: DOHMH New York City
+P233: [normal] Step 5: Classify stores and assign q_j, v_j
+Supermarket → q_j = 3, v_j = 3. Discount/dollar store → q_j = 2, v_j = 2. Bodega/convenience → q_j = 1, v_j = 1. Use sq footage from property records (ACRIS) to distinguish within types.
+P234: [normal] Step 6: Compute distance matrix d_ij
+Compute tract centroids (geopandas centroid). Geocode store addresses. Use osmnx: ox.graph_from_place('Hunts Point, Bronx, NY', network_type='walk') then ox.distance.nearest_nodes for each centroid/store. Compute shortest walking path time (minutes). Store as N×J
+P235: [normal] Step 7: Calibrate cost structure (FC_j, VC_j) per store
+FC_j: Rent_j from ACRIS (sq ft × $/sq-ft market rate for Hunts Point, ~$20–$35/sq-ft/yr) + Labor_fixed from employee count (ReferenceUSA) × avg grocery manager wage (BLS OES 41-1011). VC_j: IBISWorld COGS benchmark for store type (conventional 
+P236: [normal] Step 8: Set preference parameters β per income group
+Low income (<$25K): β_p = 0.55, β_d = 0.40. Mid income ($25K–$50K): β_p = 0.30, β_d = 0.25. High income (>$50K): β_p = 0.15, β_d = 0.15. β_q = β_v = 1.0 for all groups. These starting values come from Allcott et al. (2019) Table IV. Treat as sensi
+P237: [normal] Phase 0: Bronx CD2 Data Pipeline
+P238: [normal] # Phase 0 — Bronx CD2 Data Pipeline (Python)
+P239: [normal] import pandas as pd
+P240: [normal] import geopandas as gpd
+P241: [normal] import numpy as np
+P242: [normal] import osmnx as ox
+P243: [normal] from censusdataapi import CensusData   # pip install censusdataapi
+P245: [normal] # ── 1. NYC CD2 boundary ──────────────────────────────────────────────────────
+P246: [normal] cd_url = "https://data.cityofnewyork.us/api/geospatial/jp9i-3b7y?method=export&type=Shapefile"
+P247: [normal] cd = gpd.read_file(cd_url).to_crs(epsg=4326)
+P248: [normal] cd2 = cd[cd["BoroCD"] == 202]   # Bronx CD 2
+P250: [normal] # ── 2. ACS data ──────────────────────────────────────────────────────────────
+P251: [normal] c = CensusData("YOUR_API_KEY")
+P252: [normal] acs = c.acs5(
+P253: [normal]     variables=["B11001_001E",  # households
+P254: [normal]                "B19013_001E",  # median income
+P255: [normal]                "B08201_001E",  # vehicle access
+P256: [normal]                "B19001_001E"], # income brackets
+P257: [normal]     for_="tract:*",
+P258: [normal]     in_="state:36 county:005"  # NY, Bronx County
+P259: [normal] )
+P260: [normal] tracts_gdf = gpd.GeoDataFrame(acs, geometry=gpd.points_from_xy(
+P261: [normal]     acs["lon"], acs["lat"])).set_crs(epsg=4326)
+P262: [normal] cd2_tracts = tracts_gdf.sjoin(cd2[["geometry"]], how="inner", predicate="within")
+P263: [normal] print(f"CD2 tracts: {len(cd2_tracts)}")
+P265: [normal] # ── 3. SNAP stores ───────────────────────────────────────────────────────────
+P266: [normal] snap = pd.read_csv("data/snap_retailer_locator.csv")
+P267: [normal] snap_bronx = snap[snap["State"] == "NY"]
+P268: [normal] snap_gdf = gpd.GeoDataFrame(snap_bronx,
+P269: [normal]     geometry=gpd.points_from_xy(snap_bronx.Longitude, snap_bronx.Latitude)).set_crs(epsg=4326)
+P270: [normal] stores_cd2 = snap_gdf.sjoin(cd2[["geometry"]], how="inner", predicate="within")
+P271: [normal] print(f"SNAP stores in CD2: {len(stores_cd2)}")
+P273: [normal] # ── 4. Walking distance matrix ───────────────────────────────────────────────
+P274: [normal] G = ox.graph_from_place("Hunts Point, Bronx, New York, USA", network_type="walk")
+P275: [normal] tract_centroids = cd2_tracts.geometry.centroid
+P276: [normal] store_coords    = [(r.geometry.y, r.geometry.x) for _, r in stores_cd2.iterrows()]
+P278: [normal] d_ij = np.zeros((len(cd2_tracts), len(stores_cd2)))
+P279: [normal] for i, centroid in enumerate(tract_centroids):
+P280: [normal]     n_src = ox.distance.nearest_nodes(G, centroid.x, centroid.y)
+P281: [normal]     for j, (sy, sx) in enumerate(store_coords):
+P282: [normal]         n_dst = ox.distance.nearest_nodes(G, sx, sy)
+P283: [normal]         try:
+P284: [normal]             t = nx.shortest_path_length(G, n_src, n_dst, weight="travel_time")
+P285: [normal]         except Exception:
+P286: [normal]             t = 999  # unreachable
+P287: [normal]         d_ij[i, j] = t / 60  # convert seconds to minutes
+P288: [normal] print("Distance matrix shape:", d_ij.shape)
+P291: [Heading 2] 2.1  Goal 1 — Single-Store Subsidy Effect
+P292: [normal] Output: ΔCS(s) curve for one store — shows welfare gain at every subsidy level from $0 to B.
+P293: [normal] Step 1: Select representative store j*
+Choose a store in a food-desert tract (e.g., lowest-income tract in CD2). All other store prices remain at baseline. Fix θ = 0.65.
+P294: [normal] Step 2: Build Δp_j(s) function
+Δp_j(s) = θ_j · s / Q_j. Build a grid: s_grid = np.linspace(0, B_max, 500).
+P295: [normal] Step 3: Compute V_ij matrix (pre-subsidy)
+For each income group i and store j: V_ij = β_q_i·q_j + β_v_i·v_j − β_p_i·p_j − β_d_i·d_ij. Store as matrix V_pre of shape (N_groups, J).
+P296: [normal] Step 4: For each s in grid, compute ΔCS(s)
+Update V_ij*_post = V_ij*_pre + β_p_i·|Δp_j*(s)|. Compute logsum_pre = log(Σ_k exp(V_ik_pre)) per group. Compute logsum_post = log(Σ_k exp(V_ik_post)) per group. ΔW_i = (1/β_p_i)·(logsum_post − logsum_pre). ΔCS = Σ_i ΔW_i · household_count_i.
+P297: [normal] Step 5: Find threshold s*
+s* = min{s : ΔCS(s) ≥ ΔCS_min AND Δp_j(s)/p_j ≥ 5%}.
+P298: [normal] Step 6: Sensitivity on θ and β_p
+Repeat for θ ∈ {0.40, 0.65, 0.85} and β_p scale ∈ {0.8, 1.0, 1.2}. Plot ΔCS(s) curves with confidence band.
+P299: [normal] Step 7: Compare tax break vs. rent subsidy
+Both use the same formula Δp_j = θ·s/Q_j, so the ΔCS(s) curve is identical. The difference is practical: which cost item (tax or rent) can the city actually reduce for this store? Report both instrument labels at the same s* value.
+P300: [normal] Goal 1: Python Implementation
+P301: [normal] # Goal 1 — Single-Store Subsidy Effect (Python)
+P302: [normal] import numpy as np
+P303: [normal] from scipy.special import logsumexp
+P305: [normal] # ── Inputs (from Phase 0) ─────────────────────────────────────────────────────
+P306: [normal] # q_j, v_j : (J,) store quality and variety scores
+P307: [normal] # p_j      : (J,) baseline price levels
+P308: [normal] # d_ij     : (N, J) distance matrix
+P309: [normal] # beta_p_i : (N,) price sensitivity per income group
+P310: [normal] # beta_d_i : (N,) distance sensitivity per income group
+P311: [normal] # beta_q, beta_v : scalars (= 1.0 for simplified model)
+P312: [normal] # household_count : (N,) households per income group in CD2
+P313: [normal] # Q_j      : (J,) annual volumes
+P314: [normal] # theta    : pass-through rate (scalar, start with 0.65)
+P315: [normal] # j_star   : index of subsidized store
+P316: [normal] # B_max    : max annual subsidy to consider
+P318: [normal] # ── Pre-subsidy utility matrix V_pre ─────────────────────────────────────────
+P319: [normal] N, J = len(beta_p_i), len(q_j)
+P320: [normal] V_pre = np.zeros((N, J))
+P321: [normal] for i in range(N):
+P322: [normal]     V_pre[i] = (beta_q * q_j + beta_v * v_j
+P323: [normal]                 - beta_p_i[i] * p_j
+P324: [normal]                 - beta_d_i[i] * d_ij[i])
+P326: [normal] # ── Grid search over subsidy levels ──────────────────────────────────────────
+P327: [normal] s_grid   = np.linspace(0, B_max, 500)
+P328: [normal] DCS_vals = np.zeros_like(s_grid)
+P329: [normal] dp_vals  = np.zeros_like(s_grid)
+P331: [normal] for idx, s in enumerate(s_grid):
+P332: [normal]     delta_p = theta * s / Q_j[j_star]          # price reduction ($/basket)
+P333: [normal]     V_post  = V_pre.copy()
+P334: [normal]     V_post[:, j_star] += beta_p_i * delta_p    # utility of j* rises
+P336: [normal]     logsum_pre  = logsumexp(V_pre,  axis=1)     # (N,)
+P337: [normal]     logsum_post = logsumexp(V_post, axis=1)     # (N,)
+P339: [normal]     delta_W     = (1.0 / beta_p_i) * (logsum_post - logsum_pre)  # (N,) in $
+P340: [normal]     DCS_vals[idx] = np.sum(delta_W * household_count)
+P341: [normal]     dp_vals[idx]  = delta_p
+P343: [normal] # ── Find minimum effective subsidy ───────────────────────────────────────────
+P344: [normal] DCS_min = 50_000           # $50K aggregate welfare threshold
+P345: [normal] dp_min  = p_j[j_star] * 0.05   # 5% price reduction
+P347: [normal] mask   = (DCS_vals >= DCS_min) & (dp_vals >= dp_min)
+P348: [normal] s_star = s_grid[mask][0] if mask.any() else None
+P349: [normal] print(f"Min effective subsidy: ${s_star:,.0f}  |  "
+P350: [normal]       f"Price drop: {dp_vals[mask][0]:.2f}  |  "
+P351: [normal]       f"ΔCS: ${DCS_vals[mask][0]:,.0f}")
+P353: [normal] # ── Plot ΔCS(s) curve ─────────────────────────────────────────────────────────
+P354: [normal] import matplotlib.pyplot as plt
+P355: [normal] fig, ax = plt.subplots(figsize=(7, 4))
+P356: [normal] ax.plot(s_grid / 1000, DCS_vals / 1000, color="steelblue", lw=2, label="ΔCS(s), θ=0.65")
+P357: [normal] ax.axhline(DCS_min / 1000, color="red", ls="--", label=f"ΔCS_min = ${DCS_min/1000:.0f}K")
+P358: [normal] if s_star: ax.axvline(s_star / 1000, color="green", ls=":", label=f"s* = ${s_star/1000:.0f}K")
+P359: [normal] ax.set_xlabel("Annual subsidy s ($ thousands)")
+P360: [normal] ax.set_ylabel("Aggregate welfare gain ΔCS ($ thousands/year)")
+P361: [normal] ax.set_title("Goal 1: Cost-Effectiveness Frontier — Store j* in Bronx CD2")
+P362: [normal] ax.legend(); ax.grid(alpha=0.3)
+P363: [normal] fig.savefig("goal1_curve.png", dpi=150, bbox_inches="tight")
+P364: [normal] plt.show()
+P367: [Heading 2] 2.2  Goal 2 — Optimal Store Selection (Gurobi)
+P368: [normal] Output: which store maximizes ΔCS subject to budget B.
+P369: [normal] Step 1: Run Goal 1 for every candidate store
+Call the Goal 1 function for each store j at the full budget B. Record DCS_j = ΔCS_j(B) and s_j_star = minimum effective subsidy per store.
+P370: [normal] Step 2: Apply eligibility filters
+Set e_j = 0 for: stores not SNAP-authorized, stores outside CD2, stores owned by a chain if policy targets independents.
+P371: [normal] Step 3: K=1 enumeration (recommended first step)
+Sort eligible stores by DCS_j descending. Top store is optimal under K=1. No solver needed.
+P372: [normal] Step 4: K>1 integer program via Gurobi
+Use gurobipy to set up and solve the ILP from equation 1.4.2.
+P373: [normal] Step 5: Continuous budget allocation (scipy SLSQP)
+Optimize s_j across stores simultaneously using scipy.optimize.minimize.
+P374: [normal] Step 6: Distributional analysis
+Break ΔCS_j down by income group. Does the best store disproportionately benefit the lowest-income tracts in CD2?
+P375: [normal] Step 7: Instrument comparison
+For the optimal store, report: same ΔCS applies to both tax break and rent subsidy. Flag which instrument is available based on store lease/ownership structure.
+P376: [normal] Goal 2: Gurobi + scipy Implementation
+P377: [normal] # Goal 2 — Optimal Store Selection using Gurobi (gurobipy)
+P378: [normal] import gurobipy as gp
+P379: [normal] from gurobipy import GRB
+P380: [normal] import numpy as np
+P382: [normal] # ── Inputs: DCS_j[j] = welfare gain if store j gets full budget B ────────────
+P383: [normal] # s_j_star[j] = minimum effective subsidy for store j (from Goal 1)
+P384: [normal] # e_j[j]      = 1 if store j is eligible; 0 otherwise
+P385: [normal] # B           = total annual budget
+P386: [normal] # K           = max stores to subsidize
+P388: [normal] J = len(DCS_j)
+P389: [normal] B = 1_500_000    # $1.5M annual budget (adjust to Bronx CD2 policy context)
+P390: [normal] K = 1            # start with K=1 (single store selection)
+P392: [normal] # ── K=1 solution by enumeration (simplest approach) ──────────────────────────
+P393: [normal] eligible_welfare = [(DCS_j[j], j) for j in range(J) if e_j[j] == 1]
+P394: [normal] best_store = max(eligible_welfare, key=lambda x: x[0])
+P395: [normal] print(f"K=1 optimal store: {best_store[1]}  ΔCS = ${best_store[0]:,.0f}")
+P397: [normal] # ── K>1 solution via Gurobi ILP ───────────────────────────────────────────────
+P398: [normal] m = gp.Model("store_selection")
+P399: [normal] m.setParam("OutputFlag", 0)
+P401: [normal] x = m.addVars(J, vtype=GRB.BINARY, name="x")
+P402: [normal] m.setObjective(gp.quicksum(DCS_j[j] * x[j] for j in range(J)), GRB.MAXIMIZE)
+P404: [normal] m.addConstr(gp.quicksum(s_j_star[j] * x[j] for j in range(J)) <= B, "budget")
+P405: [normal] m.addConstr(gp.quicksum(x[j]           for j in range(J)) <= K,    "max_stores")
+P406: [normal] for j in range(J):
+P407: [normal]     m.addConstr(x[j] <= e_j[j], f"elig_{j}")
+P409: [normal] m.optimize()
+P411: [normal] if m.status == GRB.OPTIMAL:
+P412: [normal]     selected = [j for j in range(J) if x[j].X > 0.5]
+P413: [normal]     print(f"Gurobi optimal (K={K}): stores {selected}, ΔCS = ${m.ObjVal:,.0f}")
+P415: [normal] # ── Continuous allocation: scipy SLSQP ───────────────────────────────────────
+P416: [normal] from scipy.optimize import minimize
+P418: [normal] def neg_DCS_total(s_vec):
+P419: [normal]     total = 0
+P420: [normal]     for j in range(J):
+P421: [normal]         if e_j[j] == 1:
+P422: [normal]             delta_p = theta * s_vec[j] / Q_j[j]
+P423: [normal]             V_post  = V_pre.copy()
+P424: [normal]             V_post[:, j] += beta_p_i * delta_p
+P425: [normal]             dW = (1.0 / beta_p_i) * (logsumexp(V_post, axis=1) - logsumexp(V_pre, axis=1))
+P426: [normal]             total += np.sum(dW * household_count)
+P427: [normal]     return -total
+P429: [normal] s0     = np.ones(J) * B / J
+P430: [normal] bounds = [(0, B) for _ in range(J)]
+P431: [normal] constr = {"type": "ineq", "fun": lambda s: B - np.sum(s)}
+P432: [normal] res = minimize(neg_DCS_total, s0, method="SLSQP",
+P433: [normal]                bounds=bounds, constraints=constr,
+P434: [normal]                options={"ftol": 1e-9, "maxiter": 500})
+P435: [normal] print("Continuous optimal allocation ($/store):", res.x.round(0).astype(int))
+P439: [Heading 1] Appendix A: Worked Numerical Example
+P440: [normal] A complete end-to-end numerical example for Bronx CD2 with hypothetical but realistic values. All arithmetic is shown so you can verify the model by hand.
+P441: [Heading 2] A.1  Setup
+P442: [normal] Study area: 1 census tract (Hunts Point, Bronx). Stores: J = 3. Consumer income groups: N = 3 (Low <$25K, Mid $25K–$50K, High >$50K). Market size: M = 1,200 households × $5,000/yr = $6,000,000/yr.
+P443: [Heading 2] A.2  Store Attributes
+P445: [Heading 2] A.3  Consumer Groups
+P447: [Heading 2] A.4  Rent Subsidy Calculation at Store 1 (s = $100,000)
+P448: [normal] Step-by-step arithmetic
+P452: [Heading 1] Appendix B: Sensitivity Analysis Framework
+P453: [normal] The minimum effective subsidy s* is most sensitive to two parameters: θ (pass-through rate) and β_p (price sensitivity). The table shows illustrative s* values for different combinations.
+P454: [normal] Sensitivity: s* to achieve ΔCS ≥ $50,000/year at Store 1 (Bronx CD2, rent subsidy).
+P456: [normal] Key insight: when θ doubles (0.40 → 0.85), required subsidy drops by ~35%. The most important calibration task is getting a good estimate of θ from the literature.
+P458: [Heading 1] Appendix C: Model Validation Checklist
+P459: [normal] Run these checks after Phase 0 data assembly and before computing welfare results. A failure means a calibration problem, not a code bug.
+P462: [Heading 1] Appendix D: Assumptions, Limitations, and Caveats
+P463: [normal] Every model rests on assumptions. The table lists each assumption, what must be true for it to hold, and what happens if it is violated.
+P466: [Heading 1] Appendix E: Output Interpretation and Plain-Language Template
+P467: [Heading 2] E.1  Key Outputs by Goal
+P469: [Heading 2] E.2  Plain-Language Summary Template
+P470: [normal] Use this template for NYCEDC staff, elected officials, and community boards:
+P472: [Heading 2] E.3  Instrument Selection Flowchart
+P473: [normal] Use this to decide which subsidy instrument to apply before running the model:
+P474: [normal] 1.  Does the store lease (not own) its space?
+   YES → Use Rent Subsidy (Instrument 2). Data needed: NYC ACRIS lease amount (Rent_j).
+   NO  → Continue.
+P475: [normal] 2.  Does the store own its property and pay significant property tax?
+   YES → Use Tax Break (Instrument 1). Data needed: NYC NYCDB annual tax bill (Tax_j).
+   NO  → Explore hybrid instruments or reconsider eligibility.
+P476: [normal] 3.  Note: both instruments use the same model equation: Δp_j = −θ_j · s / Q_j.
+The only difference is which data you use to set the maximum value of s.
+P478: [Heading 1] Appendix F: Complete Data and Parameter Reference Table
+P479: [normal] Every symbol used in the model is listed below with its type, the equation section where it first appears, and the specific dataset or estimation method needed to obtain it. Green = parameter (estimated from data). Orange = dataset (directly observed). Purple = decision variable (set by city).
+
+
+--- TABLES ---
+
+Table 0:
+Causal chain (read left to right):  City pays subsidy s  →  Store's fixed cost f
+
+Table 1:
+Study area note — Bronx CD2 (Hunts Point / Longwood):  Hunts Point and Longwood 
+
+Table 2:
+In plain English:  Think of U_ij as a 'satisfaction score' that consumer i gets 
+
+Table 3:
+Conceptual note — Q2 — How are consumers represented in the data?:  You do NOT n
+
+Table 4:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Total utility of consumer (tract) i at store j  | U_ij  | Derived  | Satisfaction score; not directly observed; computed from equation  | Computed from β_i and store attributes
+Quality index of store j  | q_j  | Dataset  | Ordinal: supermarket=3, discount=2, bodega=1  | NYC DOHMH food retail classification; store type from SNAP locator
+Variety index of store j  | v_j  | Dataset  | Proxy: same ordinal as quality, or IBISWorld avg SKU by store type  | NYC DOHMH; IBISWorld Supermarkets report (normalized 0–1)
+Price level at store j (see Q1 note)  | p_j  | Dataset (baseline) / Derived (post-subsidy)  | Single representative price per store — see Section 1.2.5 and Q1 note  | ReferenceUSA revenue ÷ estimated volume; BLS CPI food index
+Travel time/distance from tract i to store j  | d_ij  | Dataset  | Walking or transit minutes from tract centroid to store address  | Census TIGER tract centroids + OSMnx walking network (Bronx)
+Price sensitivity of consumer i  | β_p_i  | Parameter  | Higher for lower-income tracts; scaled from literature by ACS income  | Allcott et al. (2019) Table IV as base; scaled by tract income (see Q3 note)
+Quality preference weight for consumer i  | β_q_i  | Parameter  | Fixed at 1.0 for simplified model (see simplification table)  | Handbury (2021); can fix = 1 initially
+Variety preference weight for consumer i  | β_v_i  | Parameter  | Fixed at 1.0 for simplified model  | Handbury (2021); can fix = 1 initially
+Distance sensitivity for consumer i  | β_d_i  | Parameter  | Higher for households without vehicle access (high in Hunts Point)  | Ben-Akiva & Lerman (1985) Table 5.3; scaled by ACS vehicle access B08201
+Unobserved idiosyncratic preference  | ε_ij  | Distributional assumption  | Random noise; Gumbel distribution gives closed-form logit formula  | Statistical assumption — McFadden (1974); not observed
+
+Table 5:
+In plain English:  Different people care about price, quality, variety, and dist
+
+Table 6:
+Conceptual note — Q4 — What is MVN and why is the mean a vector?:  MVN stands fo
+
+Table 7:
+Conceptual note — Q3 — How to calibrate μ_β from ACS and literature?:  Step-by-s
+
+Table 8:
+Simplification option:  Skip the full MVN distribution entirely. Instead, assign
+
+Table 9:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Preference weight vector for consumer i  | β_i  | Parameter  | 4-dim vector: (β_q, β_v, β_p, β_d); calibrated then varied in sensitivity  | Literature starting point + ACS income distribution calibration
+Mean preference vector (population average)  | μ_β  | Parameter  | 4 numbers: average quality, variety, price, distance weights across all consumer  | Allcott et al. (2019); Handbury (2021); Davis (2006); Ben-Akiva & Lerman (1985)
+Preference covariance matrix  | Σ_β  | Parameter  | 4×4 matrix capturing correlated preferences. Set diagonal only for simplicity.  | Literature; set to zero off-diagonals for simplified model
+
+Table 10:
+In plain English:  This is the core logit formula. The probability that consumer
+
+Table 11:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Choice probability: consumer i picks store j  | s_ij  | Derived  | Probability between 0 and 1; all J probabilities sum to 1 for each consumer  | Computed from V_ij values
+Systematic utility of store j for consumer i  | V_ij  | Derived — defined here, used throughout  | Deterministic part of utility; computed from β_i and store attributes q_j, v_j,   | Computed; referenced in 1.1.4, 1.1.5, 1.3.3
+Number of stores in the choice set  | J  | Dataset  | Candidate stores in Bronx CD2 (target 5–12 SNAP-authorized stores)  | USDA SNAP Retailer Locator + NYC DOHMH food retail data
+Index over all stores  | k  | Index  | Sums over all J stores in denominator  | —
+
+Table 12:
+Conceptual note — Q6 — What is the 'simulation' in this section?:  When consumer
+
+Table 13:
+Conceptual note — Q7 — How is β^r different from β_i?:  β^r is NOT a separate β 
+
+Table 14:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Aggregate market share of store j  | S_j  | Derived  | Fraction of consumers who choose store j; must sum to 1 across all stores  | Computed; cross-check: Σ_j S_j = 1
+Number of consumer groups (tracts or income groups)  | N  | Dataset  | Number of census tracts in Bronx CD2 (~15–20) OR number of income groups (3–5)  | ACS tract boundaries + NYC CD2 shapefile
+Number of simulation draws  | R  | Parameter  | R = 1,000 for stable results in mixed logit; R = 0 if using simplified income-gr  | Researcher choice; not needed for simplified model
+Draw r from preference distribution  | β^r  | Parameter (simulated)  | One sample of (β_q, β_v, β_p, β_d) from MVN; represents one 'consumer type'  | Simulated: numpy.random.multivariate_normal(μ_β, Σ_β)
+
+Table 15:
+In plain English:  In intro micro, consumer surplus = the area above the price l
+
+Table 16:
+Conceptual note — Q8 — Why this equation? What is the rule-of-half and income we
+
+Table 17:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Consumer welfare level (in dollars)  | W_i  | Derived  | Dollar value of best available option for consumer i; increases when prices fall  | Computed from logsum formula using V_ij values
+Welfare change for consumer i  | ΔW_i  | Derived  | Dollar gain from the subsidy; positive when store j* lowers its price  | Computed: (1/β_p_i) × Δ logsum
+Aggregate consumer surplus change  | ΔCS  | Derived — PRIMARY OUTCOME  | Sum of all consumer welfare gains; the main number the city cares about  | Computed; weighted by household count
+Income weight for consumer i  | w_i  | Parameter  | = 1 (equal weighting) or > 1 for low-income tracts (equity weighting)  | Policy choice; recommend starting with w_i = 1
+
+Table 18:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Total annual cost of store j  | TC_j  | Derived  | Sum of all costs; not used directly but defines profitability  | Computed from FC_j and VC_j
+Annual quantity sold at store j  | Q_j  | Dataset / Derived  | Annual transactions or basket-equivalents — see Section 1.2.5  | ReferenceUSA revenue ÷ p_j; or S_j × M
+Fixed costs of store j (annual $)  | FC_j  | Parameter  | Costs that don't change with sales volume: rent, salaried staff, utilities  | NYC ACRIS (rent) + IBISWorld labor benchmarks
+Annual rent for store j  | Rent_j  | Dataset  | From property lease records; basis for rent subsidy instrument  | NYC ACRIS lease filings; NYC DOF assessed values × market $/sq-ft
+Variable cost per unit  | VC_j  | Parameter  | Wholesale cost + variable labor per basket; ≈ 70–80% of revenue for grocery  | IBISWorld gross margin benchmarks: COGS/Revenue ratio by store type
+
+Table 19:
+Conceptual note — Q1 — What does 'price back-calculated from revenue/volume' mea
+
+Table 20:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Annual profit of store j  | π_j  | Derived  | Revenue minus costs; must be > 0 for store to remain open (validation check)  | Computed; check π_j > 0 for all stores before running model
+Price level at store j  | p_j  | Dataset (baseline)  | Avg basket price = Revenue_j / Q_j; see Q1 note above and Section 1.2.3  | ReferenceUSA revenue ÷ estimated volume; see Section 1.2.5
+Variable cost per unit (cross-ref)  | VC_j  | Parameter — defined in Section 1.2.1  | See Section 1.2.1 for definition and data source  | IBISWorld COGS benchmarks
+Quantity (cross-ref)  | Q_j  | Dataset / Derived — defined in Section 1.2.5  | See Section 1.2.5 for definition and data source  | ReferenceUSA; S_j × M
+Fixed cost (cross-ref)  | FC_j  | Parameter — defined in Section 1.2.1  | See Section 1.2.1 for definition and data source  | NYC ACRIS; IBISWorld
+Gross margin per unit  | margin_j = p_j − VC_j  | Derived  | Revenue per unit above variable cost; benchmark: 20–32% for grocery  | Computed; verify against IBISWorld gross margin by store type
+
+Table 21:
+In plain English:  Stores set their price as variable cost times (1 + markup). A
+
+Table 22:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Markup rate for store j  | μ_j  | Parameter  | Calibrated by store type from IBISWorld; not directly observed at store level  | IBISWorld Supermarkets report; cross-check with 10-K filings for chains
+
+Table 23:
+In plain English:  Price elasticity measures how responsive consumers are to a p
+
+Table 24:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Own-price elasticity of store j  | ε_jj  | Derived (validation check)  | % demand change per 1% price increase; expected range: −2 to −5 for grocery  | Computed from demand model; compare to literature
+Price sensitivity (population avg)  | β_p  | Parameter  | Mean of β_p_i across all income groups  | Weighted avg of group β_p values
+
+Table 25:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Annual quantity (basket-trips) at store j  | Q_j  | Derived (calibration check)  | Market share times total market; verify against ReferenceUSA revenue within 20%  | Computed; cross-check: Q_j × p_j ≈ Revenue_j
+Total annual food-at-home market ($)  | M  | Parameter  | Total annual grocery spending by all households in Bronx CD2  | ACS B11001 household count × BLS CES food-at-home spend by income quintile
+Number of households in Bronx CD2  | N_HH  | Dataset  | Sum of household counts across all tracts in CD2  | ACS 5-Year Table B11001, Bronx County, CD2 tracts
+Average weekly food-at-home spending  | f̄  | Parameter  | Varies by income; ~$75–$140/week; from BLS CES by income quintile  | BLS Consumer Expenditure Survey (bls.gov/cex); Table 4700
+
+Table 26:
+Instrument unification:  Tax break: city forgives s dollars of the store's annua
+
+Table 27:
+In plain English:  The pass-through rate θ_j answers: 'For every dollar the city
+
+Table 28:
+Conceptual note — Q10 — Is Δp_j a vector of prices or a single number?:  Δp_j is
+
+Table 29:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Price reduction at store j (scalar)  | Δp_j  | Derived  | Single number: drop in average basket price from subsidy; negative value = price  | Computed: −θ_j × g_j(s)
+Pass-through rate  | θ_j  | Parameter  | Fraction of subsidy that reaches consumers as lower prices; calibrated from lite  | Besanko et al. (2005); Nakamura & Zerom (2010); base = 0.65
+Per-unit price saving from subsidy s  | g_j(s)  | Derived  | How much s reduces the cost per unit sold; depends on instrument  | Computed from instrument formula in Section 1.3.2
+Annual subsidy amount  | s  | Decision variable  | Total dollars/year the city commits to store j; the policy lever  | City budget decision; constrained by total budget B
+
+Table 30:
+In plain English:  Whether the city forgives taxes or pays rent, the effect is t
+
+Table 31:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Fixed cost reduction  | ΔFC_j = −s  | Derived  | Fixed costs fall by exactly s dollars/year  | Computed
+Tax break: fraction of tax forgiven  | τ  | Decision variable  | τ ∈ [0,1]; total cost s = τ · Tax_j; data: NYC NYCDB annual tax bill  | NYC Property Tax Data: nycdb.info or data.cityofnewyork.us
+Annual tax liability of store j  | Tax_j  | Dataset  | Annual property/business tax bill for store j's parcel  | NYC NYCDB; NYC Dept. of Finance property tax portal
+Rent subsidy amount  | σ_rent  | Decision variable  | Total annual rent the city covers; total cost s = σ_rent; max = Rent_j  | City decision; upper bound = Rent_j from NYC ACRIS
+Annual rent for store j  | Rent_j  | Dataset  | From lease records or estimated from sq-ft × market rental rate  | NYC ACRIS (a836-acris.nyc.gov); NYC DOF; LoopNet commercial rate data
+
+Table 32:
+In plain English:  This is the 'pipeline' that converts a price drop into a welf
+
+Table 33:
+Conceptual note — Q on 1.3.3 — What is each equation doing?:  Step-by-step expla
+
+Table 34:
+In plain English:  Goal 1 asks: for a chosen store, how much must the city spend
+
+Table 35:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Minimum required price reduction  | Δp_min  | Parameter (policy threshold)  | City's threshold: how much must prices fall to count as meaningful?  | Policy choice; e.g., 5% of baseline basket price
+Minimum welfare gain threshold  | ΔCS_min  | Parameter (policy threshold)  | City's threshold: minimum aggregate consumer surplus gain  | Policy choice; e.g., $50,000/year for CD2
+Total annual budget  | B  | Parameter (constraint)  | City's maximum annual commitment to the subsidy program  | City budget allocation — exogenous input
+Minimum effective subsidy  | s*  | Derived — OUTPUT of Goal 1  | Smallest s meeting both thresholds; the answer to Goal 1  | Computed from grid search over ΔCS(s)
+
+Table 36:
+In plain English:  Goal 2 asks: given a fixed budget B and multiple candidate st
+
+Table 37:
+Term  | Symbol  | Type  | Description  | Data Source / Estimation
+Binary store selection (1 = selected)  | x_j  | Decision variable  | 1 if store j receives subsidy; 0 otherwise  | Optimization output
+Subsidy to store j  | s_j  | Decision variable  | Amount of annual subsidy; can be fixed at B (all budget to one store) or optimiz  | Optimization output
+Welfare gain if store j receives s_j  | ΔCS_j(s_j)  | Derived  | From Goal 1 computation applied to each candidate store  | Computed for each store; input to Goal 2
+Max stores to select  | K  | Parameter (policy)  | Usually K = 1 for first analysis  | Policy decision
+Eligibility indicator  | e_j  | Dataset  | 1 if store is SNAP-authorized, in CD2, meets size threshold  | USDA SNAP locator + city eligibility criteria
+Minimum effective subsidy at store j  | s_j*  | Derived (from Goal 1)  | Smallest s achieving meaningful ΔCS at store j  | Output of Goal 1 run per store
+
+Table 38:
+Assumption  | What equation it simplifies  | What you lose  | When to relax
+Use standard MNL with 3 fixed income groups instead of Mixed Logit / MVN  | Section 1.1.2 and 1.1.4: eliminates Monte Carlo simulation entirely. Market shar  | Within-group preference heterogeneity. All low-income consumers behave identical  | If you suspect strong within-group heterogeneity or have time for calibration.
+Fix β_q = β_v = 1.0 (equal quality and variety weights)  | Section 1.1.1: reduces calibration to just β_p and β_d.  | Cannot rank stores by quality vs. variety tradeoff.  | When quality or variety clearly matters more than price for a specific store.
+Use a single pass-through rate θ = 0.65 for all stores  | Section 1.3.1 and 1.3.2: no store-specific θ calibration needed.  | Cannot distinguish how efficiently different store types pass subsidies.  | After first model runs; vary θ ∈ {0.4, 0.65, 0.85} as sensitivity parameter.
+Ignore the outside option (all consumers shop at one of the J stores)  | Section 1.1.3: denominator sums only over in-area stores, not an outside option.  | Slightly overstates market size and welfare gains if some consumers shop elsewhe  | If evidence of significant out-of-area or online shopping in CD2.
+Use K=1 (subsidize one store only)  | Section 1.4.2: reduces optimization to argmax (no solver needed); compare ΔCS_j   | Cannot evaluate multi-store portfolio strategies.  | After Goal 1 is validated and budget allows multiple subsidies.
+
+Table 39:
+Software stack:  Python 3.10+ | pandas, geopandas, numpy, scipy | gurobipy (Guro
+
+Table 40:
+Bronx CD2 geography:  Bronx Community District 2 covers Hunts Point and Longwood
+
+Table 41:
+Store  | Type  | q_j  | v_j  | p_j ($/basket)  | FC_j ($K/yr)  | VC_j ($/basket)
+Store 1 (Independent)  | Independent  | 2  | 2  | $42.00  | $310K  | $31.50
+Store 2 (Discount)  | Discount  | 1  | 1  | $36.00  | $175K  | $28.80
+Store 3 (Chain Key Food)  | Supermarket  | 3  | 3  | $48.00  | $620K  | $34.56
+
+Table 42:
+Group  | HH Count  | β_p_i  | β_d_i  | Avg distance to Store 1 (min)
+Low (<$25K)  | 720  | 0.55  | 0.40  | 6 min
+Mid ($25–$50K)  | 360  | 0.30  | 0.25  | 9 min
+High (>$50K)  | 120  | 0.15  | 0.15  | 12 min
+
+Table 43:
+Interpretation of worked example:  A $100,000 annual rent subsidy at Store 1 yie
+
+Table 44:
+β_p scale  \  θ  | θ = 0.40  | θ = 0.55  | θ = 0.65 (base)  | θ = 0.85
+β_p × 0.8 (less sensitive)  | $3.2M  | $2.3M  | $1.9M  | $1.5M
+β_p × 1.0 (base)  | $2.3M  | $1.7M  | $1.4M  | $1.1M
+β_p × 1.2 (more sensitive)  | $1.9M  | $1.4M  | $1.2M  | $0.9M
+
+Table 45:
+Category  | Check  | Criterion  | How to Verify
+Demand  | Market shares sum to 1  | sum(S_j) = 1.0 ± 0.001  | assert abs(S_j.sum()-1)<1e-3
+Demand  | All probabilities in (0,1)  | 0 < s_ij < 1 for all i,j  | assert (s>0).all() and (s<1).all()
+Demand  | Predicted volumes near observed  | Q_j·p_j within 20% of Revenue_j  | Compare to ReferenceUSA revenue
+Demand  | Own-price elasticities in range  | ε_jj ∈ [−2, −5] for grocery  | Compute and print ε_jj for all stores
+Demand  | Welfare sign is correct  | ΔCS > 0 when price falls  | Unit test: compute_DCS(s=100K) > 0
+Supply  | All stores profitable at baseline  | π_j > 0 for all j  | assert (pi_pre > 0).all()
+Supply  | Markup calibration check  | p_j ≈ (1+μ_j)·VC_j within 5%  | Compare implied vs. observed prices
+Pass-through  | θ produces realistic Δp  | 1% subsidy → 0.5–0.8% price drop  | Check Δp/p for s = 1% of Revenue_j
+Optimization  | Gurobi solution feasible  | Σ s_j ≤ B and e_j constraints satisfied  | Check Gurobi constraint violations
+
+Table 46:
+Assumption  | Required condition  | If violated…  | Sensitivity / Extension
+Static single-period model  | Short-run; no store entry or exit  | Underestimates long-run access benefits if subsidy prevents closure  | Extend to dynamic if multi-year program
+Fixed store attributes (q_j, v_j)  | Subsidy doesn't enable quality/variety upgrades  | Welfare gains underestimated if store reinvests subsidy in upgrades  | Sensitivity run: shift q_j or v_j by +1
+No rival response  | Competing stores don't react to subsidized store's lower price  | If rivals cut prices too, consumer gains are larger; rival losses smaller  | Optional extension: Bertrand loop
+Single representative price per store  | Consumers can be characterized by one avg basket price  | Ignores within-store price variation across products  | Use product-level data if available
+Pass-through θ is constant  | Store's pricing is linear in subsidy amount  | If store pockets more at larger subsidies, cost-effectiveness is overstated  | Model θ as decreasing in s; run sensitivity
+No outside option / online grocery  | Consumers shop only at the J local stores  | If consumers shop at Walmart in co-op city or online, welfare gains overstated  | Add j=0 outside option with fixed utility
+Census tract = homogeneous consumer unit  | All households in a tract have the same preferences  | Ignores within-tract income heterogeneity  | Split tracts into income groups (3-group model)
+
+Table 47:
+Goal  | Primary output  | Chart / table  | How to read it
+Goal 1  | Cost-effectiveness frontier ΔCS(s)  | Line chart: x = annual subsidy $, y = ΔCS $/yr  | Find the 'elbow' where each extra dollar gives rapidly diminishing welfare retur
+Goal 1  | Instrument comparison  | Side-by-side table: tax break vs. rent subsidy at equal cost s*  | Both instruments produce same ΔCS; difference is which cost item the city reduce
+Goal 2  | Store ranking table  | Table: stores sorted by ΔCS_j(B), with eligibility column  | Top-ranked eligible store = recommended selection under K=1 and budget B
+Goal 2  | Distributional breakdown  | Bar chart: ΔCS by income group for each candidate store  | Prefer stores where a larger share of ΔCS goes to Low-income households in Hunts
+
+Table 48:
+Summary Template:  "Subsidizing [STORE NAME], a [store type] at [address] in Hun
+
+Table 49:
+Symbol  | Term  | Section  | Type  | Specific data needed  | Source
+q_j  | Quality index  | 1.1.1  | Dataset  | Store type classification; sq footage  | NYC DOHMH + SNAP locator
+v_j  | Variety index  | 1.1.1  | Dataset  | Store type; IBISWorld avg SKU by type  | NYC DOHMH; IBISWorld
+p_j  | Baseline price level  | 1.1.1 / 1.2.3  | Dataset  | Revenue_j / Q_j (see 1.2.5)  | ReferenceUSA + BLS CPI
+d_ij  | Distance (min)  | 1.1.1  | Dataset  | Walking minutes from tract centroid to store  | OSMnx + Census TIGER
+β_p_i  | Price sensitivity  | 1.1.1  | Parameter  | Allcott et al. Table IV; scaled by ACS income  | Allcott et al. (2019)
+β_d_i  | Distance sensitivity  | 1.1.1  | Parameter  | Literature; scaled by ACS vehicle access (B08201)  | Ben-Akiva & Lerman (1985)
+β_q_i  | Quality weight  | 1.1.1  | Parameter  | Set = 1.0 for simplified model  | Handbury (2021)
+β_v_i  | Variety weight  | 1.1.1  | Parameter  | Set = 1.0 for simplified model  | Handbury (2021)
+μ_β  | Mean preference vector  | 1.1.2  | Parameter  | Weighted avg of group β values from literature  | Allcott et al. (2019); Davis (2006)
+Σ_β  | Preference covariance  | 1.1.2  | Parameter  | Set to diagonal for simplified model  | Train (2009) Ch. 6
+V_ij  | Systematic utility  | 1.1.3  | Derived  | Computed from β_i and store attributes  | Equation 1.1.3b
+S_j  | Market share  | 1.1.4  | Derived  | Weighted avg of choice probs across income groups  | Equation 1.1.4
+N_HH  | Household count in CD2  | 1.1.4 / 1.2.5  | Dataset  | Sum of households across CD2 tracts  | ACS Table B11001, Bronx CD2 tracts
+W_i / ΔW_i  | Welfare / welfare change  | 1.1.5  | Derived  | Logsum formula; computed from V_ij  | Equation 1.1.5
+ΔCS  | Aggregate welfare change  | 1.1.5  | Derived — PRIMARY OUTPUT  | Σ_i ΔW_i · household_count_i  | Equation 1.1.5c
+w_i  | Income weight  | 1.1.5  | Parameter  | = 1 for neutral weighting; > 1 for equity  | Policy choice
+FC_j  | Fixed costs ($/yr)  | 1.2.1  | Parameter  | Rent_j (ACRIS) + salaried labor (BLS OES) + other  | NYC ACRIS; BLS OES 41-1011
+VC_j  | Variable cost per unit  | 1.2.1  | Parameter  | COGS = 1 − gross margin; IBISWorld by store type  | IBISWorld Report 44511
+Rent_j  | Annual rent  | 1.2.1  | Dataset  | Lease amount from ACRIS; or sq-ft × market rate  | NYC ACRIS; a836-acris.nyc.gov
+π_j  | Annual profit  | 1.2.2  | Derived  | Validation check: must be > 0 at baseline  | Equation 1.2.2
+μ_j  | Markup rate  | 1.2.3  | Parameter  | IBISWorld gross margin by store type  | IBISWorld; 10-K filings
+Q_j  | Annual volume (baskets)  | 1.2.5  | Dataset/Derived  | Revenue_j / p_j; cross-check with S_j × M  | ReferenceUSA; BLS CES
+M  | Total market size ($)  | 1.2.5  | Parameter  | N_HH × avg annual food spend × income share  | ACS B11001 × BLS CES Table 4700
+θ_j  | Pass-through rate  | 1.3.1  | Parameter  | Literature: 0.50–0.85; base = 0.65  | Besanko et al. (2005)
+s  | Subsidy amount ($/yr)  | 1.3.2  | Decision variable  | Annual $ the city commits; constrained by B  | City budget
+Tax_j  | Annual tax liability  | 1.3.2  | Dataset  | Annual property/business tax bill for store j  | NYC NYCDB; nycdb.info
+Δp_j  | Price reduction ($/basket)  | 1.3.1 / 1.3.3  | Derived  | = θ_j · s / Q_j; single scalar per store  | Equation 1.3.2b
+B  | Total budget ($/yr)  | 1.4.1  | Parameter (constraint)  | City's max annual commitment  | City budget allocation
+s*  | Min effective subsidy  | 1.4.1  | Derived — Goal 1 output  | Smallest s meeting Δp_min and ΔCS_min  | Grid search over ΔCS(s)
+x_j  | Store selection binary  | 1.4.2  | Decision variable  | 1 if store selected; 0 otherwise  | Gurobi / enumeration output
+e_j  | Eligibility indicator  | 1.4.2  | Dataset  | 1 = SNAP-authorized + in CD2 + meets criteria  | USDA SNAP locator + city criteria
