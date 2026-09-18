@@ -4,6 +4,8 @@ Interactive documentation for an optimization framework that allocates a city gr
 
 **Live site:** https://dlpsamuel.github.io/grocery-subsidy-model/
 
+**Large data / Git LFS:** teammates should follow [docs/git_lfs_team_guide.md](docs/git_lfs_team_guide.md) to install Git LFS and pull shared files under `data/`.
+
 ## Local development
 
 ```bash
