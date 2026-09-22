@@ -19,12 +19,44 @@ RELEASES = [
 
 UA = "grocery-subsidy-analysis/0.1 (research; Bronx CD2 ACS pull)"
 
+# Table/code descriptors for ACS B19001 (household income bands) and B11001 (households by type)
+#
+# B11001: Households by Type
+#   B11001001 = Total households
+#
+# B19001: Household Income in the Past 12 Months (in 2024 Inflation-Adjusted Dollars)
+#   B19001001 = Total households (should match B11001001)
+#
+#   B19001002 = Less than $10,000
+#   B19001003 = $10,000 to $14,999
+#   B19001004 = $15,000 to $19,999
+#   B19001005 = $20,000 to $24,999
+#   --> These form the "LOW" income group (B19001_LOW)
+#
+#   B19001006 = $25,000 to $29,999
+#   B19001007 = $30,000 to $34,999
+#   B19001008 = $35,000 to $39,999
+#   B19001009 = $40,000 to $44,999
+#   B19001010 = $45,000 to $49,999
+#   --> These form the "MID" income group (B19001_MID)
+#
+#   B19001011 = $50,000 to $59,999
+#   B19001012 = $60,000 to $74,999
+#   B19001013 = $75,000 to $99,999
+#   B19001014 = $100,000 to $124,999
+#   B19001015 = $125,000 to $149,999
+#   B19001016 = $150,000 to $199,999
+#   B19001017 = $200,000 or more
+#   --> These form the "HIGH" income group (B19001_HIGH)
+#
+# These lists are used to aggregate/group income bands for reporting and modeling.
+
 # Census Reporter uses concatenated codes without underscore: B19001002 etc.
 B19001_LOW = [f"B19001{i:03d}" for i in range(2, 6)]
 B19001_MID = [f"B19001{i:03d}" for i in range(6, 11)]
 B19001_HIGH = [f"B19001{i:03d}" for i in range(11, 18)]
 
-
+# Load CD2 tract GEOIDs from GeoJSON file
 def load_cd2_tract_geoids() -> set[str]:
     path = GEO_DIR / "bronx_cd2_tracts.geojson"
     if not path.exists():
@@ -43,7 +75,7 @@ def load_cd2_tract_geoids() -> set[str]:
             out.add(f"36005{v[-6:]}")
     return out
 
-
+# Fetch ACS data from Census Reporter API for a given release
 def fetch_census_reporter(release: str) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     url = f"https://api.censusreporter.org/1.0/data/show/{release}"
     params = {"table_ids": "B11001,B19001", "geo_ids": "140|05000US36005"}
@@ -98,7 +130,7 @@ def fetch_census_reporter(release: str) -> tuple[pd.DataFrame, pd.DataFrame, dic
     }
     return pd.DataFrame(hh_rows), pd.DataFrame(inc_rows), meta
 
-
+# Try to fetch ACS data from Census API for a given year
 def try_census_api(year: int) -> tuple[pd.DataFrame, pd.DataFrame] | None:
     """Optional path if CENSUS_API_KEY is set."""
     key = census_api_key()
@@ -130,7 +162,7 @@ def try_census_api(year: int) -> tuple[pd.DataFrame, pd.DataFrame] | None:
         print(f"  Census API {year} failed: {msg}")
         return None
 
-
+# Main function to download ACS data and save to CSV files
 def main() -> None:
     print("=== ACS B11001 / B19001 (Bronx tracts -> CD2) ===")
     cd2_geoids = load_cd2_tract_geoids()
@@ -172,6 +204,7 @@ def main() -> None:
         meta["sources"].append(rel_meta)
         meta["years_ok"].append(year)
 
+        # Keep only CD2 tracts
         hh_cd2 = hh[hh["GEOID"].isin(cd2_geoids)].copy() if cd2_geoids else hh.copy()
         inc_cd2 = inc[inc["GEOID"].isin(cd2_geoids)].copy() if cd2_geoids else inc.copy()
         hh_cd2.to_csv(ACS_DIR / f"cd2_B11001_{year}.csv", index=False)

@@ -8,13 +8,16 @@ import geopandas as gpd
 import pandas as pd
 import requests
 
+# Define root directory
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+# Define subdirectories
 GEO_DIR = DATA / "geography"
 ACS_DIR = DATA / "acs"
 BLS_DIR = DATA / "bls"
 STORES_DIR = DATA / "stores"
 
+# Create subdirectories if they don't exist
 for _d in (GEO_DIR, ACS_DIR, BLS_DIR, STORES_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
@@ -23,13 +26,15 @@ SESSION.headers.update(
     {"User-Agent": "grocery-subsidy-analysis/0.1 (Bronx CD2 research; academic)"}
 )
 
-
+# Helper functions
+# Get JSON from URL
 def get_json(url: str, params: dict | None = None, timeout: int = 120) -> object:
     r = SESSION.get(url, params=params, timeout=timeout)
     r.raise_for_status()
     return r.json()
 
 
+# Download file from URL to destination
 def download_file(url: str, dest: Path, timeout: int = 300) -> Path:
     dest.parent.mkdir(parents=True, exist_ok=True)
     with SESSION.get(url, stream=True, timeout=timeout) as r:
@@ -40,7 +45,7 @@ def download_file(url: str, dest: Path, timeout: int = 300) -> Path:
                     f.write(chunk)
     return dest
 
-
+# Load Bronx CD2 boundary from saved GeoJSON, or fetch from NYC Open Data
 def load_cd2_boundary() -> gpd.GeoDataFrame:
     """Load Bronx CD2 (BoroCD 202) from saved GeoJSON, or fetch from NYC Open Data."""
     path = GEO_DIR / "bronx_cd2_boundary.geojson"
@@ -76,7 +81,7 @@ def load_cd2_boundary() -> gpd.GeoDataFrame:
     cd2.to_file(path, driver="GeoJSON")
     return cd2
 
-
+# Filter a DataFrame with lon/lat columns to points inside CD2
 def points_in_cd2(
     df: pd.DataFrame,
     lon_col: str,
@@ -100,7 +105,8 @@ def points_in_cd2(
         joined = joined.drop(columns=["index_right"])
     return joined
 
-
+# Load KEY=VALUE pairs from repo-root .env into os.environ (no extra dependency)
+# Used to access personal API keys from .env file
 def _load_dotenv() -> None:
     """Load KEY=VALUE pairs from repo-root .env into os.environ (no extra dependency)."""
     env_path = ROOT / ".env"
@@ -115,7 +121,7 @@ def _load_dotenv() -> None:
         if key and key not in os.environ:
             os.environ[key] = val
 
-
+# Get Census API key from .env file
 def census_api_key() -> str | None:
     _load_dotenv()
     key = (os.environ.get("CENSUS_API_KEY") or "").strip()

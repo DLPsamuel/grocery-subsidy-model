@@ -1,3 +1,4 @@
+# NOTE: This script is no longer used in the project (Data is manually downloaded)
 """Download BLS CES income / quintile XLSX tables (2020–2024).
 
 Preferred path (user-confirmed 2024 URLs):

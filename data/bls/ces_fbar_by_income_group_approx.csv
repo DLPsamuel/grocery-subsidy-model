@@ -1,4 +1,0 @@
-group,f_bar_weekly_usd_approx,notes,source_url
-Low (<$25K),75,Lower end of model doc range; refine with CES income table when XLSX accessible,https://www.bls.gov/cex/tables.htm
-Mid ($25-50K),100,Mid of model doc ~$75–$140/week range,https://www.bls.gov/cex/tables.htm
-High (>$50K),140,Upper end of model doc range,https://www.bls.gov/cex/tables.htm

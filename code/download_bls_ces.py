@@ -1,3 +1,4 @@
+# NOTE: This script is no longer used in the project (Data is manually downloaded)
 """Collect BLS CES food-at-home spending inputs for market size M and f_bar.
 
 Automated downloads from bls.gov return HTTP 403 in this environment.

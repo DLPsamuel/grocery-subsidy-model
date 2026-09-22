@@ -1,3 +1,0 @@
-acs_year,ces_year,N_HH,food_at_home_annual_usd_per_CU,M_usd_approx,f_bar_weekly_usd,method,caveat,ces_source
-2024,2024,19922.0,6224.0,123994528.0,119.69,M = N_HH * CES mean annual food-at-home (all CU),"Uses US all-CU mean, not NYC-metro or income-specific rates; Q_j cross-check only until income-specific CES XLSX available",https://www.bls.gov/news.release/cesan.htm
-2024,approx_model_ranges,19922.0,,109090020.0,,M = sum_i n_i * f_bar_i_weekly * 52 (model doc ranges),Approximate weekly rates pending CES income-table access,https://www.bls.gov/cex/tables.htm
