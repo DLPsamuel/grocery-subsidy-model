@@ -46,17 +46,19 @@ ATTEMPTS_LOG: list[dict[str, Any]] = []
 
 
 def log_attempt(name: str, **kwargs: Any) -> None:
+    """Append one API/step attempt record to the in-memory run log."""
     ATTEMPTS_LOG.append({"attempt": name, **kwargs})
 
 
 def load_json(path: Path) -> dict:
+    """Load a JSON file as a dict, or return {} if the file is missing."""
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
     return {}
 
 
 def save_json(path: Path, obj: object) -> None:
-    """Atomic-ish write to avoid Windows lock / partial-write issues."""
+    """Write JSON atomically (temp file then replace) to avoid partial writes."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     data = json.dumps(obj, indent=2, default=str)
@@ -73,6 +75,7 @@ def save_json(path: Path, obj: object) -> None:
 
 
 def clean_bbl(val: Any) -> str | None:
+    """Normalize a BBL to a 10-digit digit string, or None if invalid."""
     if val is None or (isinstance(val, float) and pd.isna(val)):
         return None
     s = str(val).strip()
@@ -85,7 +88,7 @@ def clean_bbl(val: Any) -> str | None:
 
 
 def parse_bbl(bbl: str) -> tuple[str, str, str]:
-    """Return borough, block, lot (unpadded ints as strings for ACRIS)."""
+    """Split a 10-digit BBL into borough, block, and lot for ACRIS queries."""
     boro = bbl[0]
     block = str(int(bbl[1:6]))
     lot = str(int(bbl[6:10]))
@@ -93,6 +96,7 @@ def parse_bbl(bbl: str) -> tuple[str, str, str]:
 
 
 def normalize_street(s: str) -> str:
+    """Uppercase and abbreviate street tokens (AVE, ST, E/W, etc.)."""
     s = str(s or "").upper().strip()
     s = re.sub(r"\s+", " ", s)
     reps = [
@@ -113,6 +117,7 @@ def normalize_street(s: str) -> str:
 
 
 def build_address(number: Any, street: Any, zipcode: Any = None) -> str:
+    """Build a GeoSearch query string from house number, street, and ZIP."""
     num = str(number or "").strip()
     st = normalize_street(street)
     z = str(zipcode or "").strip()[:5]
@@ -126,6 +131,7 @@ def build_address(number: Any, street: Any, zipcode: Any = None) -> str:
 
 
 def load_store_frames() -> dict[str, pd.DataFrame]:
+    """Load Phase 2 Ag & Markets, SNAP, and DOHMH CD2 store CSVs."""
     frames = {}
 
     ag = pd.read_csv(STORES_DIR / "agmarkets_bronx_cd2.csv")
@@ -162,6 +168,7 @@ def load_store_frames() -> dict[str, pd.DataFrame]:
 
 
 def geosearch_bbl(address: str, cache: dict) -> dict:
+    """Look up BBL via NYC GeoSearch (cached); return match fields."""
     if not address:
         return {"bbl": None, "method": "empty_address", "label": None, "bin": None}
     if address in cache:
@@ -194,7 +201,7 @@ def geosearch_bbl(address: str, cache: dict) -> dict:
 
 
 def pluto_fallback_bbl(number: Any, street: Any, cache_key: str, cache: dict) -> dict:
-    """Fallback: PLUTO address search in Bronx."""
+    """If GeoSearch fails, try PLUTO address match for a Bronx BBL."""
     if cache_key in cache and cache[cache_key].get("bbl"):
         return cache[cache_key]
     num = str(number or "").strip()
@@ -242,6 +249,7 @@ def pluto_fallback_bbl(number: Any, street: Any, cache_key: str, cache: dict) ->
 
 
 def fetch_pluto(bbl: str) -> dict:
+    """Fetch PLUTO assessed-value and lot attributes for a BBL."""
     time.sleep(SLEEP)
     try:
         r = SESSION.get(PLUTO, params={"bbl": bbl, "$limit": "1"}, timeout=60)
@@ -268,6 +276,7 @@ def fetch_pluto(bbl: str) -> dict:
 
 
 def _num(v: Any) -> float | None:
+    """Coerce a value to float, or None if missing/invalid."""
     try:
         if v is None or (isinstance(v, float) and pd.isna(v)):
             return None
@@ -277,7 +286,7 @@ def _num(v: Any) -> float | None:
 
 
 def fetch_dof_tax(bbl: str) -> dict:
-    """Sum quarterly CHG liabilities for the latest tax year → Tax_j."""
+    """Compute annual Tax_j from DOF Property Charges Balance for a BBL."""
     time.sleep(SLEEP)
     try:
         r = SESSION.get(
@@ -320,6 +329,7 @@ def fetch_dof_tax(bbl: str) -> dict:
 
 
 def fetch_assessment(bbl: str) -> dict:
+    """Attempt DOF Assessment Data lookup for a BBL (often empty)."""
     time.sleep(SLEEP)
     try:
         r = SESSION.get(
@@ -344,6 +354,7 @@ def fetch_assessment(bbl: str) -> dict:
 
 
 def fetch_acris_lease(bbl: str) -> dict:
+    """Find lease-related ACRIS documents for a BBL and any document_amt."""
     boro, block, lot = parse_bbl(bbl)
     time.sleep(SLEEP)
     try:
@@ -414,6 +425,7 @@ def fetch_acris_lease(bbl: str) -> dict:
 
 
 def apply_market_rent(sqft: Any) -> dict:
+    """Compute low/mid/high annual rent from sq-ft × $20 / $27.50 / $35."""
     s = _num(sqft)
     if s is None or s <= 0:
         return {
@@ -433,6 +445,7 @@ def apply_market_rent(sqft: Any) -> dict:
 
 
 def enrich_frame(df: pd.DataFrame, source: str, bbl_cache: dict, tax_cache: dict, acris_cache: dict) -> pd.DataFrame:
+    """Match BBL and attach tax/rent columns for one store list; choose Rent_j."""
     print(f"\n=== Enriching {source} ({len(df)} rows) ===")
     rows_out = []
     for i, row in df.iterrows():
@@ -525,6 +538,7 @@ def enrich_frame(df: pd.DataFrame, source: str, bbl_cache: dict, tax_cache: dict
 
 
 def success_rates(df: pd.DataFrame, source: str) -> dict:
+    """Summarize BBL / Tax_j / Rent_j match rates for a finished frame."""
     n = len(df)
     if n == 0:
         return {"source": source, "n": 0}
@@ -563,6 +577,7 @@ def success_rates(df: pd.DataFrame, source: str) -> dict:
 
 
 def main() -> None:
+    """Run Phase 3 end-to-end: load stores, enrich all lists, write CSVs and meta."""
     print("=== Phase 3: Tax_j / Rent_j ===")
     log_attempt(
         "sources_declared",

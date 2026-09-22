@@ -16,7 +16,7 @@ BASE = f"https://data.ny.gov/resource/{DATASET}.json"
 
 CD2_ZIPS = {"10454", "10455", "10459", "10474"}
 
-
+# Fetch all rows from the dataset
 def fetch_all(limit: int = 50000) -> pd.DataFrame:
     rows = []
     offset = 0
@@ -34,7 +34,7 @@ def fetch_all(limit: int = 50000) -> pd.DataFrame:
         offset += limit
     return pd.DataFrame(rows)
 
-
+# Parse georeference from the dataset
 def parse_georeference(val):
     if val is None or (isinstance(val, float) and pd.isna(val)):
         return None, None
@@ -55,7 +55,7 @@ def parse_georeference(val):
                 return None, None
     return None, None
 
-
+# Main function to download the dataset and save to CSV files
 def main() -> None:
     print("=== NYS Ag & Markets Retail Food Stores ===")
     df = fetch_all()
