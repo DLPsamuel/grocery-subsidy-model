@@ -1,0 +1,6 @@
+year,table,item,all_consumer_units,lowest_20,second_20,third_20,fourth_20,highest_20,f_bar_weekly_all,source_file
+2020,income_quintiles,food_at_home_annual_usd,4942.0,3099.0,3820.0,4230.0,5736.0,7817.0,95.04,cu-income-quintiles-before-taxes-2020.xlsx
+2021,income_quintiles,food_at_home_annual_usd,5259.0,3524.0,4015.0,4754.0,5868.0,8127.0,101.13,cu-income-quintiles-before-taxes-2021.xlsx
+2022,income_quintiles,food_at_home_annual_usd,5703.0,3624.0,4310.0,5525.0,6529.0,8523.0,109.67,cu-income-quintiles-before-taxes-2022.xlsx
+2023,income_quintiles,food_at_home_annual_usd,6053.0,3707.0,4680.0,5756.0,6917.0,9198.0,116.4,cu-income-quintiles-before-taxes-2023.xlsx
+2024,income_quintiles,food_at_home_annual_usd,6224.0,3843.0,4952.0,5820.0,7162.0,9336.0,119.69,cu-income-quintiles-before-taxes-2024.xlsx

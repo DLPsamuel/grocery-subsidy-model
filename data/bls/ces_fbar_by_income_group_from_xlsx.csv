@@ -1,0 +1,5 @@
+group,f_bar_weekly_usd,f_bar_annual_usd,ces_year,method,source_file
+Low (<$25K),71.87,3737.0,2024,avg of CES brackets <$15k and $15–30k,cu-income-before-taxes-2024.xlsx
+Mid ($25-50K),88.52,4603.0,2024,avg of CES brackets $30–40k and $40–50k,cu-income-before-taxes-2024.xlsx
+High (>$50K),142.71,7420.8,2024,avg of CES brackets $50k+,cu-income-before-taxes-2024.xlsx
+All consumer units,119.69,6224.0,2024,CES all consumer units,cu-income-before-taxes-2024.xlsx

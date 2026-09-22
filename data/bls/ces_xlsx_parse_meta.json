@@ -1,0 +1,23 @@
+{
+  "income_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "quintile_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "missing_or_failed": [],
+  "outputs": [
+    "ces_food_at_home_by_income_bracket.csv",
+    "ces_food_at_home_by_income_quintile.csv",
+    "ces_fbar_by_income_group_from_xlsx.csv",
+    "cd2_market_size_M_from_xlsx.csv"
+  ]
+}

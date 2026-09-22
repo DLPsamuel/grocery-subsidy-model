@@ -176,8 +176,8 @@ No published **Bronx CD2–only annual operating subsidy** amount was found for 
 ## 7. Phase 2 implementation checklist
 
 - [x] CD2 boundary + tract centroids → `data/geography/`
-- [x] ACS B11001 & B19001 (ACS 2024 5-year via Census Reporter) → `data/acs/`
-- [x] BLS CES food-at-home published series + `M` estimates → `data/bls/`
+- [x] ACS B11001 & B19001 for end-years **2020–2024** (Census API key) → `data/acs/`
+- [x] BLS CES Income before taxes + Quintiles XLSX **2020–2024** → `data/bls/` (browser download; parsed)
 - [x] Ag & Markets stores in CD2 → `data/stores/`
 - [x] SNAP retailers in CD2 → `data/stores/`
 - [x] NYC DOHMH grocery-like establishments in CD2 → `data/stores/`

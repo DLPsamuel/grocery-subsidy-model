@@ -1,0 +1,32 @@
+# Open these in a browser if automated download gets HTTP 403.
+# Save each file into data/bls/ with the same filename.
+
+cu-income-before-taxes-2020.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-before-taxes-2020.xlsx
+
+cu-income-quintiles-before-taxes-2020.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-quintiles-before-taxes-2020.xlsx
+
+cu-income-before-taxes-2021.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-before-taxes-2021.xlsx
+
+cu-income-quintiles-before-taxes-2021.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-quintiles-before-taxes-2021.xlsx
+
+cu-income-before-taxes-2022.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-before-taxes-2022.xlsx
+
+cu-income-quintiles-before-taxes-2022.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-quintiles-before-taxes-2022.xlsx
+
+cu-income-before-taxes-2023.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-before-taxes-2023.xlsx
+
+cu-income-quintiles-before-taxes-2023.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-quintiles-before-taxes-2023.xlsx
+
+cu-income-before-taxes-2024.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-before-taxes-2024.xlsx
+
+cu-income-quintiles-before-taxes-2024.xlsx
+https://www.bls.gov/cex/tables/calendar-year/mean-item-share-average-standard-error/cu-income-quintiles-before-taxes-2024.xlsx
