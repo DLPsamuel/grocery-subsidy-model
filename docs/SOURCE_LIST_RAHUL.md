@@ -10,6 +10,11 @@ Sources for my Appendix F rows (Lead = R) and supporting context, what each one 
 - **Tier B** — identified, but only ever seen as a search-result snippet. Titles and URLs are confirmed real; the numbers are not yet verified in situ.
 - **Tier C** — identified but not retrieved at all.
 
+Each **Feeds** line is tagged by how the source is used:
+
+- **[input]** — a number from the source goes directly into a model calculation. Remove the source and a model value changes.
+- **[context]** — the source supports, explains or sanity-checks a value, but no number from it is plugged in.
+
 ---
 
 # Status of my Appendix F rows (v3 spec, Lead = R), as of 2026-09-24
@@ -52,7 +57,7 @@ Ratio: **1 supermarket : 6 bodegas : 4 fast food**. The 2012 Crotona–Tremont s
 
 **Prices, 2025** (N=113 stores): the standard basket cost **$37.40–$43.00 across 10 South Bronx ZIP codes**. In 6 of the 10 ZIPs, fewer than 80% of basket items were available. Item-level: eggs avg **$7.75/dozen**, deli beef avg **$12.90/lb**, lettuce **$1–$4.99/head**, avocados **$1–$5 each**, tomatoes **$0.79–$4.99/lb**. Some items cost more than 4× the lowest price found.
 
-**Feeds:** p_j (price context for the South Bronx). The brief states that "the cost of food in supermarkets and bodegas was similar," which matters for how much price differences can drive store choice in the model.
+**Feeds:** **[context]** p_j (price context for the South Bronx). The brief states that "the cost of food in supermarkets and bodegas was similar," which matters for how much price differences can drive store choice in the model.
 
 **Two precision points when citing it:**
 
@@ -83,7 +88,11 @@ Also note a conflicting popular claim surfaced in the same search: a CBS / Measu
 
 **Labor findings currently unused:** 1,869 FTE jobs at FRESH stores in FY2023 (63% at unionized ShopRite/Food Bazaar, 13% Western Beef non-union, 24% mixed/unknown). NYC grocery floor workers' median wage **$15.25/hr**, supervisors **$22.73/hr**. Only **46%** of full-time grocery workers get employer health insurance vs. 74% citywide. This is a whole equity dimension sitting unused — and it is the report's actual thesis, since the title is "Good Jobs."
 
-**Feeds:** s (cost-per-store baseline), e_j (eligibility thresholds), and context for θ (the report gives no evidence that FRESH lowered shelf prices).
+**Feeds:**
+
+- **[input]** s — the ~$110–150K per store per year baseline sets the starting range for the subsidy grid search
+- **[input]** e_j and J — the 6,000 sq ft minimum is the cut-off used to pick the candidate stores
+- **[context]** θ — the report gives no evidence that FRESH lowered shelf prices
 
 ## 3. NYCEDC — N.Y.C. Groceries RFP, Round 1 Q&A #1 (Aug 14, 2026)
 
@@ -95,6 +104,8 @@ Sections: Core Basket Items and Pricing, Labor, Proposal Requirements, Site Sele
 - **Q5** — an annual cap agreed with the operator, funded separately from capital / rent / tax relief, requiring budget approval. The cap itself is not published, which is relevant to budget B.
 - **Q21** — La Marqueta area foot traffic ~**4,300/week**.
 - **Q25, Q37** — operator earns a "modest margin" (not quantified).
+
+**Feeds:** **[context]** θ and B. No number from it is plugged into the model.
 
 ## 4. FMI — Food Industry Facts (2025)
 
@@ -110,7 +121,7 @@ Sections: Core Basket Items and Pricing, Labor, Proposal Requirements, Site Sele
 | Items carried | 33,248 |
 | US supermarkets | 45,575 (2024) |
 
-**Feeds:** Revenue_j = sales per sq ft × store square footage.
+**Feeds:** **[input]** Revenue_j = sales per sq ft × store square footage.
 
 **Caveat for the limitations section:** these are national medians for a **42,272 sq ft** store, while the CD2 candidate stores are **7,500–15,000 sq ft** (18–36% of median size). Sales per sq ft does not hold constant across formats; smaller stores generally turn less per sq ft, so this rate likely overstates Revenue_j.
 
@@ -122,7 +133,7 @@ Sections: Core Basket Items and Pricing, Labor, Proposal Requirements, Site Sele
 
 **163 supermarkets** across **71 of NYC's 181 neighborhoods**, priced **March–August 2019**. Mean **$22.81**, range **$16.20–$35.11**.
 
-**Feeds:** p_j. This is the **only store-level price microdata in the entire source set**, and it is downloadable.
+**Feeds:** **[input]** p_j (the 2019 basket prices, adjusted to 2026). This is the **only store-level price microdata in the entire source set**, and it is downloadable.
 
 **Caveats:** 2019 prices (needs CPI food-at-home adjustment to 2025–26), **supermarkets only** — no bodegas, so it cannot speak to the store-type comparison.
 
@@ -136,7 +147,10 @@ Sections: Core Basket Items and Pricing, Labor, Proposal Requirements, Site Sele
 
 Second finding, currently unused: means-tested healthy-food subsidies could in principle eliminate nutritional inequality at roughly **15% of the annual SNAP budget**.
 
-**Feeds:** the discussion and limitations sections. Appendix F also cites this paper (Table IV) for β_p_i (Lead C). The second finding favours demand-side price subsidies over store-siting, which is relevant to the FRESH vs. N.Y.C. Groceries comparison in the proposal.
+**Feeds:**
+
+- **[input]** β_p_i (Lead C) — Appendix F cites Table IV of this paper for the price-sensitivity values. I have not checked that Table IV gives 0.55 / 0.30 / 0.15; Chris should confirm.
+- **[context]** the discussion and limitations sections. The second finding favours demand-side price subsidies over store-siting, which is relevant to the FRESH vs. N.Y.C. Groceries comparison in the proposal.
 
 ## 7. Dannefer, Adjoian, Brathwaite & Walsh 2015 — *AIMS Public Health*
 
@@ -147,7 +161,7 @@ Second finding, currently unused: means-tested healthy-food subsidies could in p
 - Travel: **83%** walked to their usual supermarket, mean **9.1 min**. In-neighborhood shoppers: 94% walked, 7.3 min. Out-of-neighborhood: 43% drove, 26% bus, 23% walked, 18.6 min
 - **76%** bought most fresh produce at supermarkets
 
-**Feeds:** context for β_d_i and d_ij (Lead C and S): most Bronx shoppers walk to their supermarket, in about 7–9 minutes.
+**Feeds:** **[context]** β_d_i and d_ij (Lead C and S): most Bronx shoppers walk to their supermarket, in about 7–9 minutes.
 
 **Caveat:** it measures *whether* people shop somewhere, not *what share of their spending* lands there. It is also 2012 data from two Bronx neighborhoods that are not CD2.
 
@@ -156,6 +170,8 @@ Second finding, currently unused: means-tested healthy-food subsidies could in p
 In this repo at `docs/research_papers/NYC-Groceries-Vision-Plan_07-27-2026.pdf` · [program page](https://edc.nyc/program/nyc-groceries)
 
 Peninsula store **15,000 sq ft**, opening late 2027 (p.10 — this is what contradicts the Phase 1 report's 20,000). City covers **rent and property taxes** and funds the initial buildout (p.9). NYC households spend ~**6%** of income on groceries, low-income up to **25%** (citing BLS CE). **$70M is for buildout of 5 stores** (~$14M/site), a one-time capital cost. It does **not** cover rent or property taxes; the city pays those separately, and that amount is not published.
+
+**Feeds:** **[context]** s and B — shows the scale of city spending on the N.Y.C. Groceries program. No number from it is plugged into the model.
 
 ---
 
