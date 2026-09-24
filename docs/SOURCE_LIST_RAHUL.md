@@ -1,7 +1,7 @@
 # Source List — annotated
 
 **Project:** Policy Levers for Grocery Access in Bronx Community District 2 (94-867)
-**Compiled by:** Rahul Tejannavar · **Date:** 2026-09-21
+**Compiled by:** Rahul Tejannavar · **Date:** 2026-09-21 · **Updated:** 2026-09-24
 **Companion docs:** [SIMPLIFIED_PLAN_AND_SOURCES.md](SIMPLIFIED_PLAN_AND_SOURCES.md) · [ISSUES_AND_GAPS.md](ISSUES_AND_GAPS.md)
 
 Every source behind the simplified model, what it actually contains, and what it feeds. Sources are grouped by how far verification actually got, because that determines what we can safely cite in Appendix F.
@@ -9,6 +9,25 @@ Every source behind the simplified model, what it actually contains, and what it
 - **Tier A** — the document was opened and read; figures below are quoted from the source itself.
 - **Tier B** — cited in the plan, but only ever seen as a search-result snippet. Titles and URLs are confirmed real; the numbers are not yet verified in situ.
 - **Tier C** — identified but not retrieved at all.
+
+---
+
+# Status of my Appendix F rows (v3 spec, Lead = R), as of 2026-09-24
+
+The v3 spec's Appendix F has six rows with R in the Lead column. This table maps each one to the data we now have. (The simplified plan has its own Appendix F table with different parameters; it is covered by the tiers below.)
+
+Status: ✅ have it · 🟡 have a first estimate, can be improved · ⚠️ assumption, no source
+
+| Symbol | What it is | Status | Data we have | Still open |
+|---|---|---|---|---|
+| J | Number of candidate stores | ✅ | **6 stores:** SNAP-eligible CD2 stores with at least 6,000 sq ft (the FRESH minimum). Key Food 1050 Westchester Ave (15,000), Food Fair Fresh Market 1065 E 163rd St (13,000), Fine Fare 950 Westchester Ave (10,000), Food Universe 724 Hunts Point Ave (8,000), C-Town 564 Southern Blvd (8,000), C Town 809 Southern Blvd (7,500). Source: `data/stores/agmarkets_bronx_cd2_snap_eligibility.csv` (Samuel's Ag & Markets–SNAP linkage). CD2 has 97 active SNAP retailers in total. | Team to confirm the 6,000 sq ft cut-off |
+| e_j | Store eligibility (1/0) | ✅ | SNAP-authorized with no end date, located in CD2, and at least 6,000 sq ft of grocery space (FRESH threshold, NYC Comptroller 2024) | Same decision as J |
+| α_j | Store quality score by type | ✅ type / ⚠️ values | Store type for every store from the SNAP `Store Type` column (3 Supermarket, 3 Super Store among the 6) | The +1.5 / 0 / −1.5 values come from the spec and have **no citation**. Label them as assumptions and test them in sensitivity analysis. |
+| p_j | Price of the 10-item basket at each store | 🟡 | Built in `data/prices/p_j_cd2_candidate_stores.csv` (script `code/build_p_j.py`). Aug 2026 prices: Key Food $27.76, Food Fair $28.95, Fine Fare $30.32, Food Universe $29.93, both C-Towns $28.82. Method: 2019 DOHMH survey (Crossa et al.), adjusted by BLS CPI food at home for NY metro (series CUURS12ASAF11), factor 1.31 from Mar–Aug 2019 to Aug 2026. | Only Key Food is a direct match. The others use same-chain Bronx averages; Food Fair uses the all-Bronx average. An Instacart or in-store check of the 6 stores would replace these proxies. |
+| Revenue_j | Annual sales of each store | 🟡 | Square footage for each store (above) × sales per sq ft. The only rate so far is FMI's national **$19.59/sq ft/week (≈$1,019/yr)**. | Compute the first estimate. Replace the national rate with a Bronx one from the 2022 Economic Census (NAICS 445110, Bronx County) if time allows. The FMI rate likely overstates sales for stores this small. |
+| Q_j (shared with S) | Baskets sold per year | 🟡 derived | Q_j = Revenue_j ÷ p_j, so nothing new is needed | Available once Revenue_j is computed. Cross-check against Samuel's market size M. |
+
+**Bottom line:** every R row now has a data source. What remains is computing Revenue_j and Q_j, not finding new data.
 
 ---
 
@@ -105,7 +124,9 @@ Sections: Core Basket Items and Pricing, Labor, Proposal Requirements, Site Sele
 
 **Feeds:** store-level price dispersion. This is the **only store-level price microdata in the entire source set**, and it is downloadable. Worth prioritising: pulling it and filtering to Bronx ZIPs would let us say something concrete about CD2 instead of borrowing a South Bronx average.
 
-**Caveats:** 2019 prices (needs CPI food-at-home adjustment to 2025–26), **supermarkets only** — no bodegas, so it cannot speak to the store-type comparison. The paper does not state whether Bronx or Hunts Point stores are included; that has to be checked in the dataset itself.
+**Caveats:** 2019 prices (needs CPI food-at-home adjustment to 2025–26), **supermarkets only** — no bodegas, so it cannot speak to the store-type comparison.
+
+**Checked in the dataset (2026-09-24):** 30 distinct Bronx supermarkets are included (31 survey rows; one store was recorded twice). **One is in CD2: Key Food, 1050 Westchester Ave, $21.21 in 2019**, with all 10 items found. The Bronx average is $22.12. This is now the basis for p_j (see the status table at the top).
 
 ## 6. Allcott, Diamond, Dubé, Handbury, Rahkovsky & Schnell 2019 — *QJE*
 
@@ -132,9 +153,9 @@ Second finding, currently unused: means-tested healthy-food subsidies could in p
 
 ## 8. N.Y.C. Groceries Vision Plan (Jul 27, 2026)
 
-In this repo at `docs/NYC-Groceries-Vision-Plan_07-27-2026.pdf` · [program page](https://edc.nyc/program/nyc-groceries)
+In this repo at `docs/research_papers/NYC-Groceries-Vision-Plan_07-27-2026.pdf` · [program page](https://edc.nyc/program/nyc-groceries)
 
-Peninsula store **15,000 sq ft**, opening late 2027 (p.10 — this is what contradicts the Phase 1 report's 20,000). City covers **rent and property taxes** and funds the initial buildout (p.9). NYC households spend ~**6%** of income on groceries, low-income up to **25%** (citing BLS CE). **$70M capital for 5 stores**, ~$14M/site — capital, not annual.
+Peninsula store **15,000 sq ft**, opening late 2027 (p.10 — this is what contradicts the Phase 1 report's 20,000). City covers **rent and property taxes** and funds the initial buildout (p.9). NYC households spend ~**6%** of income on groceries, low-income up to **25%** (citing BLS CE). **$70M is for buildout of 5 stores** (~$14M/site), a one-time capital cost. It does **not** cover rent or property taxes; the city pays those separately, and that amount is not published.
 
 ---
 
@@ -159,7 +180,7 @@ These appeared only as search-result snippets. The titles, authors, journals and
 # Tier C — identified but not retrieved
 
 - **[2022 Economic Census](https://www.census.gov/data/tables/2022/econ/economic-census/naics-sector-44-45.html)**, NAICS 445110 / 445131, Bronx County — an API query was attempted and returned nothing; needs an API key or a manual pull from data.census.gov
-- **[BLS CE geographic tables](https://www.bls.gov/cex/tables/geographic/mean.htm#msa)** (F_i by income quintile) and **[CE tables](https://www.bls.gov/cex/tables.htm)** (κ) — both return HTTP 403 to scripts, browser download only
+- **[BLS CE geographic tables](https://www.bls.gov/cex/tables/geographic/mean.htm#msa)** (F_i by income quintile) and **[CE tables](https://www.bls.gov/cex/tables.htm)** (κ) — both return HTTP 403 to scripts, browser download only. **Update 2026-09-24:** Samuel has since added the CE income and income-quintile tables for 2020–2024 to `data/bls/`. Whether they have enough food-category detail for κ has not been checked yet.
 - **Rent, $20–35/sq ft/yr** — still unsourced. Inherited from the v3 spec with no citation attached. Nothing found so far supports it.
 - **Kroger / Albertsons 10-Ks** for gross margin — the ~22% figure has never been confirmed in a filing
 

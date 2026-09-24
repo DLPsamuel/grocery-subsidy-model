@@ -1,0 +1,7 @@
+store,address,snap_store_type,square_footage,method,n_survey_stores_used,p_j_2019,cpi_factor,p_j_current,price_month
+KEY FOOD,1050 WESTCHESTER AVE,Super Store,15000,direct match (same store),1,21.21,1.3087,27.76,August 2026
+FOOD FAIR FRESH MARKET,1065 E 163RD ST,Super Store,13000,all-Bronx average (chain not surveyed),30,22.12,1.3087,28.95,August 2026
+FINE FARE SUPERMARKET,950 WESTCHESTER AVE,Supermarket,10000,same-chain Bronx average,5,23.17,1.3087,30.32,August 2026
+FOOD UNIVERSE,724 HUNTS PT AVE,Supermarket,8000,same-chain Bronx average,2,22.87,1.3087,29.93,August 2026
+C-TOWN SUPERMARKET,564 SOUTHERN BLVD,Super Store,8000,same-chain Bronx average,9,22.02,1.3087,28.82,August 2026
+C TOWN SUPERMARKET,809 SOUTHERN BLVD,Supermarket,7500,same-chain Bronx average,9,22.02,1.3087,28.82,August 2026
