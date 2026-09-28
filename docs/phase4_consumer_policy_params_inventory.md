@@ -16,10 +16,10 @@ This complements `docs/ISSUES_AND_GAPS.md` and `docs/SIMPLIFIED_PLAN_AND_SOURCES
 
 | Symbol | Spec value | Status | Recommended handling |
 |---|---|---|---|
-| β_p_i | Low 0.55 · Mid 0.30 · High 0.15 | **Citation does not support it** | Calibrate jointly with α_j against observed shares (ISSUES #5) |
+| β_p_i | Low 0.55 · Mid 0.30 · High 0.15 | **Citation does not support it** | Derive from β_d and USDOT value of time: Low 0.43 · Mid 0.14 · High 0.06 (see §3); α_j calibrated to shares given β_p |
 | β_d_i | Low 0.40 · Mid 0.25 · High 0.15 | **Level sourced, gradient not** | Hillier level (per mile → convert to d_ij units); gradient pending Taylor & Villas-Boas |
 | θ | 0.65 (0.40–0.85) | **0.65 unsourced** | θ = 1 for N.Y.C. Groceries (contracted); θ ∈ {0, 0.25, 0.5, 1} for FRESH-type breaks |
-| trips/yr | not in spec | **Missing** | Needed to annualise ΔCS (ISSUES #4); candidate source below |
+| trips/yr | not in spec | **Borrowed (Dannefer 2016); unit choice open** | ~40 supermarket visits/yr, or 52·f̄/p_j ≈ 128/158/255 basket-equivalents. Team must pick the unit (ISSUES #4) |
 
 ---
 
@@ -27,7 +27,7 @@ This complements `docs/ISSUES_AND_GAPS.md` and `docs/SIMPLIFIED_PLAN_AND_SOURCES
 
 | File | Citation | Serves | What it actually says (verified) |
 |---|---|---|---|
-| `hillier_etal_2017_foodaps_discrete_choice.pdf` *(to add)* | Hillier, Smith, Whiteman & Chrisinger (2017). *IJERPH* 14(10):1133. Open access: PMC5664634 | β_d | Conditional logit on FoodAPS store trips. Table 2: **DIST −0.3736** (z −8.67), **DIST-URBAN −0.1745** (z −7.49), DIST-SNAP −0.0043 (p 0.836), DIST-RACE 0.0631 (p 0.06), DIST-CAR significant at p ≈ 0.05 (check sign in PDF). **Distance in miles.** No income interaction. |
+| `hillier_etal_2017_foodaps_discrete_choice.pdf` | Hillier, Smith, Whiteman & Chrisinger (2017). *IJERPH* 14(10):1133. Open access: PMC5664634 | β_d | Conditional logit on FoodAPS store trips. Table 2: **DIST −0.3736** (z −8.67), **DIST-URBAN −0.1745** (z −7.49), DIST-SNAP −0.0043 (p 0.836), DIST-RACE 0.0631 (p 0.06), DIST-CAR is internally inconsistent in the published table (coef −0.0043, z +1.96; the text says car owners travel further), so don't use it. SQFT 0.0170 (z 6.64), SQFT-URBAN −0.0072 (z −4.96): used for γ_sq. **Distance in miles.** No income interaction. |
 | `cao_etal_2026_cowles_d2508_willingness_to_travel.pdf` | Cao, Chevalier, Handbury, Parsley & Williams (2026). Cowles Foundation Discussion Paper 2508 | β_d | Instruments for endogenous store location. Treating distance as exogenous **understates distance coefficients by 37% (income Q1) and 43% (Q4)** (p. 7). Setting is general-merchandise chains, not grocery. |
 | `marshall_pires_2017_travel_costs_grocery.pdf` | Marshall & Pires (2018). "Measuring the Impact of Travel Costs on Grocery Shopping." *Economic Journal* 128(614):2538–2557. File is the May 2017 working paper | β_d : β_p ratio | Store convenience (travel cost), not prices or variety, drives grocery store choice. Sanity check: if our calibration lets price dominate distance, we are out of line with this. |
 | `dube_gupta_2008_crossbrand_passthrough.pdf` | Dubé & Gupta (2008). *Marketing Science* 27(3):324–333 | θ | Cross-brand pass-through **elasticities** across 11 categories. No 0.65. |
@@ -59,10 +59,16 @@ This complements `docs/ISSUES_AND_GAPS.md` and `docs/SIMPLIFIED_PLAN_AND_SOURCES
   unobserved characteristics. There is **no store-choice price coefficient** to borrow.
 - With β_p = 0.55 per basket dollar, a $6 price gap outweighs the +1.5 supermarket α_j, which gives
   supermarkets roughly 0% share (ISSUES #5).
-- **Handling:** anchor β_d from Hillier, then either (a) calibrate β_p and α_j so that predicted shares
-  match observed shares (revenue or square footage), or (b) back β_p out of a published willingness
-  to travel (WTP = β_d/β_p) once Taylor & Villas-Boas is available. Mark it as calibrated, not sourced.
-  Basket units must be fixed first (β_p is per basket dollar).
+- **Correction (9/28):** observed store shares can pin down α_j given β_p, but not β_p as well. β_p
+  has to come from outside the share data.
+- **Handling (adopted in `docs/MODEL_PLAN_AND_ASSIGNMENTS.md`):** β_p,i = −β_d / value of a minute for
+  group i. USDOT travel-time guidance: local personal travel at 50% of the hourly wage, walking time at
+  100%. Hourly income = group median (from B19001 brackets: $13.3K / $39.8K / $92.5K) ÷ 2,080. With
+  β_d = −0.0227/min this gives **Low 0.43 · Mid 0.14 · High 0.06** per basket dollar (100% values:
+  0.21 / 0.07 / 0.03). Status DERIVED. Taylor & Villas-Boas would give an estimated willingness to
+  travel to check it against.
+- **Elasticity check:** the logit own-price elasticity β_p·p·(1−S) at p ≈ $29 is about 12 / 4 / 2,
+  above food category elasticities (0.27–0.81, Andreyeva et al. 2010). Run 2 sweeps β_p to test this.
 
 ### β_d_i (distance sensitivity)
 
@@ -82,9 +88,40 @@ This complements `docs/ISSUES_AND_GAPS.md` and `docs/SIMPLIFIED_PLAN_AND_SOURCES
 ### Trips per year (new; needed for ISSUES #4)
 
 - logsum/β_p gives dollars per shopping trip. ΔCS per year needs trips/yr.
-- Candidate source: Dannefer et al. (2015), *AIMS Public Health*: in two Bronx neighbourhoods, 97%
-  shop at neighbourhood supermarkets, 60% weekly, 83% walk (already cited in SIMPLIFIED_PLAN).
-  Not yet read in full.
+- **Source read (2026-09-28):** Dannefer, Adjoian, Brathwaite & Walsh (2016), "Food shopping
+  behaviors of residents in two Bronx neighborhoods," *AIMS Public Health* 3(1):1–12,
+  doi:10.3934/publichealth.2016.1.1 (online Dec 2015; PMC5690258). Street-intercept survey,
+  April 2012, West Farms (10460) and Fordham (10458), n = 505, 40% response rate.
+  - Table 2, supermarkets: ever shops at a neighbourhood supermarket 96.8%; **once per week or more
+    60.1%**; less than once per week 36.7%; never 3.2%. Usual supermarket inside the neighbourhood
+    83.8%, outside 16.2%.
+  - Table 2, bodegas: ever 94.6%; **once per day or more 65.5%**.
+  - Table 3: 83% walk to their usual supermarket, mean 9.1 min (7 min if it's in the neighbourhood,
+    19 min if outside).
+  - No income, SNAP or car-ownership breakdown, so any trips/yr from this source is the same for
+    every income group.
+- **Caveats:** these are neighbouring areas, not CD2 (Hunts Point / Longwood is 10459/10474/10455);
+  the data are from 2012; "once per week or more" is top-coded, so the weekly rate is a floor.
+- **Physical visits (supermarket):** 0.601 × 52 + 0.367 × 24 ≈ **40/yr**, assuming less-than-weekly
+  shoppers go twice a month; **36–49** if that group goes 1–4 times a month. Round scenario: 52.
+  BORROWED + assumption.
+- **Units decide which number is right.** β_p is per *basket* dollar and the spec defines
+  Q_j = Revenue_j / p_j in basket-trips, so a "trip" in the model is one p_j basket, not one visit.
+  In those units, trips/yr = 52 · f̄_i / p_j. With mean p_j = $29.10 (6 CD2 stores), that is
+  **Low ≈ 128 · Mid ≈ 158 · High ≈ 255** basket-equivalents per year (f̄ caveats apply: US
+  averages). The visit counts above are 3–6× smaller. The team has to pick one definition and use
+  it for both Q_j and ΔCS annualisation (ISSUES #4).
+- **Bodegas:** 65.5% shop at a bodega daily. If J includes bodegas (the 137-store option), bodega
+  visits are small top-up trips, not full baskets. That is one more reason to count trips in
+  basket units rather than visits.
+- **Also relevant to β_d:** 83% walk, whereas 84.7% of Hillier's FoodAPS sample had a car and
+  Hillier measures *driving* miles. Hillier's per-mile coefficient probably understates distance
+  sensitivity for CD2's mostly walking shoppers. This supports using the Cao et al. +37–43% as the
+  upper sensitivity bound.
+- **Capture share c_i (simplified plan):** Dannefer isn't a capture-share estimate. It shows strong
+  loyalty to nearby stores: 84% use an in-neighbourhood supermarket, and 16% shop outside, which
+  gives an outside-option share. Keep c_i ∈ {10, 25, 40%} as scenarios, anchored on the
+  low-adoption evidence (Dubowitz 2015; Cummins 2014).
 
 ---
 
