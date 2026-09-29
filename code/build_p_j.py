@@ -9,7 +9,8 @@ Sources:
 Method:
   - Store surveyed directly (same address) -> use its own 2019 price.
   - Otherwise -> average of the same chain's Bronx stores in the survey.
-  - Chain not surveyed -> average of all Bronx stores.
+  - Chain not surveyed -> average of all Bronx stores. This includes the small meat and
+    produce markets on the final list, since the survey only priced supermarkets.
   - Multiply by CPI(latest month) / CPI(average Mar-Aug 2019).
 """
 from __future__ import annotations
@@ -35,9 +36,8 @@ SURVEY_MONTHS = ["M03", "M04", "M05", "M06", "M07", "M08"]  # Mar-Aug 2019
 OUT_CSV = PRICES_DIR / "p_j_cd2_candidate_stores.csv"
 CROSSA_BRONX_CSV = PRICES_DIR / "crossa_2019_bronx_basket_prices.csv"
 
-# Candidate stores: SNAP-eligible CD2 stores with >= 6,000 sq ft (FRESH minimum),
-# from agmarkets_bronx_cd2_snap_eligibility.csv
-MIN_SQFT = 6000
+# Candidate stores: the team's hand-filtered final list (Samuel, 2026-09-28)
+CANDIDATES_CSV = STORES_DIR / "large_grocery_stores_cd2.csv"
 
 
 def chain_of(name: str) -> str:
@@ -60,8 +60,9 @@ def street_key(number: object, street: object) -> str:
 
 
 def load_candidates() -> pd.DataFrame:
-    ag = pd.read_csv(STORES_DIR / "agmarkets_bronx_cd2_snap_eligibility.csv")
-    ag = ag[(ag["snap_eligible"] == 1) & (ag["square_footage"] >= MIN_SQFT)].copy()
+    ag = pd.read_csv(CANDIDATES_CSV, encoding="utf-8-sig")
+    ag = ag[ag["keep"] == 1].copy()
+    ag["street_name"] = ag["street_name"].str.replace("#", "").str.strip()
     ag["chain"] = ag["dba_name"].map(chain_of)
     ag["addr_key"] = [street_key(n, s) for n, s in zip(ag["street_number"], ag["street_name"])]
     return ag
