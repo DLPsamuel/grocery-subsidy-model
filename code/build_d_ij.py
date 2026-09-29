@@ -11,6 +11,11 @@ Method (Datasets sheet, row 18 note):
 
 Store locations come from Samuel's final list. Food Universe uses the old 724 Hunts Point
 Ave location for now (team still deciding on 1334 Louis Nine Blvd).
+
+The planned N.Y.C. Groceries store is added as a 10th store (store_status = "planned"):
+1215 Spofford Ave, Unit 8 (Peninsula 1A, per the RFP). PLUTO has no 1215 lot; the Peninsula
+campus is listed as 1201-1225 Spofford Ave, so the city-owned 1225 Spofford Ave lot
+(BBL 2027387502) is used for the coordinates.
 """
 from __future__ import annotations
 
@@ -32,6 +37,14 @@ TRACT_CSV = OUT_DIR / "d_tract_store_miles.csv"
 MILES_PER_DEG_LAT = 69.17
 GROUPS = {"low": "n_low", "mid": "n_mid", "high": "n_high"}
 
+PLANNED_STORES = pd.DataFrame([{
+    "dba_name": "N.Y.C. GROCERIES (PLANNED)",
+    "address": "1215 SPOFFORD AVE",
+    "latitude": 40.8145920,
+    "longitude": -73.8899488,
+    "store_status": "planned",
+}])
+
 
 def manhattan_miles(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """North-south plus east-west distance in miles (flat-earth, fine at this scale)."""
@@ -51,6 +64,8 @@ def main() -> None:
     stores = stores[stores["keep"] == 1].copy()
     stores["address"] = (stores["street_number"].astype(str) + " "
                          + stores["street_name"].str.replace("#", "").str.strip())
+    stores["store_status"] = "existing"
+    stores = pd.concat([stores, PLANNED_STORES], ignore_index=True)
 
     # Distance from every tract to every store
     rows = []
@@ -60,6 +75,7 @@ def main() -> None:
                 "tract_id": t["tract_id"],
                 "store": s["dba_name"],
                 "address": s["address"],
+                "store_status": s["store_status"],
                 "miles": manhattan_miles(t["lat"], t["lon"], s["latitude"], s["longitude"]),
                 **{col: t[col] for col in GROUPS.values()},
             })
@@ -69,10 +85,11 @@ def main() -> None:
     # Household-weighted average for each income group
     out = []
     for group, col in GROUPS.items():
-        for (store, address), g in pairs.groupby(["store", "address"], sort=False):
+        for (store, address, status), g in pairs.groupby(
+                ["store", "address", "store_status"], sort=False):
             miles = (g["miles"] * g[col]).sum() / g[col].sum()
             out.append({"income_group": group, "store": store, "address": address,
-                        "d_ij_miles": round(miles, 3)})
+                        "store_status": status, "d_ij_miles": round(miles, 3)})
     result = pd.DataFrame(out)
     result.to_csv(OUT_CSV, index=False)
 
