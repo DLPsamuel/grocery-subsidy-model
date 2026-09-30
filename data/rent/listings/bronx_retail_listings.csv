@@ -1,0 +1,7 @@
+source,url,address,zip,sqft,asking_rent_psf_yr,rent_basis,lease_type,floor,date_seen,notes
+crexi,https://www.crexi.com/lease/properties/982195,991 Southern Blvd,10459,6417,35,psf_yr,,,2026-09-30,"Crexi card: 'Gorgeous Bronx Building with Multiple Floors Available', single tenant; sq ft may include upper floors"
+crexi,https://www.crexi.com/lease/properties/931022,3044 Third Ave,10451,1100,65,psf_yr,,,2026-09-30,The Hub (149th St / Third Ave); 1 space available
+crexi,https://www.crexi.com/search?searchType=Lease&propertyAttributes.type_tree_Retail=&address_value=Bronx%252C%2520NY%252C%2520USA,987 Prospect Ave,10459,1400,47.14,psf_yr,,,2026-09-30,"Crexi card: 'BRONX NEIGHBORHOOD LOCATION - Prospect Avenue, 1400 sf'; listing id not captured"
+crexi,https://www.crexi.com/lease/properties/1244397,406 161st Street,10451,,22,psf_yr,,,2026-09-30,sq ft not shown on card; open listing to add size
+crexi,https://www.crexi.com/lease/properties/1247052,3025 Third Ave,10455,,3.25,psf_mo,,,2026-09-30,$3.25/SF/MO on card (= $39/SF/YR); sq ft not shown on card; open listing to add size
+crexi,https://www.crexi.com/search?searchType=Lease&propertyAttributes.type_tree_Retail=&address_value=Bronx%252C%2520NY%252C%2520USA,2598 Third Ave,10454,,50,psf_yr,,,2026-09-30,"exclude: former medical office (built-out medical space), not a retail storefront; outside the six CD2-area ZIPs"

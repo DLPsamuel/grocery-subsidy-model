@@ -1,0 +1,11 @@
+ces_bracket,ces_period,consumer_units_thousands,income_before_taxes,food_at_home_annual_usd,cereals_bakery_annual_usd,meats_poultry_fish_eggs_annual_usd,dairy_annual_usd,fruits_vegetables_annual_usd,other_food_at_home_annual_usd,source_file
+total_northeast,2023-2024,23430.0,116310.0,7029.0,964.0,1511.0,709.0,1150.0,2694.0,cu-region-by-income-northeast-2023-2024.xlsx
+lt_15k,2023-2024,1792.0,7764.0,4193.0,614.0,949.0,407.0,764.0,1458.0,cu-region-by-income-northeast-2023-2024.xlsx
+15_to_29k,2023-2024,2778.0,22432.0,4315.0,569.0,1002.0,443.0,762.0,1538.0,cu-region-by-income-northeast-2023-2024.xlsx
+30_to_39k,2023-2024,1694.0,35147.0,4574.0,646.0,1011.0,487.0,786.0,1642.0,cu-region-by-income-northeast-2023-2024.xlsx
+40_to_49k,2023-2024,1485.0,44524.0,5323.0,720.0,1240.0,598.0,881.0,1884.0,cu-region-by-income-northeast-2023-2024.xlsx
+50_to_69k,2023-2024,2541.0,59516.0,6078.0,823.0,1391.0,627.0,973.0,2263.0,cu-region-by-income-northeast-2023-2024.xlsx
+70_to_99k,2023-2024,2946.0,84106.0,7305.0,995.0,1568.0,724.0,1153.0,2864.0,cu-region-by-income-northeast-2023-2024.xlsx
+100_to_149k,2023-2024,3884.0,121503.0,8149.0,1054.0,1827.0,831.0,1281.0,3155.0,cu-region-by-income-northeast-2023-2024.xlsx
+150_to_199k,2023-2024,2697.0,171241.0,9390.0,1404.0,1865.0,929.0,1477.0,3716.0,cu-region-by-income-northeast-2023-2024.xlsx
+200k_plus,2023-2024,3613.0,329533.0,10338.0,1417.0,2042.0,1014.0,1744.0,4121.0,cu-region-by-income-northeast-2023-2024.xlsx

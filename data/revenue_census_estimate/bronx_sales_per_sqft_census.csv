@@ -1,0 +1,7 @@
+variant,scope,agmarkets_vintage,sqft_treatment,census_sales_usd,numerator_usd,census_employer_establishments,census_nonemployer_establishments,agmarkets_stores,agmarkets_stores_known_sqft,share_stores_imputed,share_sqft_imputed,sqft_total,sales_per_sqft_2022,sales_per_sqft_2024,sales_per_sqft_week_2024,sales_per_employee_2024
+central,"NAICS 4451 grocery + convenience, employer + nonemployer",2023,impute,3749379000,3749379000,1410,1788,2043,1509,0.261,0.149,4747880,789.7,828.62,15.93,320791
+employer_only,"NAICS 4451 grocery + convenience, employer only",2023,impute,3639031000,3639031000,1410,0,2043,1509,0.261,0.149,4747880,766.45,804.23,15.47,320791
+grocery_445110_only,"NAICS 445110 grocery (no convenience), employer only",2023,impute,3425165000,3425165000,1125,0,750,592,0.211,0.101,3292445,1040.31,1091.58,20.99,323548
+with_specialty_4452,"NAICS 4451 + 4452 grocery + specialty food, employer + nonemployer",2023,impute,4082371000,4082371000,1629,2494,2275,1693,0.256,0.151,5077246,804.05,843.68,16.22,322668
+current_agmarkets_list,"NAICS 4451 grocery + convenience, employer + nonemployer",current,impute,3749379000,3749379000,1410,1788,1798,1315,0.269,0.156,4584232,817.89,858.2,16.5,320791
+known_sqft_only,"NAICS 4451 grocery + convenience, employer + nonemployer",2023,known_only,3749379000,2769365106,1410,1788,2043,1509,0.261,0.0,4039480,685.57,719.36,13.83,320791

@@ -13,11 +13,16 @@
     2023,
     2024
   ],
+  "regional_ces_period": "2023-2024",
   "missing_or_failed": [],
   "outputs": [
     "ces_food_at_home_by_income_bracket.csv",
     "ces_food_at_home_by_income_quintile.csv",
     "ces_fbar_by_income_group_from_xlsx.csv",
-    "cd2_market_size_M_from_xlsx.csv"
+    "cd2_market_size_M_from_xlsx.csv",
+    "ces_food_at_home_northeast_by_income_2023_2024.csv",
+    "ces_food_at_home_northeast_msa_2023_2024.csv",
+    "ces_fbar_by_income_group_northeast_cd2weighted.csv",
+    "cd2_market_size_M_northeast_cd2weighted.csv"
   ]
 }

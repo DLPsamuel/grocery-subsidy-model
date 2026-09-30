@@ -1,0 +1,7 @@
+area,size_group,n,p25,median,p75,min,max
+CD2-area ZIPs,all sizes,3,41.07,47.14,56.07,35.0,65.0
+CD2-area ZIPs,"large (5,000+ sq ft)",1,35.0,35.0,35.0,35.0,35.0
+CD2-area ZIPs,"small (under 5,000 sq ft)",2,51.6,56.07,60.54,47.14,65.0
+all Bronx,all sizes,3,41.07,47.14,56.07,35.0,65.0
+all Bronx,"large (5,000+ sq ft)",1,35.0,35.0,35.0,35.0,35.0
+all Bronx,"small (under 5,000 sq ft)",2,51.6,56.07,60.54,47.14,65.0

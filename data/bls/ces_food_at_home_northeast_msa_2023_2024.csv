@@ -1,0 +1,5 @@
+area,ces_period,consumer_units_thousands,income_before_taxes,food_at_home_annual_usd,cereals_bakery_annual_usd,meats_poultry_fish_eggs_annual_usd,dairy_annual_usd,fruits_vegetables_annual_usd,other_food_at_home_annual_usd,food_at_home_ratio_to_northeast,source_file
+northeast,2023-2024,23430.0,116310.0,7029.0,964.0,1511.0,709.0,1150.0,2694.0,1.0,cu-msa-northeast-2-year-average-2023-2024.xlsx
+new_york,2023-2024,7020.0,122952.0,7033.0,927.0,1624.0,676.0,1275.0,2531.0,1.000569,cu-msa-northeast-2-year-average-2023-2024.xlsx
+philadelphia,2023-2024,1901.0,141142.0,7044.0,929.0,1331.0,720.0,1258.0,2806.0,1.002134,cu-msa-northeast-2-year-average-2023-2024.xlsx
+boston,2023-2024,1730.0,148023.0,7993.0,1173.0,1623.0,724.0,1163.0,3310.0,1.137146,cu-msa-northeast-2-year-average-2023-2024.xlsx

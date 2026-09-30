@@ -1,0 +1,124 @@
+{
+  "census_source": "api",
+  "census_year": 2022,
+  "census_queries": [
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=4451&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=445110&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=445131&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=4452&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/nonemp?NAICS2022=4451&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/nonemp?NAICS2022=4452&for=county:005&in=state:36"
+  ],
+  "census_note": "445131 convenience retailers are published as 0 for the Bronx (suppressed); the 4451 total includes them. Nonemployer Statistics have no 445110 row at county level.",
+  "cpi_series": "CUURS12ASAF11",
+  "cpi_annual_avg": {
+    "2022": 303.153,
+    "2024": 318.094
+  },
+  "cpi_factor": 1.0493,
+  "agmarkets_files": {
+    "2023": "data\\stores\\agmarkets_retail_food_stores_archive_2023.csv",
+    "current": "data\\stores\\agmarkets_bronx_county.csv"
+  },
+  "filter_rules": {
+    "keep": "operation_type Store with establishment code A (store)",
+    "exclude_codes": [
+      "D",
+      "E",
+      "H",
+      "I",
+      "L"
+    ],
+    "exclude_name_patterns": {
+      "pharmacy": "WALGREENS?|RITE ?AID|CVS|DUANE ?READE|PHARMACY|FARMACIA|CHEMISTS?|DRUGS?",
+      "general merchandise or dollar store": "DOLLAR|99 ?CENTS?|99 ?C|TARGET|WAL ?MART|BJ ?S|COSTCO|FIVE BELOW|BIG LOTS|BURLINGTON|MARSHALLS|T ?J ?MAXX|HOME DEPOT|BOB ?S DISCOUNT|DISCOUNT FURNITUR\\w*|BED BATH|ROSS DRESS|OLD NAVY|KMART|SEARS|MACY ?S|STAPLES|PARTY CITY|SUPER ?DISCOUNT|DISCOUNT|BARGAINS?|VALUE STORES?|PRICE BUSTERS|VARIETY",
+      "gas station": "BP|MOBIL|MOBIL MART|SHELL|SUNOCO|CITGO|EXXON|GULF|SPEEDWAY|HESS|GETTY|LUKOIL|VALERO|GAS|FUEL|SERVICE STATION|PETROLEUM|AM ?PM",
+      "online, wholesale or warehouse": "GO ?PUFF|FRESH ?DIRECT|PRIME NOW|AMAZON|INSTACART|GETIR|GORILLAS|JOKR|FRIDGE NO MORE|WAREHOUSE|WHOLESALE|DISTRIBUT\\w*|JETRO|RESTAURANT DEPOT|IMPORT\\w*|EXPORT\\w*|DEPOT",
+      "food service or non-food retail": "GNC|GENERAL NUTRITION|VITAMIN SHOPPE|SMOKE|VAPE|TOBACCO|NEWS ?STAND|HUDSON NEWS|PETCO|PETSMART|PET SUPPL\\w*|EDIBLE ARRANGEMENTS|DUNKIN|STARBUCKS|MCDONALD ?S|RESTAURANT|PIZZA|LIQUORS?|WINES?|SPIRITS|BREWERY|BREWING|CATERERS?|CATERING"
+    },
+    "grocery_override": {
+      "reasons": [
+        "food service or non-food retail",
+        "general merchandise or dollar store"
+      ],
+      "pattern": "DELI|GROCERY|GRO|GRCY|GROCERIA|FOODS?|SUPER ?MARKET|SUPERMKT"
+    },
+    "category_patterns": {
+      "supermarket": "SUPER ?MARKETS?|SUPERMKTS?|SUPERMARKE?|SUPERMERCADO|KEY ?FOODS?|C ?TOWN|FINE FARE|FOOD UNIVERSE|BRAVO|ASSOCIATED|PIONEER|FOOD ?TOWN|MET ?FOOD|MET ?FRESH|FOOD BAZAAR|STOP ?& ?SHOP|SHOP ?RITE|WESTERN BEEF|ALDI|LIDL|FOOD ?D[YI]NASTY|SHOP FAIR|COMPARE FOODS?|TRADER JOE ?S|WHOLE FOODS|FOOD ?FAIR|MORTON WILLIAMS|FAIRWAY|GRISTEDES|SUPER ?FOODS?|FRESH MARKET|SAVE A LOT|PATHMARK|NETCOST|GOLDEN MANGO|MARKET ?PLA\\w*|FOOD PLAZA|JUMBO",
+      "convenience or deli": "DELI|GROCERY|GROCERIA|MINI ?MART|MINI ?MARKET|CONVENIENCE|BODEGA|7 ?ELEVEN|ELEVEN|FOOD MART|CANDY",
+      "specialty": "MEATS?|CARNICERIA|BUTCHER|POULTRY|FISH|SEAFOODS?|MARISCOS|BAKERY|BAKERS|PANADERIA|PASTRY|PASTELERIA|CAKES?|CHEESECAKE|FRUITS?|PRODUCE|VEGETABLES?|NUTS|SPICES?|CHEESE|CHOCOLATES?"
+    },
+    "sqft_missing_below": 100,
+    "sqft_excluded_above": 100000,
+    "imputation": "median recorded sq ft of kept stores in the same category and vintage"
+  },
+  "excluded_counts": {
+    "2023": {
+      "kept": 2275,
+      "general merchandise or dollar store": 168,
+      "pharmacy": 75,
+      "gas station": 36,
+      "warehouse, wholesale or plant license": 35,
+      "food service or non-food retail": 23,
+      "online, wholesale or warehouse": 5
+    },
+    "current": {
+      "kept": 2001,
+      "general merchandise or dollar store": 112,
+      "pharmacy": 52,
+      "gas station": 29,
+      "warehouse, wholesale or plant license": 25,
+      "food service or non-food retail": 8,
+      "online, wholesale or warehouse": 6,
+      "over 100,000 sq ft": 2
+    }
+  },
+  "kept_by_category": {
+    "2023": {
+      "convenience or deli": 1293,
+      "other grocery": 555,
+      "specialty": 232,
+      "supermarket": 195
+    },
+    "current": {
+      "convenience or deli": 1172,
+      "other grocery": 424,
+      "specialty": 203,
+      "supermarket": 202
+    }
+  },
+  "central_variant": {
+    "variant": "central",
+    "scope": "NAICS 4451 grocery + convenience, employer + nonemployer",
+    "agmarkets_vintage": "2023",
+    "sqft_treatment": "impute",
+    "census_sales_usd": 3749379000,
+    "numerator_usd": 3749379000,
+    "census_employer_establishments": 1410,
+    "census_nonemployer_establishments": 1788,
+    "agmarkets_stores": 2043,
+    "agmarkets_stores_known_sqft": 1509,
+    "share_stores_imputed": 0.261,
+    "share_sqft_imputed": 0.149,
+    "sqft_total": 4747880,
+    "sales_per_sqft_2022": 789.7,
+    "sales_per_sqft_2024": 828.62,
+    "sales_per_sqft_week_2024": 15.93,
+    "sales_per_employee_2024": 320791
+  },
+  "market_size_M_2024_nyc_scaled": 112977140.44,
+  "nine_store_totals": {
+    "census_central": 56844000,
+    "census_low": 49348000,
+    "census_high": 74885000,
+    "referenceusa_current_Revenue_j": 27240000,
+    "fmi_national": 69881000
+  },
+  "nine_store_share_of_M": {
+    "census_central": 0.503,
+    "census_low": 0.437,
+    "census_high": 0.663,
+    "referenceusa_current_Revenue_j": 0.241,
+    "fmi_national": 0.619
+  }
+}

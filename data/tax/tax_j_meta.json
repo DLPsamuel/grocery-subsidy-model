@@ -1,0 +1,27 @@
+{
+  "fiscal_year": 2025,
+  "fiscal_year_period": [
+    "2024-07-01",
+    "2025-06-30"
+  ],
+  "sources": {
+    "tax_bills": "DOF Property Charges Balance, NYC Open Data scjx-j6np (code = CHG)",
+    "floor_area": "MapPLUTO, NYC Open Data 64uk-42ks (bldgarea)",
+    "store_sqft": "NYS Ag & Markets retail food store licenses (data/stores/large_grocery_stores_cd2.csv)",
+    "tax_lots": "Phase 3 geocoding (data/phase3/tax_rent_agmarkets_cd2.csv); Fine Fare condo unit from ReferenceUSA parcel number",
+    "check": "DOF Notice of Property Value 2024-25, estimated property tax (data/rent/nopv_income_fy2025.csv)"
+  },
+  "dedup_rule": "Keep CHG rows whose billing period lies inside the fiscal year; keep the latest extractdt; one liability per billing period (max sum_liab); sum periods. No annualizing.",
+  "store_share_rule": "min(store_sqft / PLUTO bldgarea, 1); condo unit = 1",
+  "condo_unit_lots": {
+    "704892": {
+      "unit_bbl": "2027031001",
+      "billing_bbl": "2027037501"
+    }
+  },
+  "outputs": [
+    "data/tax/candidate_store_lots.csv",
+    "data/tax/pluto_candidate_lots.csv",
+    "data/tax/tax_j_cd2_candidate_stores.csv"
+  ]
+}

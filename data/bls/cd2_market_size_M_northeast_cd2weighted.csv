@@ -1,0 +1,6 @@
+acs_year,ces_period,N_HH,M_usd_northeast,M_usd_nyc_scaled,f_bar_weekly_cd2,f_bar_weekly_cd2_nyc,nyc_scale,M_usd_prev_national_simple_avg,pct_change_vs_prev,source_file
+2020,2023-2024,18582.0,99360606.0,99417142.18,102.83,102.89,1.000569,80785279.6,23.06,cu-region-by-income-northeast-2023-2024.xlsx; cu-msa-northeast-2-year-average-2023-2024.xlsx; cd2_B19001_2020.csv
+2021,2023-2024,19149.0,104836619.0,104896271.04,105.28,105.34,1.000569,91592425.2,14.53,cu-region-by-income-northeast-2023-2024.xlsx; cu-msa-northeast-2-year-average-2023-2024.xlsx; cd2_B19001_2021.csv
+2022,2023-2024,19620.0,111342449.0,111405802.85,109.13,109.2,1.000569,101262914.8,10.02,cu-region-by-income-northeast-2023-2024.xlsx; cu-msa-northeast-2-year-average-2023-2024.xlsx; cd2_B19001_2022.csv
+2023,2023-2024,19721.0,112574134.0,112638188.68,109.78,109.84,1.000569,106688895.1,5.58,cu-region-by-income-northeast-2023-2024.xlsx; cu-msa-northeast-2-year-average-2023-2024.xlsx; cd2_B19001_2023.csv
+2024,2023-2024,19922.0,112912893.0,112977140.44,109.0,109.06,1.000569,106023191.2,6.56,cu-region-by-income-northeast-2023-2024.xlsx; cu-msa-northeast-2-year-average-2023-2024.xlsx; cd2_B19001_2024.csv
