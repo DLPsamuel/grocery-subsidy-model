@@ -1,0 +1,24 @@
+metric,value,unit_or_detail,source
+Census tracts (2020 geography),16.0000,tracts,bronx_cd2_tracts.geojson
+Tracts with households (active),13.0000,tracts,cd2_B19001_2024.csv
+Tracts with 0 households (omitted),3.0000,"19.04, 93.02, 117.02",cd2_B19001_2024.csv
+"Consumer groups i = (t, g)",39.0000,groups,13 tracts x 3 income groups
+Households N_HH,19922.0000,households,ACS 2024 B19001
+"Land area, all 16 tracts",2.2010,sq mi,tract shape_area
+"Land area, 13 active tracts",1.0349,sq mi,tract shape_area
+"Household density, active tracts",19250.7976,households per sq mi,
+Median tract household density,25664.7523,households per sq mi,
+Households in Hunts Point,5245.0000,4 active tracts,NTA 2020
+Households in Longwood,14677.0000,9 active tracts,NTA 2020
+Existing large grocery stores,9.0000,stores,large_grocery_stores_cd2.csv
+"Stores per 10,000 households",4.5176,stores,
+"Grocery floor area, 9 stores (Ag & Markets)",68600.0000,sq ft,
+Grocery floor area per household,3.4434,sq ft per household,
+Annual grocery market M,112977140.4400,USD per year,cd2_market_size_M_northeast_cd2weighted.csv
+M per household,5670.9738,USD per year,
+Average weekly food-at-home spending (CD2),109.0600,USD per week,
+"9-store revenue, v2 pooled rate",54961000.0000,USD per year,revenue_j_census_v2_cd2_candidate_stores.csv
+9-store revenue as share of M,0.4865,share,
+Median basket price p_j (9 stores),28.9500,USD per 10-item basket,p_j_cd2_candidate_stores.csv
+HH-weighted distance to nearest existing store,0.2104,miles (Manhattan),d_tract_store_miles.csv
+HH-weighted distance to nearest store incl. N.Y.C. Groceries,0.1973,miles (Manhattan),d_tract_store_miles.csv

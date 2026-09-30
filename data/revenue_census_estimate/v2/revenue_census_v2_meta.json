@@ -1,0 +1,256 @@
+{
+  "census_source": "api",
+  "census_queries": [
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=4451&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=445110&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=44513&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/ecnbasic?NAICS2022=4452&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/nonemp?NAICS2022=4451&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/nonemp?NAICS2022=44513&for=county:005&in=state:36",
+    "https://api.census.gov/data/2022/nonemp?NAICS2022=4452&for=county:005&in=state:36"
+  ],
+  "nonemployer_split": "NES 445110 = NES 4451 - NES 44513",
+  "class_numerators": {
+    "445110": {
+      "employer_sales_usd": 3425165000.0,
+      "nonemployer_sales_usd": 89419000.0,
+      "employer_establishments": 1125.0,
+      "nonemployer_establishments": 1579.0,
+      "sales_usd": 3514584000.0,
+      "establishments": 2704.0
+    },
+    "44513": {
+      "employer_sales_usd": 213866000.0,
+      "nonemployer_sales_usd": 20929000.0,
+      "employer_establishments": 285.0,
+      "nonemployer_establishments": 209.0,
+      "sales_usd": 234795000.0,
+      "establishments": 494.0
+    },
+    "4452": {
+      "employer_sales_usd": 295586000.0,
+      "nonemployer_sales_usd": 37406000.0,
+      "employer_establishments": 219.0,
+      "nonemployer_establishments": 706.0,
+      "sales_usd": 332992000.0,
+      "establishments": 925.0
+    }
+  },
+  "cpi_series": "CUURS12ASAF11",
+  "cpi_annual_avg": {
+    "2022": 303.153,
+    "2024": 318.094
+  },
+  "cpi_factor": 1.0493,
+  "snap_file": "data\\stores\\snap_bronx_county.csv",
+  "snap_active_window_for_2023_archive": [
+    "2022-01-01",
+    "2022-12-31"
+  ],
+  "snap_type_class": {
+    "Supermarket": "445110",
+    "Super Store": "445110",
+    "Large Grocery Store": "445110",
+    "Medium Grocery Store": "445110",
+    "Small Grocery Store": "445110",
+    "Convenience Store": "44513",
+    "Meat/Poultry Specialty": "4452",
+    "Seafood Specialty": "4452",
+    "Fruits/Veg Specialty": "4452",
+    "Bakery Specialty": "4452",
+    "Combination Grocery/Other": "44513"
+  },
+  "snap_types_excluded": [
+    "Farmers' Market",
+    "Food Buying Co-op",
+    "Military Commissary"
+  ],
+  "name_category_class": {
+    "supermarket": "445110",
+    "other grocery": "445110",
+    "convenience or deli": "44513",
+    "specialty": "4452"
+  },
+  "spatial_match": {
+    "max_m": 50.0,
+    "requires_shared_name_word": true,
+    "generic_words_ignored": [
+      "&",
+      "1",
+      "2",
+      "3",
+      "AND",
+      "AVE",
+      "BAKERY",
+      "BEST",
+      "BRONX",
+      "CANDY",
+      "CO",
+      "CONVENIENCE",
+      "CORP",
+      "CORPORATION",
+      "DELI",
+      "E",
+      "FAMILY",
+      "FOOD",
+      "FOODS",
+      "FRESH",
+      "FRUIT",
+      "FRUITS",
+      "GOURMET",
+      "GROCERIA",
+      "GROCERY",
+      "I",
+      "II",
+      "III",
+      "INC",
+      "LLC",
+      "LTD",
+      "MARKET",
+      "MARKETS",
+      "MART",
+      "MEAT",
+      "MEATS",
+      "MINI",
+      "NEW",
+      "NY",
+      "NYC",
+      "OF",
+      "PRODUCE",
+      "SHOP",
+      "ST",
+      "STORE",
+      "STORES",
+      "SUPER",
+      "SUPERMARKET",
+      "THE",
+      "W"
+    ]
+  },
+  "estab_code_gate": {
+    "keep": "A",
+    "exclude": [
+      "D",
+      "E",
+      "H",
+      "I",
+      "L"
+    ],
+    "code_sheet": "data/stores/NYSDAM_RetailFoodStoresEstablishmentTypeCodes.pdf"
+  },
+  "sqft_missing_below": 100,
+  "sqft_excluded_above": 100000,
+  "snap_match_methods": {
+    "2023": {
+      "address": 1869,
+      "none": 651,
+      "spatial, name match": 97
+    },
+    "current": {
+      "address": 1553,
+      "none": 600,
+      "spatial, name match": 82
+    }
+  },
+  "class_source_counts_kept": {
+    "2023": {
+      "445110 / SNAP type": 828,
+      "445110 / name fallback": 172,
+      "44513 / SNAP type": 867,
+      "44513 / name fallback": 305,
+      "4452 / SNAP type": 69,
+      "4452 / name fallback": 34
+    },
+    "current": {
+      "445110 / SNAP type": 716,
+      "445110 / name fallback": 128,
+      "44513 / SNAP type": 717,
+      "44513 / name fallback": 331,
+      "4452 / SNAP type": 64,
+      "4452 / name fallback": 44
+    }
+  },
+  "exclude_reasons": {
+    "2023": {
+      "kept": 2275,
+      "general merchandise or dollar store": 168,
+      "pharmacy": 75,
+      "gas station": 36,
+      "warehouse, wholesale or plant license": 35,
+      "food service or non-food retail": 23,
+      "online, wholesale or warehouse": 5
+    },
+    "current": {
+      "kept": 2000,
+      "general merchandise or dollar store": 112,
+      "pharmacy": 52,
+      "gas station": 29,
+      "warehouse, wholesale or plant license": 25,
+      "food service or non-food retail": 8,
+      "online, wholesale or warehouse": 6,
+      "over 100,000 sq ft": 2,
+      "SNAP type Military Commissary": 1
+    }
+  },
+  "sqft_by_estab_code_2023_kept": {
+    "A": {
+      "stores": 277,
+      "median_recorded_sqft": 800.0,
+      "share_445110": 0.329
+    },
+    "ABC": {
+      "stores": 44,
+      "median_recorded_sqft": 7000.0,
+      "share_445110": 0.727
+    },
+    "ABCK": {
+      "stores": 6,
+      "median_recorded_sqft": 7500.0,
+      "share_445110": 0.667
+    },
+    "AC": {
+      "stores": 1936,
+      "median_recorded_sqft": 1200.0,
+      "share_445110": 0.447
+    },
+    "ACK": {
+      "stores": 8,
+      "median_recorded_sqft": 1100.0,
+      "share_445110": 0.875
+    }
+  },
+  "split_check": {
+    "agmarkets_445110_share_of_4451_stores": 0.46,
+    "census_445110_share_of_4451_establishments": 0.846,
+    "gap": 0.386,
+    "tolerance": 0.15,
+    "recommended_variant": "pooled_4451",
+    "range_variants": [
+      "pooled_4451",
+      "all_food_445",
+      "pooled_current_list",
+      "pooled_known_sqft_only"
+    ]
+  },
+  "market_size_M_2024_nyc_scaled": 112977140.44,
+  "nine_store_totals": {
+    "revenue_census_v2": 54961000,
+    "revenue_class_rate": 71637000,
+    "revenue_pooled_4451": 54961000,
+    "revenue_census_v2_low": 47881000,
+    "revenue_census_v2_high": 57973000,
+    "revenue_census_v1": 56844000,
+    "revenue_rusa_2024": 23779000,
+    "revenue_fmi": 69881000
+  },
+  "nine_store_share_of_M": {
+    "revenue_census_v2": 0.486,
+    "revenue_class_rate": 0.634,
+    "revenue_pooled_4451": 0.486,
+    "revenue_census_v2_low": 0.424,
+    "revenue_census_v2_high": 0.513,
+    "revenue_census_v1": 0.503,
+    "revenue_rusa_2024": 0.21,
+    "revenue_fmi": 0.619
+  }
+}

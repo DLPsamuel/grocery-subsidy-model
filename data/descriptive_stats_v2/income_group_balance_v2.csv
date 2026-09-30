@@ -1,0 +1,14 @@
+metric,value,note
+group_sizes,"Low 7,683 / Mid 4,795 / High 7,444","Households, 13 active tracts, ACS 2024"
+largest_to_smallest_group_ratio,1.602,Low / Mid
+gof_equal_thirds_chi2,773.8,Chi-square goodness of fit: are the 3 groups equal in size? (df = 2)
+gof_equal_thirds_p,9.55e-169,p < 0.05 means group sizes are not equal
+independence_chi2,1199.7,"Chi-square test of independence, tract x group (df = 24)"
+independence_p,2.88e-238,p < 0.05 means group mix differs across tracts (large N makes this easy to reject)
+cramers_v,0.174,"Effect size for tract x group association: <0.1 negligible, 0.1-0.3 small, 0.3-0.5 moderate"
+dissimilarity_low_mid,0.163,Index of dissimilarity: share of one group that would have to move tracts to match the other's distribution
+dissimilarity_low_high,0.202,
+dissimilarity_mid_high,0.174,
+smallest_cell,"129 (High, tract 117.01)","Smallest n_{t,g} among the 39 active consumer groups"
+largest_cell,"1,277","Largest n_{t,g}"
+cells_under_200,6,Number of the 39 groups with fewer than 200 households

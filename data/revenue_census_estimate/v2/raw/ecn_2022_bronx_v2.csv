@@ -1,0 +1,8 @@
+dataset,source,naics2022,label,establishments,sales_usd,employees,payroll_usd,year,geography,api_url
+ecnbasic,employer (Economic Census),4451,Grocery and Convenience Retailers,1410,3639031000,11903.0,352493000.0,2022,"Bronx County, NY (36005)",https://api.census.gov/data/2022/ecnbasic
+ecnbasic,employer (Economic Census),445110,Supermarkets and Other Grocery Retailers (except Convenience Retailers),1125,3425165000,11108.0,330965000.0,2022,"Bronx County, NY (36005)",https://api.census.gov/data/2022/ecnbasic
+ecnbasic,employer (Economic Census),44513,Convenience Retailers and Vending Machine Operators,285,213866000,795.0,21528000.0,2022,"Bronx County, NY (36005)",https://api.census.gov/data/2022/ecnbasic
+ecnbasic,employer (Economic Census),4452,Specialty Food Retailers,219,295586000,892.0,26797000.0,2022,"Bronx County, NY (36005)",https://api.census.gov/data/2022/ecnbasic
+nonemp,nonemployer (NES),4451,Grocery and Convenience Retailers,1788,110348000,,,2022,"Bronx County, NY (36005)",https://api.census.gov/data/2022/nonemp
+nonemp,nonemployer (NES),44513,Convenience Retailers and Vending Machine Operators,209,20929000,,,2022,"Bronx County, NY (36005)",https://api.census.gov/data/2022/nonemp
+nonemp,nonemployer (NES),4452,Specialty Food Retailers,706,37406000,,,2022,"Bronx County, NY (36005)",https://api.census.gov/data/2022/nonemp

@@ -33,13 +33,13 @@ Key Food and C-Town are banners of independently owned stores and publish no sto
 
 ## Method
 
-\[
+$$
 r_{2024} = \frac{\text{Census Bronx grocery sales}_{2022}}{\sum \text{sq ft of matched Bronx Ag \& Markets stores}} \times \frac{\text{CPI}_{2024}}{\text{CPI}_{2022}}
 \qquad
 \text{Revenue}_j = \text{sq ft}_j \times r_{2024}
 \qquad
 Q_j = \text{Revenue}_j / p_j
-\]
+$$
 
 ### Step 1: Census numerator
 

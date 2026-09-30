@@ -1,0 +1,7 @@
+agmarkets_vintage,naics_class,label,agmarkets_stores,agmarkets_stores_snap_typed,agmarkets_stores_name_fallback,agmarkets_sqft,census_employer_establishments,census_nonemployer_establishments,census_establishments,census_sales_usd,agmarkets_share_of_4451_stores,census_share_of_4451_establishments
+2023,445110,Supermarkets and other grocery,1000,828,172,3531508,1125,1579,2704,3514584000,0.46,0.846
+2023,44513,Convenience retailers,1172,867,305,1378978,285,209,494,234795000,0.54,0.154
+2023,4452,Specialty food,103,69,34,158360,219,706,925,332992000,,
+current,445110,Supermarkets and other grocery,844,716,128,3438299,1125,1579,2704,3514584000,0.446,0.846
+current,44513,Convenience retailers,1048,717,331,1297283,285,209,494,234795000,0.554,0.154
+current,4452,Specialty food,108,64,44,171595,219,706,925,332992000,,
