@@ -11,6 +11,9 @@ Method:
   - Otherwise -> average of the same chain's Bronx stores in the survey.
   - Chain not surveyed -> average of all Bronx stores. This includes the small meat and
     produce markets on the final list, since the survey only priced supermarkets.
+  - Team overrides (Samuel, FDTA Meeting Notes 2026-09-29), applied before the rules above:
+      Food Universe -> all-Bronx average (the store has changed owners; now Associated Fresh)
+      Food Fair     -> Key Food Bronx average
   - Multiply by CPI(latest month) / CPI(average Mar-Aug 2019).
 """
 from __future__ import annotations
@@ -38,6 +41,13 @@ CROSSA_BRONX_CSV = PRICES_DIR / "crossa_2019_bronx_basket_prices.csv"
 
 # Candidate stores: the team's hand-filtered final list (Samuel, 2026-09-28)
 CANDIDATES_CSV = STORES_DIR / "large_grocery_stores_cd2.csv"
+
+# Price proxy overrides by chain (Samuel, FDTA Meeting Notes 2026-09-29).
+# Value = chain whose Bronx average to use; None = all-Bronx average.
+PROXY_OVERRIDES = {
+    "FOOD UNIVERSE": None,     # changed owners (now Associated Fresh)
+    "FOOD FAIR": "KEY FOOD",
+}
 
 
 def chain_of(name: str) -> str:
@@ -121,7 +131,15 @@ def main() -> None:
     for _, s in stores.iterrows():
         direct = crossa[(crossa["chain"] == s["chain"]) & (crossa["addr_key"] == s["addr_key"])]
         same_chain = crossa[crossa["chain"] == s["chain"]]
-        if not direct.empty:
+        if s["chain"] in PROXY_OVERRIDES:
+            proxy = PROXY_OVERRIDES[s["chain"]]
+            if proxy is None:
+                p2019, method, n = bronx_avg, "all-Bronx average (team override)", len(crossa)
+            else:
+                proxy_rows = crossa[crossa["chain"] == proxy]
+                p2019, method, n = (proxy_rows["basket_2019"].mean(),
+                                    f"{proxy.title()} Bronx average (team override)", len(proxy_rows))
+        elif not direct.empty:
             p2019, method, n = direct["basket_2019"].iloc[0], "direct match (same store)", 1
         elif not same_chain.empty:
             p2019, method, n = same_chain["basket_2019"].mean(), "same-chain Bronx average", len(same_chain)
