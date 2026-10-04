@@ -34,6 +34,7 @@ HOURS_PER_YEAR = 2080  # full-time hours, converts annual income to an hourly wa
 # Walking pace 15 min/km (MAIN spec v3 distance convention) -> minutes per mile.  SCENARIO
 MIN_PER_MILE = 15 * 1.609344  # = 24.14
 # Group median household income from ACS B19001 brackets, 2024 (plan §3).          DERIVED
+# These values come from data/acs/cd2_B19001_2024.csv
 MEDIAN_INCOME = {"Low": 13_300, "Mid": 39_800, "High": 92_500}
 
 
