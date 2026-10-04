@@ -1,0 +1,13 @@
+run,store,lever,capital_case,capital_per_site,annual_capital,annual_operating_cost,annual_total_cost,dcs_total,dcs_per_dollar,low_income_share
+Chris run 4,Key Food,30% contract at existing store,none (operating cost only),0.0,0,2531346,2531346,2058353,0.813,0.39
+Chris run 4,Food Fair,30% contract at existing store,none (operating cost only),0.0,0,2581383,2581383,2100500,0.814,0.379
+Chris run 4,Fine Fare,30% contract at existing store,none (operating cost only),0.0,0,2336536,2336536,1877894,0.804,0.334
+Chris run 4,Food Universe,30% contract at existing store,none (operating cost only),0.0,0,2133317,2133317,1724925,0.809,0.346
+Chris run 4,C-Town (564),30% contract at existing store,none (operating cost only),0.0,0,2006936,2006936,1621423,0.808,0.352
+Chris run 4,C-Town (809),30% contract at existing store,none (operating cost only),0.0,0,2398644,2398644,1942124,0.81,0.356
+Chris run 4,Antillana,30% contract at existing store,none (operating cost only),0.0,0,580816,580816,458153,0.789,0.371
+Chris run 4,Sagal,30% contract at existing store,none (operating cost only),0.0,0,550562,550562,433949,0.788,0.373
+Chris run 4,JJ Southern Farm,30% contract at existing store,none (operating cost only),0.0,0,565267,565267,445972,0.789,0.37
+Chris run 4,N.Y.C. Groceries (planned),N.Y.C. Groceries (new store),none (operating cost only),14000000.0,0,2222385,2222385,1798540,0.809,0.346
+Chris run 4,N.Y.C. Groceries (planned),N.Y.C. Groceries (new store),"low (3%, 30 yr)",14000000.0,714270,2222385,2936654,1798540,0.612,0.346
+Chris run 4,N.Y.C. Groceries (planned),N.Y.C. Groceries (new store),"high (4%, 20 yr)",14000000.0,1030145,2222385,3252529,1798540,0.553,0.346
