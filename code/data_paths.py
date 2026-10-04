@@ -21,6 +21,12 @@ STORES_DIR = DATA / "stores"
 for _d in (GEO_DIR, ACS_DIR, BLS_DIR, STORES_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
+# Model inputs and outputs (code/model.py, code/run_model.py)
+PRICES_DIR = DATA / "prices"
+DISTANCE_DIR = DATA / "distance"
+DESC_STATS_V2_DIR = DATA / "descriptive_stats_v2"
+RESULTS_DIR = ROOT / "results"
+
 SESSION = requests.Session()
 SESSION.headers.update(
     {"User-Agent": "grocery-subsidy-analysis/0.1 (Bronx CD2 research; academic)"}
