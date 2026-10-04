@@ -1,0 +1,321 @@
+cs_target,lever,store,theta,min_subsidy,subsidy_per_dollar_cs,low_income_share,max_dcs_within_lever,reachable
+50000,FRESH tax break,Key Food,0.25,,,,22537,not reachable
+100000,FRESH tax break,Key Food,0.25,,,,22537,not reachable
+250000,FRESH tax break,Key Food,0.25,,,,22537,not reachable
+500000,FRESH tax break,Key Food,0.25,,,,22537,not reachable
+1000000,FRESH tax break,Key Food,0.25,,,,22537,not reachable
+50000,Rent subsidy,Key Food,0.25,198793.0,3.976,0.322,59447,yes
+100000,Rent subsidy,Key Food,0.25,,,,59447,not reachable
+250000,Rent subsidy,Key Food,0.25,,,,59447,not reachable
+500000,Rent subsidy,Key Food,0.25,,,,59447,not reachable
+1000000,Rent subsidy,Key Food,0.25,,,,59447,not reachable
+50000,FRESH tax break,Key Food,0.5,,,,45197,not reachable
+100000,FRESH tax break,Key Food,0.5,,,,45197,not reachable
+250000,FRESH tax break,Key Food,0.5,,,,45197,not reachable
+500000,FRESH tax break,Key Food,0.5,,,,45197,not reachable
+1000000,FRESH tax break,Key Food,0.5,,,,45197,not reachable
+50000,Rent subsidy,Key Food,0.5,99395.0,1.988,0.322,119756,yes
+100000,Rent subsidy,Key Food,0.5,197605.0,1.976,0.324,119756,yes
+250000,Rent subsidy,Key Food,0.5,,,,119756,not reachable
+500000,Rent subsidy,Key Food,0.5,,,,119756,not reachable
+1000000,Rent subsidy,Key Food,0.5,,,,119756,not reachable
+50000,FRESH tax break,Key Food,0.75,66264.0,1.325,0.322,67982,yes
+100000,FRESH tax break,Key Food,0.75,,,,67982,not reachable
+250000,FRESH tax break,Key Food,0.75,,,,67982,not reachable
+500000,FRESH tax break,Key Food,0.75,,,,67982,not reachable
+1000000,FRESH tax break,Key Food,0.75,,,,67982,not reachable
+50000,Rent subsidy,Key Food,0.75,66262.0,1.325,0.322,180941,yes
+100000,Rent subsidy,Key Food,0.75,131735.0,1.317,0.324,180941,yes
+250000,Rent subsidy,Key Food,0.75,,,,180941,not reachable
+500000,Rent subsidy,Key Food,0.75,,,,180941,not reachable
+1000000,Rent subsidy,Key Food,0.75,,,,180941,not reachable
+50000,30% contract at existing store,Key Food,1.0,325990.0,6.52,0.328,2058353,yes
+100000,30% contract at existing store,Key Food,1.0,325990.0,3.26,0.331,2058353,yes
+250000,30% contract at existing store,Key Food,1.0,325990.0,1.304,0.334,2058353,yes
+500000,30% contract at existing store,Key Food,1.0,530391.0,1.061,0.344,2058353,yes
+1000000,30% contract at existing store,Key Food,1.0,1118163.0,1.118,0.36,2058353,yes
+50000,FRESH tax break,Food Fair,0.25,,,,14627,not reachable
+100000,FRESH tax break,Food Fair,0.25,,,,14627,not reachable
+250000,FRESH tax break,Food Fair,0.25,,,,14627,not reachable
+500000,FRESH tax break,Food Fair,0.25,,,,14627,not reachable
+1000000,FRESH tax break,Food Fair,0.25,,,,14627,not reachable
+50000,Rent subsidy,Food Fair,0.25,198826.0,3.977,0.311,52853,yes
+100000,Rent subsidy,Food Fair,0.25,,,,52853,not reachable
+250000,Rent subsidy,Food Fair,0.25,,,,52853,not reachable
+500000,Rent subsidy,Food Fair,0.25,,,,52853,not reachable
+1000000,Rent subsidy,Food Fair,0.25,,,,52853,not reachable
+50000,FRESH tax break,Food Fair,0.5,,,,29305,not reachable
+100000,FRESH tax break,Food Fair,0.5,,,,29305,not reachable
+250000,FRESH tax break,Food Fair,0.5,,,,29305,not reachable
+500000,FRESH tax break,Food Fair,0.5,,,,29305,not reachable
+1000000,FRESH tax break,Food Fair,0.5,,,,29305,not reachable
+50000,Rent subsidy,Food Fair,0.5,99412.0,1.988,0.311,106367,yes
+100000,Rent subsidy,Food Fair,0.5,197670.0,1.977,0.313,106367,yes
+250000,Rent subsidy,Food Fair,0.5,,,,106367,not reachable
+500000,Rent subsidy,Food Fair,0.5,,,,106367,not reachable
+1000000,Rent subsidy,Food Fair,0.5,,,,106367,not reachable
+50000,FRESH tax break,Food Fair,0.75,,,,44033,not reachable
+100000,FRESH tax break,Food Fair,0.75,,,,44033,not reachable
+250000,FRESH tax break,Food Fair,0.75,,,,44033,not reachable
+500000,FRESH tax break,Food Fair,0.75,,,,44033,not reachable
+1000000,FRESH tax break,Food Fair,0.75,,,,44033,not reachable
+50000,Rent subsidy,Food Fair,0.75,66274.0,1.325,0.311,160553,yes
+100000,Rent subsidy,Food Fair,0.75,131778.0,1.318,0.313,160553,yes
+250000,Rent subsidy,Food Fair,0.75,,,,160553,not reachable
+500000,Rent subsidy,Food Fair,0.75,,,,160553,not reachable
+1000000,Rent subsidy,Food Fair,0.75,,,,160553,not reachable
+50000,30% contract at existing store,Food Fair,1.0,268510.0,5.37,0.317,2100500,yes
+100000,30% contract at existing store,Food Fair,1.0,268510.0,2.685,0.32,2100500,yes
+250000,30% contract at existing store,Food Fair,1.0,269632.0,1.079,0.323,2100500,yes
+500000,30% contract at existing store,Food Fair,1.0,529632.0,1.059,0.333,2100500,yes
+1000000,30% contract at existing store,Food Fair,1.0,1115325.0,1.115,0.349,2100500,yes
+50000,FRESH tax break,Fine Fare,0.25,,,,2035,not reachable
+100000,FRESH tax break,Fine Fare,0.25,,,,2035,not reachable
+250000,FRESH tax break,Fine Fare,0.25,,,,2035,not reachable
+500000,FRESH tax break,Fine Fare,0.25,,,,2035,not reachable
+1000000,FRESH tax break,Fine Fare,0.25,,,,2035,not reachable
+50000,Rent subsidy,Fine Fare,0.25,,,,46369,not reachable
+100000,Rent subsidy,Fine Fare,0.25,,,,46369,not reachable
+250000,Rent subsidy,Fine Fare,0.25,,,,46369,not reachable
+500000,Rent subsidy,Fine Fare,0.25,,,,46369,not reachable
+1000000,Rent subsidy,Fine Fare,0.25,,,,46369,not reachable
+50000,FRESH tax break,Fine Fare,0.5,,,,4072,not reachable
+100000,FRESH tax break,Fine Fare,0.5,,,,4072,not reachable
+250000,FRESH tax break,Fine Fare,0.5,,,,4072,not reachable
+500000,FRESH tax break,Fine Fare,0.5,,,,4072,not reachable
+1000000,FRESH tax break,Fine Fare,0.5,,,,4072,not reachable
+50000,Rent subsidy,Fine Fare,0.5,99316.0,1.986,0.262,93331,yes
+100000,Rent subsidy,Fine Fare,0.5,,,,93331,not reachable
+250000,Rent subsidy,Fine Fare,0.5,,,,93331,not reachable
+500000,Rent subsidy,Fine Fare,0.5,,,,93331,not reachable
+1000000,Rent subsidy,Fine Fare,0.5,,,,93331,not reachable
+50000,FRESH tax break,Fine Fare,0.75,,,,6110,not reachable
+100000,FRESH tax break,Fine Fare,0.75,,,,6110,not reachable
+250000,FRESH tax break,Fine Fare,0.75,,,,6110,not reachable
+500000,FRESH tax break,Fine Fare,0.75,,,,6110,not reachable
+1000000,FRESH tax break,Fine Fare,0.75,,,,6110,not reachable
+50000,Rent subsidy,Fine Fare,0.75,66211.0,1.324,0.262,140897,yes
+100000,Rent subsidy,Fine Fare,0.75,131526.0,1.315,0.264,140897,yes
+250000,Rent subsidy,Fine Fare,0.75,,,,140897,not reachable
+500000,Rent subsidy,Fine Fare,0.75,,,,140897,not reachable
+1000000,Rent subsidy,Fine Fare,0.75,,,,140897,not reachable
+50000,30% contract at existing store,Fine Fare,1.0,192440.0,3.849,0.268,1877894,yes
+100000,30% contract at existing store,Fine Fare,1.0,192440.0,1.924,0.271,1877894,yes
+250000,30% contract at existing store,Fine Fare,1.0,258818.0,1.035,0.277,1877894,yes
+500000,30% contract at existing store,Fine Fare,1.0,534557.0,1.069,0.287,1877894,yes
+1000000,30% contract at existing store,Fine Fare,1.0,1135265.0,1.135,0.304,1877894,yes
+50000,FRESH tax break,Food Universe,0.25,,,,15274,not reachable
+100000,FRESH tax break,Food Universe,0.25,,,,15274,not reachable
+250000,FRESH tax break,Food Universe,0.25,,,,15274,not reachable
+500000,FRESH tax break,Food Universe,0.25,,,,15274,not reachable
+1000000,FRESH tax break,Food Universe,0.25,,,,15274,not reachable
+50000,Rent subsidy,Food Universe,0.25,,,,47239,not reachable
+100000,Rent subsidy,Food Universe,0.25,,,,47239,not reachable
+250000,Rent subsidy,Food Universe,0.25,,,,47239,not reachable
+500000,Rent subsidy,Food Universe,0.25,,,,47239,not reachable
+1000000,Rent subsidy,Food Universe,0.25,,,,47239,not reachable
+50000,FRESH tax break,Food Universe,0.5,,,,30617,not reachable
+100000,FRESH tax break,Food Universe,0.5,,,,30617,not reachable
+250000,FRESH tax break,Food Universe,0.5,,,,30617,not reachable
+500000,FRESH tax break,Food Universe,0.5,,,,30617,not reachable
+1000000,FRESH tax break,Food Universe,0.5,,,,30617,not reachable
+50000,Rent subsidy,Food Universe,0.5,99278.0,1.986,0.277,95130,yes
+100000,Rent subsidy,Food Universe,0.5,,,,95130,not reachable
+250000,Rent subsidy,Food Universe,0.5,,,,95130,not reachable
+500000,Rent subsidy,Food Universe,0.5,,,,95130,not reachable
+1000000,Rent subsidy,Food Universe,0.5,,,,95130,not reachable
+50000,FRESH tax break,Food Universe,0.75,,,,46027,not reachable
+100000,FRESH tax break,Food Universe,0.75,,,,46027,not reachable
+250000,FRESH tax break,Food Universe,0.75,,,,46027,not reachable
+500000,FRESH tax break,Food Universe,0.75,,,,46027,not reachable
+1000000,FRESH tax break,Food Universe,0.75,,,,46027,not reachable
+50000,Rent subsidy,Food Universe,0.75,66186.0,1.324,0.277,143684,yes
+100000,Rent subsidy,Food Universe,0.75,131426.0,1.314,0.279,143684,yes
+250000,Rent subsidy,Food Universe,0.75,,,,143684,not reachable
+500000,Rent subsidy,Food Universe,0.75,,,,143684,not reachable
+1000000,Rent subsidy,Food Universe,0.75,,,,143684,not reachable
+50000,30% contract at existing store,Food Universe,1.0,248632.0,4.973,0.282,1724925,yes
+100000,30% contract at existing store,Food Universe,1.0,248632.0,2.486,0.285,1724925,yes
+250000,30% contract at existing store,Food Universe,1.0,273741.0,1.095,0.291,1724925,yes
+500000,30% contract at existing store,Food Universe,1.0,536424.0,1.073,0.301,1724925,yes
+1000000,30% contract at existing store,Food Universe,1.0,1142313.0,1.142,0.321,1724925,yes
+50000,FRESH tax break,C-Town (564),0.25,,,,7725,not reachable
+100000,FRESH tax break,C-Town (564),0.25,,,,7725,not reachable
+250000,FRESH tax break,C-Town (564),0.25,,,,7725,not reachable
+500000,FRESH tax break,C-Town (564),0.25,,,,7725,not reachable
+1000000,FRESH tax break,C-Town (564),0.25,,,,7725,not reachable
+50000,Rent subsidy,C-Town (564),0.25,,,,46406,not reachable
+100000,Rent subsidy,C-Town (564),0.25,,,,46406,not reachable
+250000,Rent subsidy,C-Town (564),0.25,,,,46406,not reachable
+500000,Rent subsidy,C-Town (564),0.25,,,,46406,not reachable
+1000000,Rent subsidy,C-Town (564),0.25,,,,46406,not reachable
+50000,FRESH tax break,C-Town (564),0.5,,,,15469,not reachable
+100000,FRESH tax break,C-Town (564),0.5,,,,15469,not reachable
+250000,FRESH tax break,C-Town (564),0.5,,,,15469,not reachable
+500000,FRESH tax break,C-Town (564),0.5,,,,15469,not reachable
+1000000,FRESH tax break,C-Town (564),0.5,,,,15469,not reachable
+50000,Rent subsidy,C-Town (564),0.5,99230.0,1.985,0.282,93484,yes
+100000,Rent subsidy,C-Town (564),0.5,,,,93484,not reachable
+250000,Rent subsidy,C-Town (564),0.5,,,,93484,not reachable
+500000,Rent subsidy,C-Town (564),0.5,,,,93484,not reachable
+1000000,Rent subsidy,C-Town (564),0.5,,,,93484,not reachable
+50000,FRESH tax break,C-Town (564),0.75,,,,23231,not reachable
+100000,FRESH tax break,C-Town (564),0.75,,,,23231,not reachable
+250000,FRESH tax break,C-Town (564),0.75,,,,23231,not reachable
+500000,FRESH tax break,C-Town (564),0.75,,,,23231,not reachable
+1000000,FRESH tax break,C-Town (564),0.75,,,,23231,not reachable
+50000,Rent subsidy,C-Town (564),0.75,66153.0,1.323,0.282,141247,yes
+100000,Rent subsidy,C-Town (564),0.75,131298.0,1.313,0.284,141247,yes
+250000,Rent subsidy,C-Town (564),0.75,,,,141247,not reachable
+500000,Rent subsidy,C-Town (564),0.75,,,,141247,not reachable
+1000000,Rent subsidy,C-Town (564),0.75,,,,141247,not reachable
+50000,30% contract at existing store,C-Town (564),1.0,215164.0,4.303,0.287,1621423,yes
+100000,30% contract at existing store,C-Town (564),1.0,215164.0,2.152,0.29,1621423,yes
+250000,30% contract at existing store,C-Town (564),1.0,262248.0,1.049,0.297,1621423,yes
+500000,30% contract at existing store,C-Town (564),1.0,538771.0,1.078,0.31,1621423,yes
+1000000,30% contract at existing store,C-Town (564),1.0,1151539.0,1.152,0.33,1621423,yes
+50000,FRESH tax break,C-Town (809),0.25,,,,14525,not reachable
+100000,FRESH tax break,C-Town (809),0.25,,,,14525,not reachable
+250000,FRESH tax break,C-Town (809),0.25,,,,14525,not reachable
+500000,FRESH tax break,C-Town (809),0.25,,,,14525,not reachable
+1000000,FRESH tax break,C-Town (809),0.25,,,,14525,not reachable
+50000,Rent subsidy,C-Town (809),0.25,,,,40042,not reachable
+100000,Rent subsidy,C-Town (809),0.25,,,,40042,not reachable
+250000,Rent subsidy,C-Town (809),0.25,,,,40042,not reachable
+500000,Rent subsidy,C-Town (809),0.25,,,,40042,not reachable
+1000000,Rent subsidy,C-Town (809),0.25,,,,40042,not reachable
+50000,FRESH tax break,C-Town (809),0.5,,,,29105,not reachable
+100000,FRESH tax break,C-Town (809),0.5,,,,29105,not reachable
+250000,FRESH tax break,C-Town (809),0.5,,,,29105,not reachable
+500000,FRESH tax break,C-Town (809),0.5,,,,29105,not reachable
+1000000,FRESH tax break,C-Town (809),0.5,,,,29105,not reachable
+50000,Rent subsidy,C-Town (809),0.5,99357.0,1.987,0.287,80500,yes
+100000,Rent subsidy,C-Town (809),0.5,,,,80500,not reachable
+250000,Rent subsidy,C-Town (809),0.5,,,,80500,not reachable
+500000,Rent subsidy,C-Town (809),0.5,,,,80500,not reachable
+1000000,Rent subsidy,C-Town (809),0.5,,,,80500,not reachable
+50000,FRESH tax break,C-Town (809),0.75,,,,43739,not reachable
+100000,FRESH tax break,C-Town (809),0.75,,,,43739,not reachable
+250000,FRESH tax break,C-Town (809),0.75,,,,43739,not reachable
+500000,FRESH tax break,C-Town (809),0.75,,,,43739,not reachable
+1000000,FRESH tax break,C-Town (809),0.75,,,,43739,not reachable
+50000,Rent subsidy,C-Town (809),0.75,66238.0,1.325,0.287,121379,yes
+100000,Rent subsidy,C-Town (809),0.75,131633.0,1.316,0.289,121379,yes
+250000,Rent subsidy,C-Town (809),0.75,,,,121379,not reachable
+500000,Rent subsidy,C-Town (809),0.75,,,,121379,not reachable
+1000000,Rent subsidy,C-Town (809),0.75,,,,121379,not reachable
+50000,30% contract at existing store,C-Town (809),1.0,217335.0,4.347,0.293,1942124,yes
+100000,30% contract at existing store,C-Town (809),1.0,217335.0,2.173,0.296,1942124,yes
+250000,30% contract at existing store,C-Town (809),1.0,258221.0,1.033,0.302,1942124,yes
+500000,30% contract at existing store,C-Town (809),1.0,532276.0,1.065,0.312,1942124,yes
+1000000,30% contract at existing store,C-Town (809),1.0,1126716.0,1.127,0.328,1942124,yes
+50000,FRESH tax break,Antillana,0.25,,,,4662,not reachable
+100000,FRESH tax break,Antillana,0.25,,,,4662,not reachable
+250000,FRESH tax break,Antillana,0.25,,,,4662,not reachable
+500000,FRESH tax break,Antillana,0.25,,,,4662,not reachable
+1000000,FRESH tax break,Antillana,0.25,,,,4662,not reachable
+50000,Rent subsidy,Antillana,0.25,,,,26895,not reachable
+100000,Rent subsidy,Antillana,0.25,,,,26895,not reachable
+250000,Rent subsidy,Antillana,0.25,,,,26895,not reachable
+500000,Rent subsidy,Antillana,0.25,,,,26895,not reachable
+1000000,Rent subsidy,Antillana,0.25,,,,26895,not reachable
+50000,FRESH tax break,Antillana,0.5,,,,9351,not reachable
+100000,FRESH tax break,Antillana,0.5,,,,9351,not reachable
+250000,FRESH tax break,Antillana,0.5,,,,9351,not reachable
+500000,FRESH tax break,Antillana,0.5,,,,9351,not reachable
+1000000,FRESH tax break,Antillana,0.5,,,,9351,not reachable
+50000,Rent subsidy,Antillana,0.5,97074.0,1.941,0.3,54674,yes
+100000,Rent subsidy,Antillana,0.5,,,,54674,not reachable
+250000,Rent subsidy,Antillana,0.5,,,,54674,not reachable
+500000,Rent subsidy,Antillana,0.5,,,,54674,not reachable
+1000000,Rent subsidy,Antillana,0.5,,,,54674,not reachable
+50000,FRESH tax break,Antillana,0.75,,,,14066,not reachable
+100000,FRESH tax break,Antillana,0.75,,,,14066,not reachable
+250000,FRESH tax break,Antillana,0.75,,,,14066,not reachable
+500000,FRESH tax break,Antillana,0.75,,,,14066,not reachable
+1000000,FRESH tax break,Antillana,0.75,,,,14066,not reachable
+50000,Rent subsidy,Antillana,0.75,64715.0,1.294,0.301,83379,yes
+100000,Rent subsidy,Antillana,0.75,,,,83379,not reachable
+250000,Rent subsidy,Antillana,0.75,,,,83379,not reachable
+500000,Rent subsidy,Antillana,0.75,,,,83379,not reachable
+1000000,Rent subsidy,Antillana,0.75,,,,83379,not reachable
+50000,30% contract at existing store,Antillana,1.0,124460.0,2.489,0.306,458153,yes
+100000,30% contract at existing store,Antillana,1.0,124460.0,1.245,0.317,458153,yes
+250000,30% contract at existing store,Antillana,1.0,287455.0,1.15,0.343,458153,yes
+500000,30% contract at existing store,Antillana,1.0,,,,458153,not reachable
+1000000,30% contract at existing store,Antillana,1.0,,,,458153,not reachable
+50000,FRESH tax break,Sagal,0.25,,,,2270,not reachable
+100000,FRESH tax break,Sagal,0.25,,,,2270,not reachable
+250000,FRESH tax break,Sagal,0.25,,,,2270,not reachable
+500000,FRESH tax break,Sagal,0.25,,,,2270,not reachable
+1000000,FRESH tax break,Sagal,0.25,,,,2270,not reachable
+50000,Rent subsidy,Sagal,0.25,,,,16880,not reachable
+100000,Rent subsidy,Sagal,0.25,,,,16880,not reachable
+250000,Rent subsidy,Sagal,0.25,,,,16880,not reachable
+500000,Rent subsidy,Sagal,0.25,,,,16880,not reachable
+1000000,Rent subsidy,Sagal,0.25,,,,16880,not reachable
+50000,FRESH tax break,Sagal,0.5,,,,4546,not reachable
+100000,FRESH tax break,Sagal,0.5,,,,4546,not reachable
+250000,FRESH tax break,Sagal,0.5,,,,4546,not reachable
+500000,FRESH tax break,Sagal,0.5,,,,4546,not reachable
+1000000,FRESH tax break,Sagal,0.5,,,,4546,not reachable
+50000,Rent subsidy,Sagal,0.5,,,,34128,not reachable
+100000,Rent subsidy,Sagal,0.5,,,,34128,not reachable
+250000,Rent subsidy,Sagal,0.5,,,,34128,not reachable
+500000,Rent subsidy,Sagal,0.5,,,,34128,not reachable
+1000000,Rent subsidy,Sagal,0.5,,,,34128,not reachable
+50000,FRESH tax break,Sagal,0.75,,,,6830,not reachable
+100000,FRESH tax break,Sagal,0.75,,,,6830,not reachable
+250000,FRESH tax break,Sagal,0.75,,,,6830,not reachable
+500000,FRESH tax break,Sagal,0.75,,,,6830,not reachable
+1000000,FRESH tax break,Sagal,0.75,,,,6830,not reachable
+50000,Rent subsidy,Sagal,0.75,64604.0,1.292,0.302,51755,yes
+100000,Rent subsidy,Sagal,0.75,,,,51755,not reachable
+250000,Rent subsidy,Sagal,0.75,,,,51755,not reachable
+500000,Rent subsidy,Sagal,0.75,,,,51755,not reachable
+1000000,Rent subsidy,Sagal,0.75,,,,51755,not reachable
+50000,30% contract at existing store,Sagal,1.0,75867.0,1.517,0.308,433949,yes
+100000,30% contract at existing store,Sagal,1.0,106497.0,1.065,0.318,433949,yes
+250000,30% contract at existing store,Sagal,1.0,289671.0,1.159,0.344,433949,yes
+500000,30% contract at existing store,Sagal,1.0,,,,433949,not reachable
+1000000,30% contract at existing store,Sagal,1.0,,,,433949,not reachable
+50000,FRESH tax break,JJ Southern Farm,0.25,,,,4300,not reachable
+100000,FRESH tax break,JJ Southern Farm,0.25,,,,4300,not reachable
+250000,FRESH tax break,JJ Southern Farm,0.25,,,,4300,not reachable
+500000,FRESH tax break,JJ Southern Farm,0.25,,,,4300,not reachable
+1000000,FRESH tax break,JJ Southern Farm,0.25,,,,4300,not reachable
+50000,Rent subsidy,JJ Southern Farm,0.25,,,,17438,not reachable
+100000,Rent subsidy,JJ Southern Farm,0.25,,,,17438,not reachable
+250000,Rent subsidy,JJ Southern Farm,0.25,,,,17438,not reachable
+500000,Rent subsidy,JJ Southern Farm,0.25,,,,17438,not reachable
+1000000,Rent subsidy,JJ Southern Farm,0.25,,,,17438,not reachable
+50000,FRESH tax break,JJ Southern Farm,0.5,,,,8623,not reachable
+100000,FRESH tax break,JJ Southern Farm,0.5,,,,8623,not reachable
+250000,FRESH tax break,JJ Southern Farm,0.5,,,,8623,not reachable
+500000,FRESH tax break,JJ Southern Farm,0.5,,,,8623,not reachable
+1000000,FRESH tax break,JJ Southern Farm,0.5,,,,8623,not reachable
+50000,Rent subsidy,JJ Southern Farm,0.5,,,,35256,not reachable
+100000,Rent subsidy,JJ Southern Farm,0.5,,,,35256,not reachable
+250000,Rent subsidy,JJ Southern Farm,0.5,,,,35256,not reachable
+500000,Rent subsidy,JJ Southern Farm,0.5,,,,35256,not reachable
+1000000,Rent subsidy,JJ Southern Farm,0.5,,,,35256,not reachable
+50000,FRESH tax break,JJ Southern Farm,0.75,,,,12970,not reachable
+100000,FRESH tax break,JJ Southern Farm,0.75,,,,12970,not reachable
+250000,FRESH tax break,JJ Southern Farm,0.75,,,,12970,not reachable
+500000,FRESH tax break,JJ Southern Farm,0.75,,,,12970,not reachable
+1000000,FRESH tax break,JJ Southern Farm,0.75,,,,12970,not reachable
+50000,Rent subsidy,JJ Southern Farm,0.75,64668.0,1.293,0.299,53465,yes
+100000,Rent subsidy,JJ Southern Farm,0.75,,,,53465,not reachable
+250000,Rent subsidy,JJ Southern Farm,0.75,,,,53465,not reachable
+500000,Rent subsidy,JJ Southern Farm,0.75,,,,53465,not reachable
+1000000,Rent subsidy,JJ Southern Farm,0.75,,,,53465,not reachable
+50000,30% contract at existing store,JJ Southern Farm,1.0,86163.0,1.723,0.305,445972,yes
+100000,30% contract at existing store,JJ Southern Farm,1.0,106290.0,1.063,0.315,445972,yes
+250000,30% contract at existing store,JJ Southern Farm,1.0,288450.0,1.154,0.341,445972,yes
+500000,30% contract at existing store,JJ Southern Farm,1.0,,,,445972,not reachable
+1000000,30% contract at existing store,JJ Southern Farm,1.0,,,,445972,not reachable
+50000,N.Y.C. Groceries (new store),N.Y.C. Groceries (planned),1.0,361531.0,7.231,0.282,1798540,yes
+100000,N.Y.C. Groceries (new store),N.Y.C. Groceries (planned),1.0,361531.0,3.615,0.285,1798540,yes
+250000,N.Y.C. Groceries (new store),N.Y.C. Groceries (planned),1.0,361531.0,1.446,0.292,1798540,yes
+500000,N.Y.C. Groceries (new store),N.Y.C. Groceries (planned),1.0,534892.0,1.07,0.301,1798540,yes
+1000000,N.Y.C. Groceries (new store),N.Y.C. Groceries (planned),1.0,1136093.0,1.136,0.321,1798540,yes
