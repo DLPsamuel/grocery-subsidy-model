@@ -60,9 +60,15 @@ CALIBRATE_BETA_P_LEVEL = True
 # --- Trips and price per trip ----------------------------------------------------------
 
 # Shopping trips per year, same for every income group (MAIN spec v2 §1.1.5; team chat
-# 10/2). Dannefer et al. (2016) Table 2 implies ~40 supermarket visits/yr (sensitivity).
-T_TRIPS = 52  # SCENARIO
-T_TRIPS_ALT = 40  # BORROWED (Dannefer et al. 2016)
+# 10/2). Base: weekly shopping.                                                       SCENARIO
+T_TRIPS = 52
+# Sensitivity: Dannefer, Adjoian, Brathwaite & Walsh, "Food shopping behaviors of residents
+# in two Bronx neighborhoods", AIMS Public Health 3(1):1-12, 2016 (published online Dec
+# 2015). Table 2, neighborhood supermarket: 60.1% shop once a week or more, 36.7% less than
+# once a week. Assuming the less-than-weekly group shops twice a month:
+# 0.601 x 52 + 0.367 x 24 = 40.1 visits/yr (36-49 if that group shops 1-4 times a month).
+# "Once a week or more" is top-coded, so this is a floor.          BORROWED + assumption
+T_TRIPS_ALT = 40
 
 # Baskets per trip k_g = weekly food-at-home spending f_bar_g / mean basket price.
 # Computed in code/model.py from data/bls/ces_fbar_by_income_group_northeast_cd2weighted.csv
@@ -95,6 +101,16 @@ THETA_BASE = 0.50
 # Core basket share kappa_g: base version (low/high are sensitivity), from
 # data/bls/kappa_core_basket_share_northeast_cd2weighted.csv.                     SOURCED
 KAPPA_VERSION = "kappa_base"
+
+# Capital cost of building N.Y.C. Groceries (Chris run 4). NYCEDC program page
+# (edc.nyc/program/nyc-groceries): $70M of capital for 5 city-owned stores, one per borough,
+# i.e. ~$14M per site. The $30M on the same page is La Marqueta (East Harlem), not CD2.
+# The CD2 site's own capital budget is not published.                               SOURCED
+CAPITAL_TOTAL = 70_000_000
+CAPITAL_STORES = 5
+# Spread over the store's life as an annual payment (annuity). Rate and life are assumed:
+# (3%, 30 yr) low, (4%, 20 yr) high.                                                SCENARIO
+CAPITAL_AMORTIZATION = {"low (3%, 30 yr)": (0.03, 30), "high (4%, 20 yr)": (0.04, 20)}
 
 # --- Run 2 sweep ranges (MODEL_PLAN §4) ---------------------------------------------------
 

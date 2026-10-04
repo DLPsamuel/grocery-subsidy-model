@@ -4,7 +4,7 @@ Run 3 is Samuel's in the plan; this is Chris's own version, kept under chris_run
 two are not confused.
 
     python code/run_model.py            # all runs
-    python code/run_model.py run0       # calibration check only (also: run1, run2, run3)
+    python code/run_model.py run0       # calibration check only (also: run1, run2, run3, run4)
 
 Outputs go to results/<run_name>/.
   chris_run0_calibration: predicted vs observed sales by store, store constants, price elasticities
@@ -15,6 +15,8 @@ Outputs go to results/<run_name>/.
                     for each alternative parameter or data case
   chris_run3_pass_through: FRESH / rent at theta 0.25, 0.5, 0.75 (+ 1.0 best case), and the
                     30% discount on the core basket (~18% of the bill) vs on the whole basket
+  chris_run4_capital_cost: N.Y.C. Groceries with its share of the $70M build-out capital,
+                    spread over the store's life, vs the same contract at existing stores
 """
 from __future__ import annotations
 
@@ -317,6 +319,54 @@ def run3(mkt: m.Market, prm: m.Params, alpha: dict) -> tuple[pd.DataFrame, pd.Da
     return pt, summ
 
 
+# --- Chris run 4: capital cost of building N.Y.C. Groceries ------------------------------------
+
+def annual_capital(total: float, rate: float, years: int) -> float:
+    """Equal yearly payment that repays `total` over `years` at interest `rate` (annuity)."""
+    return total * rate / (1 - (1 + rate) ** -years)
+
+
+def run4(mkt: m.Market, prm: m.Params, alpha: dict) -> pd.DataFrame:
+    """Add the new store's share of the build-out capital to its yearly public cost.
+
+    Existing stores need no build-out, so their contract cost is unchanged. Delta CS for the
+    new store is the discount's gain only (see model.lever_contract).
+    """
+    st = mkt.stores
+    capital_site = P.CAPITAL_TOTAL / P.CAPITAL_STORES
+    rows = []
+    for j in range(len(st)):
+        r = m.lever_contract(mkt, prm, alpha, j, P.DISCOUNT)
+        new = st.at[j, "status"] != "existing"
+        cases = {"none (operating cost only)": 0.0}
+        if new:
+            cases.update({k: annual_capital(capital_site, *v) for k, v in P.CAPITAL_AMORTIZATION.items()})
+        for case, cap in cases.items():
+            cost = r.cost + cap
+            rows.append({
+                "run": "Chris run 4", "store": st.at[j, "short"],
+                "lever": "N.Y.C. Groceries (new store)" if new else "30% contract at existing store",
+                "capital_case": case, "capital_per_site": capital_site if new else 0.0,
+                "annual_capital": round(cap), "annual_operating_cost": round(r.cost),
+                "annual_total_cost": round(cost), "dcs_total": round(r.dcs["Total"]),
+                "dcs_per_dollar": round(r.dcs["Total"] / cost, 3),
+                "low_income_share": round(r.dcs["Low"] / r.dcs["Total"], 3),
+            })
+    res = pd.DataFrame(rows)
+    out = _out("chris_run4_capital_cost")
+    res.to_csv(out / "capital_cost_by_store.csv", index=False)
+    summ = (res.groupby(["lever", "capital_case"], sort=False)
+            .agg(stores=("store", "size"), annual_capital=("annual_capital", "median"),
+                 annual_total_cost_median=("annual_total_cost", "median"),
+                 dcs_total_median=("dcs_total", "median"),
+                 dcs_per_dollar_median=("dcs_per_dollar", "median"),
+                 dcs_per_dollar_min=("dcs_per_dollar", "min"), dcs_per_dollar_max=("dcs_per_dollar", "max"))
+            .reset_index())
+    summ.insert(0, "run", "Chris run 4")
+    summ.to_csv(out / "capital_cost_summary.csv", index=False)
+    return summ
+
+
 def main(which: str = "all") -> None:
     mkt = m.load_market()
     prm, alpha = fit(mkt, m.Params())
@@ -333,6 +383,9 @@ def main(which: str = "all") -> None:
         print("\nChris run 3: pass-through (FRESH / rent) and effective discount (contracts)")
         print(pt.to_string(index=False))
         print(cut.to_string(index=False))
+    if which in ("all", "run4"):
+        print("\nChris run 4: capital cost of building N.Y.C. Groceries")
+        print(run4(mkt, prm, alpha).to_string(index=False))
     if which in ("all", "run2"):
         res = run2(mkt, m.Params())
         print("\nChris run 2: lever ranking by Delta CS per $ (FRESH/rent at theta = 0.5)")
