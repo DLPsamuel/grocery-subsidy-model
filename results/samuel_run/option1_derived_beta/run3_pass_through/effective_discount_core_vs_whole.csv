@@ -1,0 +1,21 @@
+run,discount,store,lever,cost,dcs_total,dcs_per_dollar,low_income_share,predicted_sales,sales_vs_capacity_R_j,sales_vs_predicted_baseline
+Chris run 3,30% off core basket (~18% of bill),Key Food,30% contract at existing store,11510844,7585979,0.659,0.579,62021912,5.16,4.47
+Chris run 3,30% off core basket (~18% of bill),Food Fair,30% contract at existing store,11546033,7418428,0.643,0.572,62210976,5.97,4.94
+Chris run 3,30% off core basket (~18% of bill),Fine Fare,30% contract at existing store,9436546,3910557,0.414,0.552,50747369,6.33,13.71
+Chris run 3,30% off core basket (~18% of bill),Food Universe,30% contract at existing store,10272797,5374470,0.523,0.586,55272904,8.62,9.26
+Chris run 3,30% off core basket (~18% of bill),C-Town (564),30% contract at existing store,10101868,5348235,0.529,0.598,54346524,8.48,9.1
+Chris run 3,30% off core basket (~18% of bill),C-Town (809),30% contract at existing store,10753767,5912399,0.55,0.576,57890350,9.63,8.11
+Chris run 3,30% off core basket (~18% of bill),Antillana,30% contract at existing store,7305238,3023434,0.414,0.737,39153274,16.29,20.09
+Chris run 3,30% off core basket (~18% of bill),Sagal,30% contract at existing store,7185962,2934224,0.408,0.743,38507820,19.23,20.9
+Chris run 3,30% off core basket (~18% of bill),JJ Southern Farm,30% contract at existing store,7250149,2978051,0.411,0.739,38855408,30.31,20.48
+Chris run 3,30% off core basket (~18% of bill),N.Y.C. Groceries (planned),N.Y.C. Groceries (new store),10461952,5543587,0.53,0.58,56303122,4.68,
+Chris run 3,30% off whole basket,Key Food,30% contract at existing store,24625926,15883489,0.645,0.499,82086420,6.83,5.91
+Chris run 3,30% off whole basket,Food Fair,30% contract at existing store,24806979,15763508,0.635,0.494,82689929,7.94,6.56
+Chris run 3,30% off whole basket,Fine Fare,30% contract at existing store,23195325,11282132,0.486,0.525,77317750,9.65,20.88
+Chris run 3,30% off whole basket,Food Universe,30% contract at existing store,23421297,13023237,0.556,0.523,78070991,12.18,13.08
+Chris run 3,30% off whole basket,C-Town (564),30% contract at existing store,23000946,12855871,0.559,0.532,76669822,11.96,12.83
+Chris run 3,30% off whole basket,C-Town (809),30% contract at existing store,24157883,13864924,0.574,0.509,80526276,13.4,11.27
+Chris run 3,30% off whole basket,Antillana,30% contract at existing store,17184918,8503308,0.495,0.685,57283061,23.83,29.4
+Chris run 3,30% off whole basket,Sagal,30% contract at existing store,16896791,8325009,0.493,0.694,56322635,28.12,30.57
+Chris run 3,30% off whole basket,JJ Southern Farm,30% contract at existing store,17061911,8418937,0.493,0.689,56873037,44.36,29.97
+Chris run 3,30% off whole basket,N.Y.C. Groceries (planned),N.Y.C. Groceries (new store),23760223,13322021,0.561,0.516,79200743,6.59,

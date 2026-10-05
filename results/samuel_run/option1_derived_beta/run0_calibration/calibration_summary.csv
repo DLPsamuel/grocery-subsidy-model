@@ -1,0 +1,8 @@
+item,value
+9-store predicted sales / CD2 spending,0.4865
+9-store observed revenue / M,0.4865
+model CD2 spending ($/yr),112975545.0
+p_bar ($/basket),28.8289
+beta_p level scale (calibrated to N.Y.C. Groceries capacity),1.0
+"store constant alpha, supermarket",-1.8744
+"store constant alpha, small independent",-3.026

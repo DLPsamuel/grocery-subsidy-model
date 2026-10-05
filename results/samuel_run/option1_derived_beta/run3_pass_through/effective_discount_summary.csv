@@ -1,0 +1,5 @@
+run,discount,lever,stores,dcs_total_median,cost_median,dcs_per_dollar_median,low_income_share_median,sales_vs_capacity_max,sales_growth_vs_baseline_median
+Chris run 3,30% off core basket (~18% of bill),30% contract at existing store,9,5348235.0,10101868.0,0.523,0.586,30.31,9.26
+Chris run 3,30% off core basket (~18% of bill),N.Y.C. Groceries (new store),1,5543587.0,10461952.0,0.53,0.58,4.68,
+Chris run 3,30% off whole basket,30% contract at existing store,9,12855871.0,23195325.0,0.556,0.525,44.36,13.08
+Chris run 3,30% off whole basket,N.Y.C. Groceries (new store),1,13322021.0,23760223.0,0.561,0.516,6.59,

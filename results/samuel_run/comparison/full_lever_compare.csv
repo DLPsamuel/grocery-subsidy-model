@@ -1,0 +1,10 @@
+lever,theta,stores,cost_median_chris,dcs_total_median_chris,dcs_per_dollar_median_chris,dcs_per_dollar_min_chris,dcs_per_dollar_max_chris,low_income_share_median_chris,sales_vs_capacity_max_chris,cost_median_option1,dcs_total_median_option1,dcs_per_dollar_median_option1,dcs_per_dollar_min_option1,dcs_per_dollar_max_option1,low_income_share_median_option1,sales_vs_capacity_max_option1,dcs_per_dollar_change
+30% contract at existing store,1.0,9,2133317.0,1724925.0,0.808,0.788,0.814,0.37,2.383,10101868.0,5348235.0,0.523,0.408,0.659,0.586,30.308,-0.285
+FRESH tax break,0.25,9,30864.0,7725.0,0.25,0.25,0.251,0.291,,30864.0,7793.0,0.253,0.251,0.255,0.243,,0.003
+FRESH tax break,0.5,9,30864.0,15469.0,0.502,0.5,0.503,0.292,,30864.0,15744.0,0.514,0.503,0.52,0.248,,0.012
+FRESH tax break,0.75,9,30864.0,23231.0,0.754,0.751,0.756,0.293,,30864.0,23857.0,0.782,0.758,0.795,0.254,,0.028
+N.Y.C. Groceries (new store),1.0,1,2222385.0,1798540.0,0.809,0.809,0.809,0.346,1.0,10461952.0,5543587.0,0.53,0.53,0.53,0.58,4.685,-0.279
+"N.Y.C. Groceries (new store), Tax_j = 0",1.0,1,2222385.0,1798540.0,0.809,0.809,0.809,0.346,1.0,10461952.0,5543587.0,0.53,0.53,0.53,0.58,4.685,-0.279
+Rent subsidy,0.25,9,184300.0,46369.0,0.252,0.251,0.254,0.293,,184300.0,48964.0,0.266,0.259,0.28,0.263,,0.014
+Rent subsidy,0.5,9,184300.0,93331.0,0.507,0.505,0.516,0.296,,184300.0,104384.0,0.566,0.537,0.635,0.282,,0.059
+Rent subsidy,0.75,9,184300.0,140897.0,0.766,0.762,0.788,0.3,,184300.0,167417.0,0.908,0.836,1.094,0.307,,0.142

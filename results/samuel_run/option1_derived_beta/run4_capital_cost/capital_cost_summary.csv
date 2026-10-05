@@ -1,0 +1,5 @@
+run,lever,capital_case,stores,annual_capital,annual_total_cost_median,dcs_total_median,dcs_per_dollar_median,dcs_per_dollar_min,dcs_per_dollar_max
+Chris run 4,30% contract at existing store,none (operating cost only),9,0.0,10101868.0,5348235.0,0.523,0.408,0.659
+Chris run 4,N.Y.C. Groceries (new store),none (operating cost only),1,0.0,10461952.0,5543587.0,0.53,0.53,0.53
+Chris run 4,N.Y.C. Groceries (new store),"low (3%, 30 yr)",1,714270.0,11176222.0,5543587.0,0.496,0.496,0.496
+Chris run 4,N.Y.C. Groceries (new store),"high (4%, 20 yr)",1,1030145.0,11492096.0,5543587.0,0.482,0.482,0.482

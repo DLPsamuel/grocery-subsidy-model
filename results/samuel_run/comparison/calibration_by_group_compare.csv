@@ -1,0 +1,4 @@
+group,households,beta_p_chris,baskets_per_trip_chris,share_of_trips_to_9_stores_chris,own_price_elasticity_chris,beta_p_option1,baskets_per_trip_option1,share_of_trips_to_9_stores_option1,own_price_elasticity_option1
+Low,7683,0.0583,2.832,0.491,4.4,0.4261,2.832,0.56,29.4
+Mid,4795,0.0195,3.267,0.488,1.7,0.1424,3.267,0.474,12.28
+High,7444,0.0084,5.097,0.487,1.14,0.0613,5.097,0.462,8.33

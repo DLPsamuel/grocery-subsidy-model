@@ -1,0 +1,5 @@
+lever,capital_case,stores,annual_capital,annual_total_cost_median_chris,dcs_total_median_chris,dcs_per_dollar_median_chris,dcs_per_dollar_min_chris,dcs_per_dollar_max_chris,annual_total_cost_median_option1,dcs_total_median_option1,dcs_per_dollar_median_option1,dcs_per_dollar_min_option1,dcs_per_dollar_max_option1
+30% contract at existing store,none (operating cost only),9,0.0,2133317.0,1724925.0,0.808,0.788,0.814,10101868.0,5348235.0,0.523,0.408,0.659
+N.Y.C. Groceries (new store),none (operating cost only),1,0.0,2222385.0,1798540.0,0.809,0.809,0.809,10461952.0,5543587.0,0.53,0.53,0.53
+N.Y.C. Groceries (new store),"low (3%, 30 yr)",1,714270.0,2936654.0,1798540.0,0.612,0.612,0.612,11176222.0,5543587.0,0.496,0.496,0.496
+N.Y.C. Groceries (new store),"high (4%, 20 yr)",1,1030145.0,3252529.0,1798540.0,0.553,0.553,0.553,11492096.0,5543587.0,0.482,0.482,0.482

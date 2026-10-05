@@ -1,0 +1,4 @@
+group,households,beta_p,baskets_per_trip,share_of_trips_to_9_stores,own_price_elasticity
+Low,7683,0.4261,2.832,0.56,29.4
+Mid,4795,0.1424,3.267,0.474,12.28
+High,7444,0.0613,5.097,0.462,8.33
