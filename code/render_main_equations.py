@@ -247,21 +247,25 @@ CARDS = [
 
 # Inline $...$ segments (ignoring escaped \$) are kept whole when wrapping descriptions.
 TOKEN = re.compile(r"(?<!\\)\$.*?(?<!\\)\$\S*|\S+")
+TEX_MARKUP = re.compile(r"\\[a-zA-Z]+|[{}^_$\\]")
 
 
 def wrap(text, width=WRAP_CHARS):
-    lines, line = [], ""
+    """Wrap on printed width: TeX commands and braces inside $...$ take no space."""
+    lines, line, used = [], "", 0
     for tok in TOKEN.findall(text):
-        if line and len(line) + 1 + len(tok) > width:
+        n = len(TEX_MARKUP.sub("", tok))
+        if line and used + 1 + n > width:
             lines.append(line)
-            line = tok
+            line, used = tok, n
         else:
-            line = f"{line} {tok}" if line else tok
+            line, used = (f"{line} {tok}", used + 1 + n) if line else (tok, n)
     lines.append(line)
     return "\n".join(lines)
 
 
-def render_card(num, stem, name, section, tex, symbols):
+def render_card(num, stem, name, section, tex, symbols, out_dir=OUT_DIR,
+                source="MAIN model specification v2", sym_table=SYM):
     size = 20
     fig = plt.figure(figsize=(size, size))
     renderer = fig.canvas.get_renderer()
@@ -274,14 +278,14 @@ def render_card(num, stem, name, section, tex, symbols):
     y = size - 0.5
     _, h = put(0, y, name, fontsize=TITLE_SIZE, fontweight="bold", color=TITLE_COLOR)
     y -= h + 0.12
-    _, h = put(0, y, f"MAIN model specification v2, {section}", fontsize=REF_SIZE, color=REF_COLOR)
+    _, h = put(0, y, f"{source}, {section}", fontsize=REF_SIZE, color=REF_COLOR)
     y -= h + 0.45
     _, h = put(0.3, y, tex, fontsize=EQ_SIZE, color=TEXT_COLOR)
     y -= h + 0.5
     _, h = put(0, y, "where", fontsize=DESC_SIZE, style="italic", color=REF_COLOR)
     y -= h + 0.2
 
-    rows = [SYM[s] if isinstance(s, str) else s for s in symbols]
+    rows = [sym_table[s] if isinstance(s, str) else s for s in symbols]
     probe = [fig.text(0, 0, sym, fontsize=SYM_SIZE) for sym, _ in rows]
     sym_w = max(t.get_window_extent(renderer).width for t in probe) / fig.dpi
     for t in probe:
@@ -295,7 +299,7 @@ def render_card(num, stem, name, section, tex, symbols):
         y -= max(hs, hd) + 0.22
 
     for ext in ("png", "svg"):
-        out = os.path.join(OUT_DIR, f"eq_{num:02d}_{stem}.{ext}")
+        out = os.path.join(out_dir, f"eq_{num:02d}_{stem}.{ext}")
         fig.savefig(out, dpi=DPI, transparent=True, bbox_inches="tight", pad_inches=0.15)
     print(f"Saved: eq_{num:02d}_{stem}.png/.svg")
     plt.close(fig)
