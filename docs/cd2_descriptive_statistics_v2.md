@@ -1,6 +1,6 @@
 # Bronx CD2: Descriptive Statistics, v2
 
-Companion to [`MAIN_NYC_Grocery_Subsidy_Model_Specification_v2.md`](../MAIN_NYC_Grocery_Subsidy_Model_Specification_v2.md) · Last updated: 2026-09-30
+Companion to [`MAIN_NYC_Grocery_Subsidy_Model_Specification_v2.md`](archive/MAIN_NYC_Grocery_Subsidy_Model_Specification_v2.md) · Last updated: 2026-09-30
 
 This report answers one question: **are the Low / Mid / High income groups balanced across CD2's census tracts?** It also collects in one place the other summary numbers the model uses: food spending $\bar f_g$, every $\kappa$ version, market size $M$, CD2 characteristics, store inputs and distances.
 

@@ -175,7 +175,7 @@ Unchanged. Revenue for Food Universe and JJ Southern Farm was estimated as Ag & 
 | [`data/tax/v2/lot_polygons_v2.geojson`](../data/tax/v2/lot_polygons_v2.geojson) | Lot outlines from MapPLUTO with store fields |
 | [`data/tax/v2/lot_check_map_v2.html`](../data/tax/v2/lot_check_map_v2.html) | Lot map |
 
-v1 inputs read, not changed: `data/tax/candidate_store_lots.csv`, `data/tax/pluto_candidate_lots.csv`, `data/tax/tax_j_cd2_candidate_stores.csv`, `data/rent/nopv_income_fy2025.csv`, `data/rent/nopv/2027031001_2024-25.txt`, `data/rent/rent_j_cd2_candidate_stores.csv`, `data/rent/listings/bronx_retail_listings.csv`, `data/referenceusa/referenceusa_cd2_grocery_download_edited.csv`, `data/stores/large_grocery_stores_cd2.csv`.
+v1 inputs read, not changed: `data/tax/candidate_store_lots.csv`, `data/tax/pluto_candidate_lots.csv`, `data/tax/tax_j_cd2_candidate_stores.csv`, `data/rent/nopv_income_fy2025.csv`, `data/rent/nopv/2027031001_2024-25.txt`, `data/rent/rent_j_cd2_candidate_stores.csv`, `data/rent/listings/bronx_retail_listings.csv`, `data/archive/referenceusa/referenceusa_cd2_grocery_download_edited.csv`, `data/stores/large_grocery_stores_cd2.csv`.
 
 ## How to rerun
 

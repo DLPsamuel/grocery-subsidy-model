@@ -21,11 +21,12 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 REVENUE_DIR = ROOT / "data" / "revenue"
-HISTORICAL_CSV = REVENUE_DIR / "referenceusa_historical_2020_2024.csv"
+RUSA_DIR = ROOT / "data" / "archive" / "referenceusa"
+HISTORICAL_CSV = RUSA_DIR / "referenceusa_historical_2020_2024.csv"
 STORES_CSV = ROOT / "data" / "stores" / "large_grocery_stores_cd2.csv"
 PRICES_CSV = ROOT / "data" / "prices" / "p_j_cd2_candidate_stores.csv"
 OUT_CSV = REVENUE_DIR / "revenue_j_cd2_candidate_stores.csv"
-HISTORY_OUT_CSV = REVENUE_DIR / "referenceusa_sales_by_year.csv"
+HISTORY_OUT_CSV = RUSA_DIR / "referenceusa_sales_by_year.csv"
 
 YEAR = "2024"
 FMI_SALES_PER_SQFT_WEEK = 19.59
