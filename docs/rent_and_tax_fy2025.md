@@ -171,7 +171,7 @@ Low and high values are the 25th to 75th percentile of listings when there are e
 - DOF Notices of Property Value, tax year 2024-25, from the [DOF property portal](https://a836-pts-access.nyc.gov/care/search/commonsearch.aspx?mode=persprop)
 - Crexi Bronx retail lease listings, seen 2026-09-30
 - NYS Ag & Markets retail food store licenses (store sq ft), via `data/stores/large_grocery_stores_cd2.csv`
-- ReferenceUSA (Data Axle) "Rent Expenses", via `data/referenceusa/referenceusa_cd2_grocery_download_edited.csv`
+- ReferenceUSA (Data Axle) "Rent Expenses", via `data/archive/referenceusa/referenceusa_cd2_grocery_download_edited.csv`
 
 ## Next steps
 

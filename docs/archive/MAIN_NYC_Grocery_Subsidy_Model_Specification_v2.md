@@ -13,15 +13,15 @@ v1: [`MAIN_NYC_Grocery_Subsidy_Model_Specification.md`](MAIN_NYC_Grocery_Subsidy
 1. **Distance $d_{tj}$ is Manhattan distance in miles** (§1.1.1). v1 described it as straight-line. The data file is the same (`data/distance/d_tract_store_miles.csv`, built by `code/build_d_ij.py`), and it was already Manhattan. Only the label changed, and the formula is now written out.
 2. **Utility now shows the Gumbel error term** (§1.1.1): $U_{ij} = V_{ij} + \varepsilon_{ij}$. It is notation only; $\varepsilon_{ij}$ is **not modeled**. §1.1.3 and §1.1.5 note how $s_{ij}$ and $W_i$ follow from it.
 3. **Consumer groups corrected to 13 tracts × 3 = 39** (§1.1.2). Three of the 16 CD2 tracts have 0 households in ACS 2024 (19.04, 93.02, 117.02). v1 said 15 tracts / 45 groups.
-4. **Revenue $R_j$ uses the v2 Census estimate**, the pooled rate of \$801/sq ft/yr (range \$698–\$845), following [`docs/revenue_census_estimate_v2.md`](docs/revenue_census_estimate_v2.md) (§1.2.1, Part 2).
-5. **Rent and Tax use the FY2025 v2 values**, following [`docs/rent_and_tax_fy2025_v2.md`](docs/rent_and_tax_fy2025_v2.md) (§1.2.1, §1.3.2, Part 2).
+4. **Revenue $R_j$ uses the v2 Census estimate**, the pooled rate of \$801/sq ft/yr (range \$698–\$845), following [`docs/revenue_census_estimate_v2.md`](../revenue_census_estimate_v2.md) (§1.2.1, Part 2).
+5. **Rent and Tax use the FY2025 v2 values**, following [`docs/rent_and_tax_fy2025_v2.md`](../rent_and_tax_fy2025_v2.md) (§1.2.1, §1.3.2, Part 2).
 6. **N.Y.C. Groceries inputs updated** (Part 2):
    - $R_j$ now uses the v2 rate.
    - $\text{Tax}_j$ is re-derived from the v2 tax file.
    - The coordinates are the PLUTO point already used for distances.
    - The post-discount basket prices are recomputed; v1's figures were about \$1 too low.
 7. **New map** (Part 3): the 3 zero-household tracts are left unshaded and labelled as omitted.
-8. **New companion report:** [`docs/cd2_descriptive_statistics_v2.md`](docs/cd2_descriptive_statistics_v2.md) (income-group balance, $\bar f_g$, $\kappa$, CD2 and store statistics).
+8. **New companion report:** [`docs/cd2_descriptive_statistics_v2.md`](../cd2_descriptive_statistics_v2.md) (income-group balance, $\bar f_g$, $\kappa$, CD2 and store statistics).
 
 Files marked **(new in v2)** were created for this version. Every other file already existed.
 
@@ -100,7 +100,7 @@ Distance $d_{tj}$ is identical for all three income groups within tract $t$; it 
 | $n_{t,g}$ | Households in tract $t$, group $g$ | 129–1,277 per group (see companion report) | `data/acs/cd2_B19001_2024.csv`; tidy table `data/descriptive_stats_v2/hh_by_tract_income_group_v2.csv` **(new in v2)** |
 | $N_{\text{HH}}$ | Total CD2 households | 19,922 (Low 7,683 · Mid 4,795 · High 7,444) | `data/acs/cd2_B19001_2024.csv` |
 
-> The full $n_{t,g}$ table, and a check of whether the groups are balanced, are in [`docs/cd2_descriptive_statistics_v2.md`](docs/cd2_descriptive_statistics_v2.md). In short, the groups are unequal in size (Mid is about 24% of households, against 37–39% for Low and High), but they are spread fairly evenly across tracts (Cramér's V = 0.17).
+> The full $n_{t,g}$ table, and a check of whether the groups are balanced, are in [`docs/cd2_descriptive_statistics_v2.md`](../cd2_descriptive_statistics_v2.md). In short, the groups are unequal in size (Mid is about 24% of households, against 37–39% for Low and High), but they are spread fairly evenly across tracts (Cramér's V = 0.17).
 
 ---
 
@@ -167,7 +167,7 @@ $$M = \sum_{g} N_{g} \cdot \bar{f}_g \cdot 52 \;\approx\; \$112.98\text{M/yr (20
 | $N_g$ | Total households in income group $g$ (all tracts) | Low 7,683 · Mid 4,795 · High 7,444 | `data/acs/cd2_B19001_2024.csv` |
 | $M$ | Annual CD2 grocery market size | \$112.98M | `data/bls/cd2_market_size_M_northeast_cd2weighted.csv` |
 
-> **Revenue choice (v2):** v2 uses the pooled 4451 rate as the main $R_j$, with \$698–\$845 as the sensitivity range. ReferenceUSA 2024 (`data/revenue/revenue_j_cd2_candidate_stores.csv`, `revenue_rusa_2024`; 7 stores, \$23.8M) is kept only as an outside low case. See [`docs/revenue_census_estimate_v2.md`](docs/revenue_census_estimate_v2.md).
+> **Revenue choice (v2):** v2 uses the pooled 4451 rate as the main $R_j$, with \$698–\$845 as the sensitivity range. ReferenceUSA 2024 (`data/revenue/revenue_j_cd2_candidate_stores.csv`, `revenue_rusa_2024`; 7 stores, \$23.8M) is kept only as an outside low case. See [`docs/revenue_census_estimate_v2.md`](../revenue_census_estimate_v2.md).
 
 **Store-level data table (2024 revenue, FY2025 tax and rent, v2):**
 
@@ -347,7 +347,7 @@ Add the planned store to the choice set with $J = 10$. Set $p_j^{\text{post}} = 
 
 ## Part 3 — Map Figure
 
-![CD2 store map v2](figures/cd2_store_map_v2.png)
+![CD2 store map v2](../../figures/cd2_store_map_v2.png)
 
 *Figure 1 (v2).*
 - *Bronx CD2 (Hunts Point / Longwood): census tract boundaries and centroids, the 9 existing large grocery stores (blue circles), and the planned N.Y.C. Groceries location at 1215 Spofford Ave (orange star, PLUTO point).*

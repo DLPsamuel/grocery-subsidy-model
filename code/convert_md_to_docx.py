@@ -21,8 +21,8 @@ import tempfile
 import hashlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MD_PATH  = os.path.join(ROOT, "MAIN_NYC_Grocery_Subsidy_Model_Specification.md")
-OUT_PATH = os.path.join(ROOT, "MAIN_NYC_Grocery_Subsidy_Model_Specification.docx")
+MD_PATH  = os.path.join(ROOT, "docs", "archive", "MAIN_NYC_Grocery_Subsidy_Model_Specification.md")
+OUT_PATH = os.path.join(ROOT, "docs", "archive", "MAIN_NYC_Grocery_Subsidy_Model_Specification.docx")
 FIG_DIR  = os.path.join(ROOT, "figures")
 EQ_CACHE = os.path.join(ROOT, "figures", "_eq_cache")
 os.makedirs(EQ_CACHE, exist_ok=True)

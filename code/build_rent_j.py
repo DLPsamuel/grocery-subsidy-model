@@ -32,7 +32,7 @@ RENT_DIR = ROOT / "data" / "rent"
 LOTS_CSV = ROOT / "data" / "tax" / "candidate_store_lots.csv"
 NOPV_CSV = RENT_DIR / "nopv_income_fy2025.csv"
 LISTINGS_CSV = RENT_DIR / "listings" / "bronx_retail_listings.csv"
-RUSA_CSV = ROOT / "data" / "referenceusa" / "referenceusa_cd2_grocery_download_edited.csv"
+RUSA_CSV = ROOT / "data" / "archive" / "referenceusa" / "referenceusa_cd2_grocery_download_edited.csv"
 COMPS_OUT = RENT_DIR / "rent_comps_summary.csv"
 OUT_CSV = RENT_DIR / "rent_j_cd2_candidate_stores.csv"
 

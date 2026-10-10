@@ -280,7 +280,7 @@ Add the planned store to the choice set with $J = 10$. Set $p_j^{\text{post}} = 
 
 ## Part 3 — Map Figure
 
-![CD2 store map](figures/cd2_store_map.png)
+![CD2 store map](../../figures/cd2_store_map.png)
 
 *Figure 1. Bronx CD2 (Hunts Point / Longwood): census tract boundaries and centroids, 9 existing large grocery stores (blue circles), and the planned N.Y.C. Groceries location at 1215 Spofford Ave (orange star).*
 
